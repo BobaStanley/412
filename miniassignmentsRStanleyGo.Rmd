@@ -3,9 +3,9 @@ title: "D2M assignment notebook"
 output: html_notebook
 author: "Stanley Go"
 date: "`r Sys.Date()`"
-  output: 
-    html_document:
-      df_print: paged
+  #output: 
+    #html_document:
+      #df_print: paged
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -38,7 +38,7 @@ favenumber <- 8
 ```{r}
 sd(1:2)^2
 ```
-
+#doesntwork
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
