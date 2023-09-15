@@ -11,7 +11,7 @@
 
 <meta name="author" content="Stanley Go" />
 
-<meta name="date" content="2023-09-12" />
+<meta name="date" content="2023-09-15" />
 
 <title>D2M assignment notebook</title>
 
@@ -1750,7 +1750,7 @@ display: none;
 
 <h1 class="title toc-ignore">D2M assignment notebook</h1>
 <h4 class="author">Stanley Go</h4>
-<h4 class="date">2023-09-12</h4>
+<h4 class="date">2023-09-15</h4>
 
 </div>
 
@@ -1792,6 +1792,25 @@ the chunk or by placing your cursor inside it and pressing
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Write a function that takes a positive number and makes it
+negative</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFrZV9uZWdhdGl2ZSA8LSBmdW5jdGlvbih4KXtcbiAgYWJzKHgpKigtMSlcbn1cbmBgYCJ9 -->
+<pre class="r"><code>make_negative &lt;- function(x){
+  abs(x)*(-1)
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFrZV9uZWdhdGl2ZSgtMylcbmBgYCJ9 -->
+<pre class="r"><code>make_negative(-3)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0zXG4ifQ== -->
+<pre><code>[1] -3</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmF2ZW51bWJlciA8LSA4XG5gYGAifQ== -->
@@ -1815,7 +1834,18 @@ the chunk or by placing your cursor inside it and pressing
 <!-- rnb-text-begin -->
 <p>#doesntwork</p>
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
-toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
+toolbar or by pressing <em>Ctrl+Alt+I</em>. create a new code chunk</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9zaXRpdmVfbnVtYmVyIDwtIGZ1bmN0aW9uKHgpe1xuICAoNyo4KSA8PSBtYWtlX25lZ2F0aXZlKDU2KXx8IFRSVUVcblxufVxuXG5gYGAifQ== -->
+<pre class="r"><code>positive_number &lt;- function(x){
+  (7*8) &lt;= make_negative(56)|| TRUE
+
+}
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>When you save the notebook, an HTML file containing the code and
 output will be saved alongside it (click the <em>Preview</em> button or
 press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
@@ -1825,7 +1855,7 @@ run any R code chunks. Instead, the output of the chunk when it was last
 run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkQyTSBhc3NpZ25tZW50IG5vdGVib29rIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQphdXRob3I6ICJTdGFubGV5IEdvIg0KZGF0ZTogImByIFN5cy5EYXRlKClgIg0KICAjb3V0cHV0OiANCiAgICAjaHRtbF9kb2N1bWVudDoNCiAgICAgICNkZl9wcmludDogcGFnZWQNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCiNDVFJMK0FMVCsgaSBtYWtlcyBhIGNodW5rIA0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCmBgYHtyfQ0KeCA8LSAyKzINCmBgYA0KYGBge3J9DQpoZWxwKCkNCmBgYA0KDQoNCmBgYHtyfQ0KMisyDQpgYGANCg0KDQpgYGB7cn0NCmZhdmVudW1iZXIgPC0gOA0KYGBgDQpgYGB7cn0NCj9zZA0KDQpgYGANCmBgYHtyfQ0Kc2QoMToyKV4yDQpgYGANCiNkb2VzbnR3b3JrDQoNCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCg0KV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4NCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkQyTSBhc3NpZ25tZW50IG5vdGVib29rIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQphdXRob3I6ICJTdGFubGV5IEdvIg0KZGF0ZTogImByIFN5cy5EYXRlKClgIg0KICAjb3V0cHV0OiANCiAgICAjaHRtbF9kb2N1bWVudDoNCiAgICAgICNkZl9wcmludDogcGFnZWQNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCiNDVFJMK0FMVCsgaSBtYWtlcyBhIGNodW5rIA0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCmBgYHtyfQ0KeCA8LSAyKzINCmBgYA0KYGBge3J9DQpoZWxwKCkNCmBgYA0KDQoNCmBgYHtyfQ0KMisyDQpgYGANCldyaXRlIGEgZnVuY3Rpb24gdGhhdCB0YWtlcyBhIHBvc2l0aXZlIG51bWJlciBhbmQgbWFrZXMgaXQgbmVnYXRpdmUNCmBgYHtyfQ0KbWFrZV9uZWdhdGl2ZSA8LSBmdW5jdGlvbih4KXsNCiAgYWJzKHgpKigtMSkNCn0NCmBgYA0KYGBge3J9DQptYWtlX25lZ2F0aXZlKC0zKQ0KYGBgDQoNCmBgYHtyfQ0KZmF2ZW51bWJlciA8LSA4DQpgYGANCmBgYHtyfQ0KP3NkDQoNCmBgYA0KYGBge3J9DQpzZCgxOjIpXjINCmBgYA0KI2RvZXNudHdvcmsNCiANCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCmNyZWF0ZSBhIG5ldyBjb2RlIGNodW5rIA0KYGBge3J9DQpwb3NpdGl2ZV9udW1iZXIgPC0gZnVuY3Rpb24oeCl7DQogICg3KjgpIDw9IG1ha2VfbmVnYXRpdmUoNTYpfHwgVFJVRQ0KDQp9DQoNCmBgYA0KDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuDQo=</div>
 
 
 
