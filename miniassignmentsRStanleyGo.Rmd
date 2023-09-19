@@ -57,6 +57,18 @@ create a new code chunk
 
 ```
 
+```{r}
+my_first_vector <- c(1, 2, 3)
+my_second_vector <- c(3, 4, 5)
+my_second_vector 
+```
+```{r}
+my_list <- list(my_first_vector, my_second_vector)
+my_list
+```
+```{r}
+as.data.frame(my_list)
+```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
