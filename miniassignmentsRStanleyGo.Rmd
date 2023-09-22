@@ -69,6 +69,32 @@ my_list
 ```{r}
 as.data.frame(my_list)
 ```
+```{r}
+x <- 10
+if (x < 10){
+  print("low")
+}else if (x>=10 && x<=20){
+  print("medium")
+}else{
+  print("high")
+}
+
+```
+Make a for loop that takes a vector of names and prints “Hi NAME” (NAME meaning the names from the vector) for each element of the vector.
+
+```{r}
+names <- c("John", "joe", "Stan")
+for(name in names){
+  message <- paste("Hi", names)
+  print(message)
+}
+
+```
+Make a while loop that samples one name from the vector of names, adds it to a new vector (but only if that name hasn’t already been added), and stops when each name is in the new list at least once.
+
+```{r}
+
+```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
