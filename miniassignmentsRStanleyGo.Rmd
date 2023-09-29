@@ -93,13 +93,39 @@ for(name in names){
 Make a while loop that samples one name from the vector of names, adds it to a new vector (but only if that name hasn’t already been added), and stops when each name is in the new list at least once.
 
 ```{r}
-
+library(tidyverse)
 
 ```
 ```{r}
 my_numbers <- c(1,2,3,4,5,8,9,10)
 mean(my_numbers)
 
+```
+```{r}
+glimpse(ChickWeight)
+
+ChickWeight %>%
+  select(age_days= Time, weight_ca= weight) %>%  #%>%--just means "and then"
+  head( n = 3)
+```
+```{r}
+chick_class <- ChickWeight %>%
+  select(chick_id = Chick, diet = Diet, age_days = Time, weight_ca = weight)
+```
+```{r}
+chick_class %>%
+  arrange(chick_id) %>%
+  head()
+```
+```{r}
+chick_clean%>%
+  mutate(session = case_when(age_days = 0 ~ "birth", age_days = 20 ~ "last1", age_days = 21 ~"last2", TRUE    ~ as.character(age_days)))
+```
+```{r}
+chick_clean %>%
+  mutate(weight_lbs = weight_gm/453.6) %>%
+  group_by(diet)%>%
+  summarise(n_obs = n(), mean_wgt_gm = mean(weight_gm))
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
