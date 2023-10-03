@@ -105,12 +105,12 @@ mean(my_numbers)
 glimpse(ChickWeight)
 
 ChickWeight %>%
-  select(age_days= Time, weight_ca= weight) %>%  #%>%--just means "and then"
+  select(age_days= Time, weight_gm= weight) %>%  #%>%--just means "and then"
   head( n = 3)
 ```
 ```{r}
 chick_class <- ChickWeight %>%
-  select(chick_id = Chick, diet = Diet, age_days = Time, weight_ca = weight)
+  select(chick_id = Chick, diet = Diet, age_days = Time, weight_gm = weight)
 ```
 ```{r}
 chick_class %>%
@@ -118,14 +118,43 @@ chick_class %>%
   head()
 ```
 ```{r}
-chick_clean%>%
-  mutate(session = case_when(age_days = 0 ~ "birth", age_days = 20 ~ "last1", age_days = 21 ~"last2", TRUE    ~ as.character(age_days)))
+chick_class %>%
+  mutate(new_column = "value") %>%
+  head(n = 3)
 ```
 ```{r}
-chick_clean %>%
+chick_class %>%
+  mutate(weight_per_day = weight_gm/age_days) %>%
+  head(n = 3)
+```
+
+```{r}
+chick_class %>%
+  mutate(session = case_when(age_days == 0 ~ "birth",
+                             age_days == 20 ~ "last1",
+                             age_days == 21 ~ "last2",
+                             TRUE           ~ as.character(age_days)))
+```
+```{r}
+chick_class %>%
   mutate(weight_lbs = weight_gm/453.6) %>%
   group_by(diet)%>%
   summarise(n_obs = n(), mean_wgt_gm = mean(weight_gm))
+```
+```{r}
+?pivot_longer
+```
+```{r}
+billboard %>%
+  pivot_longer(cols= starts_with("wk"), names_to = "week", values_to = "rank", names_transform = list(week = parse_number)) #or names_prefix = "wk"
+```
+```{r}
+billboard %>%
+  separate(col =date.entered, into= c("year", "month", "day"), sep = "-")
+```
+```{r}
+billboard %>%
+  separate(col =date.entered, into= c("year", NA, NA), sep = "-")
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
