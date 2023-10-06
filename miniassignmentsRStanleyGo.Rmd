@@ -156,6 +156,48 @@ billboard %>%
 billboard %>%
   separate(col =date.entered, into= c("year", NA, NA), sep = "-")
 ```
+```{r}
+?fish_encounters
+```
+```{r}
+fish_encounters %>%
+  filter(is.na(seen) == TRUE)
+```
+```{r}
+fish_encounters %>%
+  group_by(seen) %>%
+  count()
+```
+```{r}
+fish_encounters %>%
+  complete(fish, station)
+```
+```{r}
+fish_encounters %>%
+  group_by(station) %>%
+  count()
+```
+```{r}
+fish_complete <- fish_encounters %>%
+  complete(fish, station)
+```
+```{r}
+fish_complete %>%
+  group_by(station) %>%
+  count()
+```
+```{r}
+fish_encounters %>%
+  complete(fish, station, fill = list(seen = 0)) %>%
+  group_by(seen) %>%
+  count()
+  
+```
+```{r}
+fish_encounters %>%
+  complete(fish, station) %>%
+  replace_na(list(seen=0))
+```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
