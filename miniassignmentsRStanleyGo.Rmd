@@ -198,6 +198,33 @@ fish_encounters %>%
   complete(fish, station) %>%
   replace_na(list(seen=0))
 ```
+```{r}
+?read_csv
+```
+
+```{r}
+billboard %>%
+  write_csv("billboard_data.csv")
+```
+
+```{r}
+billboard_edited <- read_csv("billboard_data.csv", name_repair = "unique")
+```
+```{r}
+billboard_edited
+```
+```{r}
+billboard_edited %>%
+  group_by("wk66") %>%
+  count()
+```
+```{r}
+billboard_edited %>%
+  select(-date.entered...3, date.entered = date.entered...4)
+```
+```{r}
+
+```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
