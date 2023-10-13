@@ -223,7 +223,52 @@ billboard_edited %>%
   select(-date.entered...3, date.entered = date.entered...4)
 ```
 ```{r}
+ezpass <- read_csv("EZPass_PhillyCommute.csv")
+```
 
+```{r}
+ezpass %>%
+  mutate(amount = parse_number(amount))
+```
+
+```{r}
+ezpass <- read_csv("EZPass_PhillyCommute.csv") %>%
+  select(date = `TRANSACTION DATE`, 
+         entry_time = `ENTRY TIME`, 
+         entry_plaza = `ENTRY PLAZA`, 
+         exit_time = `EXIT TIME`, 
+         exit_plaza = `EXIT PLAZA`, 
+         amount = AMOUNT )
+```
+```{r}
+
+getwd()
+```
+```{r}
+ezpass %>%
+  filter(description == "TOLL") %>%
+  arrange(AMOUNT)
+  
+```
+```{r}
+ezpass %>%
+  distinct(entry_plaza, exit_plaza, amount)
+```
+```{r}
+ezpass %>%
+  filter(entry_plaza == "6" & exit_plaza == "9") %>%
+  group_by(amount)%>%
+  separate(entry_time, into = c("hour", "min", "sec"), remove = FALSE) %>%
+  group_by(amount) %>%
+  summarise(earliest_entry_hour = min(hour), latest_entry_hour = max(hour))
+  
+  
+```
+```{r}
+ezpass %>%
+  group_by(agency, entry_plaza, entry_time) %>% #creating unique groups for each route
+  mutate(amount = parse_number(amount)) %>% #
+  summarise(avg_toll, mean(amount)) #taking average toll amounr for each group 
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
