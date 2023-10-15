@@ -1,0 +1,151 @@
+---
+title: 'D2M Fall 2023: Assignment 2'
+author: "Stanley Go"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+This is a completed assignment for assignment 2 for Professor Hurst
+
+```{r, error=TRUE}
+#this is just to give you an example of the code chunk header above, which is only necessary if you're submitting an assignment with code that won't run.
+#for example, you might want to do that if you've made some progress on a problem, but aren't able to fully complete it. Rather than submitting nothing, submit what you've done so far. 
+```
+
+6. When you're done, commit and push all the files associated with the assignment (.RMD file, .HTML knit file, original dataset, your written .csv file) to GitHub. Go to GitHub.com to ensure everything is visible there. If you want me to double check that I can see it, send me an email. 
+
+7. Finally, submit the assignment on Canvas by including a link to your github repository. This will signal to me that it's ready to be graded. 
+
+*Note 1: As you commit changes in your local repo and push the repo to github (e.g., as part of your class ICMAs), you'll also be pushing any mid-work you've done on this assignment. That's fine with me (and works as a good way to have version control and a back-up of your assignment!). If you'd rather not put things on GitHub until they're done, then there's a few ways to do that: (1) uncheck these files before committing, (2) don't put these files in this folder until you're finished (i.e., work in a different folder first), (3) add your Assignment2 folder to your gitignore file (see slides from class or google as a reminder for how to do that), just make sure to remove it from your gitignore once you're ready to submit!
+
+# Problem 1
+
+Include a chunk at the beginning of your document that loads the tidyverse.
+```{r}
+library(tidyverse)
+
+```
+```{r}
+library(readxl)
+```
+
+
+# Problem 2
+
+Read the file called "airquality_D2M.xlsx"
+This is a modified version of R's airquality dataset, which reports daily air quality measurements in New York, May to September 1973.You can find details here: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/airquality.html. The "Month and Day" column is not in the original data set and was created by combining the original Month and Day columns in the form Month_Day. 
+
+Once you've read in the file, go through some initial spot checks of the data. Walk me through your spot-checking by writing bullet form notes about what you're looking for, what you've found, and what that tells you. If you need to revise your reading of the data in response to any of that spot checking, go ahead and do that. 
+
+Clean up the variable names and separate the Month and Day column into separate columns. 
+```{r}
+getwd()
+```
+
+```{r}
+?cat
+```
+- look for NA values, and print if true. 
+```{r}
+# Define the full file path 
+air_quality <- read_csv("airquality_D2M.csv", skip = 1)
+na_check <- any(is.na(air_quality))
+if (na_check) {
+  cat("There are missing values (NAs) in the dataset.\n")
+} else {
+  cat("There are no missing values (NAs) in the dataset.\n")
+}
+# Clean up variable names
+air_quality <- air_quality %>%
+  rename(
+    Ozone_Concentration = Ozone,
+    Solar_Radiation = Solar.R,
+    Wind_Speed = Wind,
+    Temperature = Temp
+  )
+#  Separate the "Month and Day" column using the underscore as a delimiter
+air_quality <- air_quality %>%
+  separate(`Month and Day`, into = c("Month", "Day"), sep = "_", convert = TRUE)
+#head(air_quality$`Month and Day`, 10)
+```
+
+
+```{r}
+colnames(air_quality)
+```
+
+```{r}
+?summarise
+```
+
+# Problem 3
+
+Create a tibble that reports for each Month in the dataset: 
+1. the number of days
+2. the average temperature
+3. the minimum and maximum temperatures
+
+Save the tibble as an object and display the object as output.
+Output the tibble as a csv file. 
+```{r}
+# Create a tibble with statistics by month
+monthlyTemp_summary <- air_quality %>%
+  group_by(Month) %>%
+  summarise(
+    Number_of_Days = n(),
+    Average_Temperature = mean(Temperature, na.rm = TRUE),
+    Min_Temperature = min(Temperature, na.rm = TRUE),
+    Max_Temperature = max(Temperature, na.rm = TRUE)
+  )
+
+# Save the tibble as an object
+monthlyTempSummary_object <- as.data.frame(monthlyTemp_summary)
+
+# Display the object as output
+monthlyTempSummary_object
+
+# Save the tibble as a CSV file
+write_csv(monthlyTempSummary_object, "monthlyTemp_summary.csv")
+```
+
+
+# Problem 4
+
+Create a new variable that reports the difference between the temperature for that day and the average temperature for that month. 
+```{r}
+#calculate the avg temperature for each month
+monthlyaverage_temperature <- air_quality %>%
+  group_by(Month) %>%
+  summarise(AverageTemp = mean(Temperature, na.rm = TRUE))
+
+# combine avg temperature by month to the original air_quality csv file
+air_quality <- air_quality %>%
+  left_join(monthlyaverage_temperature, by = "Month")
+
+# Calculate the temp difference per day
+air_quality <- air_quality %>%
+  mutate(Temperature_Difference = Temperature - AverageTemp)
+
+head(air_quality)
+```
+
+
+
+
+# Problem 5
+
+Use the new column above to group days into above average vs. below average days. Summarize the data to report the average wind speed and ozone reading for each type of day and each month (so, you have two grouping variables). In your tibble, also include the number of days. Save this as an object and display it.
+
+Now, pivot your new tibble so that the average values for wind speed and ozone readings for the days above and below average are next to each other for each month. You can drop unnecessary columns. Save this as an object and display it.
+
+What do you notice? Write a couple sentences interpreting the pattern you see in these values. 
+```{r}
+
+```
+
+
+
+
+
