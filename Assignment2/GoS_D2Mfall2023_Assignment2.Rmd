@@ -14,11 +14,6 @@ This is a completed assignment for assignment 2 for Professor Hurst
 #for example, you might want to do that if you've made some progress on a problem, but aren't able to fully complete it. Rather than submitting nothing, submit what you've done so far. 
 ```
 
-6. When you're done, commit and push all the files associated with the assignment (.RMD file, .HTML knit file, original dataset, your written .csv file) to GitHub. Go to GitHub.com to ensure everything is visible there. If you want me to double check that I can see it, send me an email. 
-
-7. Finally, submit the assignment on Canvas by including a link to your github repository. This will signal to me that it's ready to be graded. 
-
-*Note 1: As you commit changes in your local repo and push the repo to github (e.g., as part of your class ICMAs), you'll also be pushing any mid-work you've done on this assignment. That's fine with me (and works as a good way to have version control and a back-up of your assignment!). If you'd rather not put things on GitHub until they're done, then there's a few ways to do that: (1) uncheck these files before committing, (2) don't put these files in this folder until you're finished (i.e., work in a different folder first), (3) add your Assignment2 folder to your gitignore file (see slides from class or google as a reminder for how to do that), just make sure to remove it from your gitignore once you're ready to submit!
 
 # Problem 1
 
