@@ -24,11 +24,11 @@ This is a completed assignment for assignment 2 for Professor Hurst
 
 Include a chunk at the beginning of your document that loads the tidyverse.
 ```{r}
-library(tidyverse)
+library(tidyverse) 
 
 ```
 ```{r}
-library(readxl)
+library(readxl) #just incase for xlsx files, but I converted it into a csv file prior so I can use tidy verse
 ```
 
 
@@ -69,11 +69,6 @@ air_quality <- air_quality %>%
 air_quality <- air_quality %>%
   separate(`Month and Day`, into = c("Month", "Day"), sep = "_", convert = TRUE)
 #head(air_quality$`Month and Day`, 10)
-```
-
-
-```{r}
-colnames(air_quality)
 ```
 
 ```{r}
@@ -128,7 +123,7 @@ air_quality <- air_quality %>%
 air_quality <- air_quality %>%
   mutate(Temperature_Difference = Temperature - AverageTemp)
 
-head(air_quality)
+head(air_quality) #just displays for me to see in console 
 ```
 
 
@@ -142,7 +137,31 @@ Now, pivot your new tibble so that the average values for wind speed and ozone r
 
 What do you notice? Write a couple sentences interpreting the pattern you see in these values. 
 ```{r}
+?ifelse
+```
 
+```{r}
+# Group days(below and above)
+airqualityavg_summary <- air_quality %>%
+  mutate(DayTemp = ifelse(Temperature_Difference >= 0, "Above Average", "Below Average")) %>%
+  group_by(Month, DayTemp) %>%
+  summarise(
+    AmountDays = n(),
+    AverageWindSpeed = mean(Wind_Speed, na.rm = TRUE),
+    AverageOzone = mean(Ozone_Concentration, na.rm = TRUE)
+  )
+
+#Display avg air
+airqualityavg_summary
+pivotedairquality_summary <- airqualityavg_summary %>%
+  pivot_wider(
+    names_from = DayTemp,
+    values_from = c(AmountDays, AverageWindSpeed, AverageOzone)
+  ) %>%
+  select(Month, starts_with("Above Average"), starts_with("Below Average"))
+
+# Display the pivoted tibble
+pivotedairquality_summary
 ```
 
 
