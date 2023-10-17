@@ -294,7 +294,7 @@ gender_data <- tribble(~ id, ~ gender,
 full_join(age_data, gender_data)
 ```
 ```{r}
-
+#pk
 ```
 
 
