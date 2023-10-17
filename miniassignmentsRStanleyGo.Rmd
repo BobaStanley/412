@@ -271,6 +271,33 @@ ezpass %>%
   summarise(avg_toll, mean(amount)) #taking average toll amounr for each group 
 ```
 
+```{r}
+word_tibble <- tibble(x= 1:3, y= 3, z = x*2 + y)
+```
+
+```{r}
+#don't use binding when combining data
+age_data<- tribble(~id, ~age,
+                   1,8,
+                   2,10,
+                   3,8,
+                   5,9)
+```
+```{r}
+gender_data <- tribble(~ id, ~ gender,
+                       1, "f",
+                       2, "m",
+                       3, "mb",
+                       4, "y")
+```
+```{r}
+full_join(age_data, gender_data)
+```
+```{r}
+
+```
+
+
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
