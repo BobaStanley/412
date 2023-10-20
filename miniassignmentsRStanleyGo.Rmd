@@ -294,9 +294,43 @@ gender_data <- tribble(~ id, ~ gender,
 full_join(age_data, gender_data)
 ```
 ```{r}
-#pk
+?lubridate
 ```
 
+```{r}
+now()
+```
+```{r}
+list_of_dates <- c("March 31st, 2017", "Janary list, 2017" ,"31-Jan-2017") 
+#2nd doesnt work because spelling and wrong format, third doesn't work because no 31st
+mdy(list_of_dates)
+```
+```{r}
+today() - mdy("Oct 10 2021")
+```
+
+```{r}
+
+```
+
+```{r}
+months_factor <- factor(months, month_levels)
+```
+```{r}
+months_factor
+```
+
+```{r}
+#when using a summarise() function, the input is a tibble, even if there's only one cell
+ChickWeight %>%
+  summarise(mean_weight = mean(weight)) %>%
+  pull() #makes it just a integer-- removing the df/tibble
+```
+```{r}
+ChickWeight %>%
+  select(weight) %>%
+  pull()
+```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
