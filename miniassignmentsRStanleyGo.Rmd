@@ -332,6 +332,53 @@ ChickWeight %>%
   pull()
 ```
 
+
+```{r}
+ChickWeight %>%
+  ggplot() 
+```
+
+```{r}
+?ggplot
+```
+
+```{r}
+first_data_raw <- read_csv("FracCardGame_FullDataSet.csv")
+```
+```{r}
+glimpse(first_data_raw)
+```
+```{r}
+first_data_raw <- first_data_raw %>%
+  filter(TaskType == "Map" & Session == "post" & IncludePostTest == 1) %>%
+  select(SubID, Condition, Month_Year_tested, AgeSession1_months, ChildGrade, Fraction, Accuracy)
+
+glimpse(first_data_raw)
+  
+```
+
+
+```{r}
+first_propcorr_post <- first_data_raw %>%
+  group_by(SubID, Condition) %>%
+  summarise(prop_corr = sum(Accuracy)/a())
+  
+```
+
+
+```{r}
+first_propcorr_post %>%
+  group_by(Condition) %>%
+  summarise(mean_prop_corr = mean(prop_corr))
+  
+```
+
+```{r}
+first_propcorr_post %>%
+  ggplot(ses(y = prop_corr, x = Condition)) +
+  stat_summary(geom ="point", fun = 'mean')
+```
+
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
