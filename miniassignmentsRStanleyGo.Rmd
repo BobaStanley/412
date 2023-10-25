@@ -343,40 +343,60 @@ ChickWeight %>%
 ```
 
 ```{r}
-first_data_raw <- read_csv("FracCardGame_FullDataSet.csv")
+frac_data_raw <- read_csv("FracCardGame_FullDataSet.csv")
 ```
 ```{r}
-glimpse(first_data_raw)
+glimpse(frac_data_raw)
 ```
 ```{r}
-first_data_raw <- first_data_raw %>%
-  filter(TaskType == "Map" & Session == "post" & IncludePostTest == 1) %>%
-  select(SubID, Condition, Month_Year_tested, AgeSession1_months, ChildGrade, Fraction, Accuracy)
+frac_data_post <- frac_data_raw %>%
+  filter(TaskType == "Map" & Session == "post" & IncludePostTest == 1) %>% # just looking at post-test scores for the Mapping task
+  select(SubID, Condition, Month_Year_tested, AgeSession1_months, ChildGrade, Fraction, Accuracy) # want to isolate just the columns we care about
 
-glimpse(first_data_raw)
+glimpse(frac_data_post)
   
 ```
 
 
 ```{r}
-first_propcorr_post <- first_data_raw %>%
-  group_by(SubID, Condition) %>%
-  summarise(prop_corr = sum(Accuracy)/a())
+frac_data_post %>%
+  distinct(SubID, AgeSession1_months) %>% # to isolate to one row per child, maintaining the Age variable
+  ggplot(aes(x = AgeSession1_months)) + 
+  geom_histogram(binwidth = 1) +
+  labs(title = "Distribution of Age (in Months)")
   
 ```
 
 
 ```{r}
-first_propcorr_post %>%
+frac_propcorr_post <- frac_data_post %>%
+  group_by(SubID, Condition) %>% # for each person, and maintaining information about their condition
+  summarise(prop_corr = sum(Accuracy)/n())  # calculate the proportion of trials they got correct. Number correct / total number of rows (i.e., trials)
+```
+
+```{r}
+frac_propcorr_post %>% 
   group_by(Condition) %>%
-  summarise(mean_prop_corr = mean(prop_corr))
-  
+  summarise(mean_prop_corr = mean(prop_corr))  # get the summarized data for each condition
 ```
 
 ```{r}
-first_propcorr_post %>%
-  ggplot(ses(y = prop_corr, x = Condition)) +
-  stat_summary(geom ="point", fun = 'mean')
+frac_propcorr_post %>% 
+  group_by(Condition) %>%
+  summarise(mean_prop_corr = mean(prop_corr))  %>% # get the summarized data for each condition
+  ggplot(aes(y = mean_prop_corr, x = Condition)) +  # then plot it
+  geom_point()
+```
+```{r}
+frac_propcorr_post %>%
+  ggplot(aes(y = prop_corr, x = Condition)) +  # pass the dataset to ggplot, but then use stat_summary to calculate the mean within ggplot:
+  stat_summary(geom = "point", # we tell it which geom to use, within the stat_summary function (but remove the geom_ bit of the name)
+               fun = "mean" # tell it which function to use (there are different function parameters depending on what you're trying to plot)
+               )
+```
+
+```{r}
+
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
