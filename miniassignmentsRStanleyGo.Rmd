@@ -396,7 +396,19 @@ frac_propcorr_post %>%
 ```
 
 ```{r}
+frac_propcorr_post %>%
+  ggplot(aes(y = prop_corr, x = Condition)) +  # pass the dataset to ggplot, but then use stat_summary to calculate the mean within ggplot:
+  stat_summary(geom = "point", # we tell it which geom to use, within the stat_summary function (but remove the geom_ bit of the name)
+               fun = "mean" # tell it which function to use (there are different function parameters depending on what you're trying to plot)
+               )+
 
+ylim(0,1) +
+  labs(y = "Proportion Correct", x= "Card Game Condition", title = "Average proportion correct on mapping task")
+```
+```{r}
+frac_propcorr_post %>%
+  mutate(Condition = factor(Condition, levels = c("Map", "Div", "Cont")),
+         Condition = fct_recode(Condition, "Actively Divided Condition" = "Map", "Statistically Divided" = "Div", "Not Divided" = "Cont")) %>%
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
