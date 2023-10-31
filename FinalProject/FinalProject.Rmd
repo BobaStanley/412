@@ -14,7 +14,7 @@ library(tidyverse)
 library(dplyr)
 ```
 ```{r}
-data("ufc_stats")
+ufc_stats
 ```
 
 
