@@ -1,0 +1,103 @@
+---
+title: 'D2M Fall 2023: Assignment 3'
+output:
+  html_document:
+    df_print: paged
+---
+
+This is the assignment template for **Assignment 3** in Data to Manuscript in R (Advanced Topics II 01:185:412). Use this template to do your own assignment by following the steps below:
+
+1. Download this file and put it in a subfolder (called "Assignment3") of your local GitHub repository for this class. (see note 1 below before doing this*)
+2. Rename this file as "LASTNAMEFIRSTINITIAL_D2Mfall2023_Assignment3.rmd", e.g., "HurstM_D2Mfall2023_Assignment3.rmd"
+3. Add to the YAML header: (1) an author line with your name, (2) a date line that will fill in the date using your operating system (see slides or google to figure this out)
+4. Complete the assignment questions below by following each prompt. 
+5. Edit this preamble to remove these instructions and instead to describe what this is (i.e., "This is a completed assignment for...")
+6. Knit to HTML by clicking the little arrow next to the word "Knit" above (yours might say "preview") and then select "Knit to HTML". VIEW YOUR HTML TO MAKE SURE IT LOOKS RIGHT.
+Note: if you aren't able to fully complete a problem and are submitting code that won't actually run, you won't be able to knit it (by default). To get it to knit, add "error=TRUE" to the code chunk header (see example below). This tells R to run it and include the error as output, rather than stopping the knitting process.
+
+```{r, error=TRUE}
+#this is just to give you an example of the code chunk header above, which is only necessary if you're submitting an assignment with code that won't run.
+#for example, you might want to do that if you've made some progress on a problem, but aren't able to fully complete it. Rather than submitting nothing, submit what you've done so far. 
+```
+
+6. When you're done, commit and push all the files associated with the assignment (.RMD file, .HTML knit file, datasets) to GitHub. Go to GitHub.com to ensure everything is visible there. If you want me to double check that I can see it, send me an email. 
+
+7. Finally, submit the assignment on Canvas by including a link to your github repository. This will signal to me that it's ready to be graded. 
+
+*Note 1: As you commit changes in your local repo and push the repo to github (e.g., as part of your class ICMAs), you'll also be pushing any mid-work you've done on this assignment. That's fine with me (and works as a good way to have version control and a back-up of your assignment!). If you'd rather not put things on GitHub until they're done, then there's a few ways to do that: (1) uncheck these files before committing, (2) don't put these files in this folder until you're finished (i.e., work in a different folder first), (3) add your Assignment3 folder to your gitignore file (see slides from class or google as a reminder for how to do that), just make sure to remove it from your gitignore once you're ready to submit!
+
+# Problem 1
+
+Include a chunk at the beginning of your document that loads the tidyverse. Load any other packages you decide to use in the same code-chunk. 
+
+# Problem 2
+
+For this problem, let's get our data set up to visualize. You'll use a lot of the functions we went over when talking about tidyr and dplyr. It contains five parts. 
+
+We will use data from this paper: https://doi.org/10.1016/j.cogdev.2022.101214
+
+1. Read the abstract to have some understanding of the research questions, tasks, and findings. If you need additional information about the data or the study, you can read the full paper, read the OSF page (https://osf.io/cv763/) or look through the data codebook (https://osf.io/4m7j9)
+
+Dataset 1 includes children's counting behavior: https://osf.io/2p9dx
+Dataset 2 includes children's performance on a separate judgement task about the meaning of the words before and after: https://osf.io/k7j8t
+
+Download both datasets and put them in your working directory in a sub-folder called "datasets". Load both CSV files separately and store them as objects. 
+
+In both files, the data is from the same subjects and the linking identifier is called "SubID".
+
+2. Counting task data ("BABSYN_counting_tidy.csv"): this file includes every child's response on every trial on a battery of counting assessments. The battery of tasks included several sub-tasks (indicated by the "Task" column, such as backward counting, forward counting, etc). Create a summary tibble that includes the proportion of trials each child got correct across all trials (regardless of which subtask they came from). Whether or not the child got the trial correct is recorded in the accuracy column (1 = correct, 0 = incorrect). Only include data from children whose data should be included (i.e., where the Include variable is equal to 1). You should end up with one row per child  
+
+3. Ordinal/Magnitude Judgement Task data (BABSYN_YNtask_tidy.csv): this file includes children's responses on every trial of the Ordinal/Magnitude judgement task. Children were given a phrase (e.g., does 5 come after 7?) and asked to make yes or no judgements. We manipulated the order of the numbers (e.g., 5 come after 7 vs. 7 come after 5), the distance between the numbers (i.e., 5 vs 7 or 6 vs 7), and whether we asked about before, after, smaller, or bigger. Create a summary tibble that presents the proportion of trials each child got correct (indicated using the Response.corr column), separated by: (1) whether the word was about order (i.e., before/after) or magnitude (i.e., smaller/bigger) (hint: to do this, you'll want to create a new column that corresponds to these two categories), (2) whether the number being asked about is on the "correct" (aka "same") or opposite side of the target number (indicated using the "Side" column), and (3) whether the numbers are consecutive or non-consecutive (indicated using the TrialType column). Filter so that only children with include == 1 are included. You should end up with a tibble with 8 rows per subject.
+
+4. Combine the two summarized tibbles together so that you end up with the following columns and eight rows per participant:
+SubID
+ComparisonCategory (or whatever you called your new variable from sub-part 3)
+Side
+TrialType
+PropCorrYNTask (or whatever you called this summary variable)
+PropCorrCounting (or whatever you called this summary variable)
+
+5. Provide a one or two sentence explanation for why the PropCorrCounting variable repeats the same value for every row within a given participant, but the other variables do not. 
+
+
+# Problem 3
+
+Hypothesis: children's overall counting score and overall score on the order/magnitude judgement task are linearly correlated. 
+
+Note: remember that the dataset right now (from Problem 2) includes eight rows per participant, for each subtype of the YN task (i.e., the Order/Magnitude judgement task). Before visualizing, summarize the data to create an overall score by taking the average proportion correct across all eight sub-tasks. 
+
+Create a data visualization to explore the hypothesis above. Include:
+- at least two geoms
+- informative titles for the overall plot and the x and y axis
+- meaningful axis limits
+- three additional non-data based visual modifications
+
+From the visual alone, do you think the hypothesis is supported? What kind of pattern do you see in the data?
+
+
+
+# Problem 4
+
+Take your code from Problem 3, and modify it so that you now plot the data for the Order task (i.e., before/after) and the Magnitude task (i.e., Bigger/Smaller) separately (hint: you'll need to use the new column you created for Problem 2). Do this in two ways: (1) within the same plot and (2) as separate faceted plots. 
+
+Which approach do you like better and why? (just one or two sentences is fine)
+What do you notice about the data when plotted this way? Make two observations. 
+
+
+# Problem 5
+
+Result: When the numbers are on the correct side (i.e., when Side == "same"), children do better on consecutive numbers, compared to non-consecutive numbers when asked about order (i.e., bigger and smaller), but not when asked about magnitude (i.e., larger and smaller). 
+
+Create a data visualizion to communicate the pattern described above (hint: the hypothesis is only about trials where SIde == "same", so filter your data to focus on those). Include:
+- at least three geoms (at least one central tendency statistic and one display of distributional information)
+- informative titles for the overall plot and the x and y axis
+- meaningful axis limits
+- three additional non-data based visual modifications
+
+
+
+
+
+
+
+
