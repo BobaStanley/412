@@ -1,0 +1,1450 @@
+SubID,Include,Exclusion_reason,Counting,Task,Trial,response,scorenotes,accuracy
+BABSYN400,0,missed trial,yes,Backward,13to9,"12, 13..",NA,0
+BABSYN400,0,missed trial,yes,Backward,18to14,dk,NA,0
+BABSYN400,0,missed trial,yes,Backward,26to22,dk,NA,0
+BABSYN400,0,missed trial,yes,Backward,5to1,"5, 4, 3, 4, 5, 6",NA,0
+BABSYN400,0,missed trial,yes,Backward,7to3,"29, 26",NA,0
+BABSYN400,0,missed trial,yes,Backward,8to4,dk,NA,0
+BABSYN400,0,missed trial,yes,Forward,18to21,"18, 4, 5, 6",NA,0
+BABSYN400,0,missed trial,yes,Forward,21to24,"21, 28, 29, 20-zero",NA,0
+BABSYN400,0,missed trial,yes,Forward,35to39,"35, 60, 70,80",NA,0
+BABSYN400,0,missed trial,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN400,0,missed trial,yes,Forward,5to7,"5, 10, 11",NA,0
+BABSYN400,0,missed trial,yes,Forward,6to12,"6, 10, 11, 12",NA,0
+BABSYN400,0,missed trial,yes,next,target23,13,NA,0
+BABSYN400,0,missed trial,yes,next,target29,3?,NA,0
+BABSYN400,0,missed trial,yes,next,target37,38,NA,1
+BABSYN400,0,missed trial,yes,next,target40,49,NA,0
+BABSYN400,0,missed trial,yes,next,target59,60-zero,NA,0
+BABSYN400,0,missed trial,yes,next,target62,38 million,NA,0
+BABSYN400,0,missed trial,yes,next,target70,nothing,NA,0
+BABSYN400,0,missed trial,yes,next,target86,none,NA,0
+BABSYN400,0,missed trial,yes,skip,by10s,"12, 20, dk",NA,0
+BABSYN400,0,missed trial,yes,skip,by2s,no,NA,0
+BABSYN400,0,missed trial,yes,skip,by5s,"2, 9, (tuna?)",NA,0
+BABSYN401,1,NA,yes,Backward,13to9,"13, 12, DK",NA,0
+BABSYN401,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 20",NA,0
+BABSYN401,1,NA,yes,Backward,26to22,"26, 25, 20-30, 22, 21",NA,0
+BABSYN401,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN401,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN401,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN401,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN401,1,NA,yes,Forward,21to24,"21, 20, 30",NA,0
+BABSYN401,1,NA,yes,Forward,35to39,"35, 40, 45, 46",NA,0
+BABSYN401,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN401,1,NA,yes,Forward,5to7,"5, 10, 15",NA,0
+BABSYN401,1,NA,yes,Forward,6to12,"6, 5, 4, 3, 2, 1",NA,0
+BABSYN401,1,NA,yes,next,target23,24,NA,1
+BABSYN401,1,NA,yes,next,target29,27,NA,0
+BABSYN401,1,NA,yes,next,target37,30-10,NA,0
+BABSYN401,1,NA,yes,next,target40,41,NA,1
+BABSYN401,1,NA,yes,next,target59,56,NA,0
+BABSYN401,1,NA,yes,next,target62,67,NA,0
+BABSYN401,1,NA,yes,next,target70,71,NA,1
+BABSYN401,1,NA,yes,next,target86,87,NA,1
+BABSYN401,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN401,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",NA,0
+BABSYN401,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN402,1,NA,yes,Backward,13to9,"13, 16",NA,0
+BABSYN402,1,NA,yes,Backward,18to14,"18, 19",NA,0
+BABSYN402,1,NA,yes,Backward,26to22,"26, 25, 6, 25",NA,0
+BABSYN402,1,NA,yes,Backward,5to1,"5, 4, 3",NA,0
+BABSYN402,1,NA,yes,Backward,7to3,"7, 6, 7, 8",NA,0
+BABSYN402,1,NA,yes,Backward,8to4,2,NA,0
+BABSYN402,1,NA,yes,Forward,18to21,16,NA,0
+BABSYN402,1,NA,yes,Forward,21to24,3,NA,0
+BABSYN402,1,NA,yes,Forward,35to39,16,NA,0
+BABSYN402,1,NA,yes,Forward,4to9,"6, 3",NA,0
+BABSYN402,1,NA,yes,Forward,5to7,16,NA,0
+BABSYN402,1,NA,yes,Forward,6to12,"2, 3",Started counting from smaller #,0
+BABSYN402,1,NA,yes,next,target23,6,NA,0
+BABSYN402,1,NA,yes,next,target29,13,NA,0
+BABSYN402,1,NA,yes,next,target37,16,NA,0
+BABSYN402,1,NA,yes,next,target40,16,NA,0
+BABSYN402,1,NA,yes,next,target59,14,NA,0
+BABSYN402,1,NA,yes,next,target62,16,NA,0
+BABSYN402,1,NA,yes,next,target70,13,NA,0
+BABSYN402,1,NA,yes,next,target86,13,NA,0
+BABSYN402,1,NA,yes,skip,by10s,10,NA,0
+BABSYN402,1,NA,yes,skip,by2s,"2, 4,",NA,0
+BABSYN402,1,NA,yes,skip,by5s,"5, 10",NA,0
+BABSYN403,1,NA,yes,Backward,13to9,"13, 12, 13, 14, 15, 16",NA,0
+BABSYN403,1,NA,yes,Backward,18to14,"18, 19, 20",NA,0
+BABSYN403,1,NA,yes,Backward,26to22,"26, 27, 28, 29",NA,0
+BABSYN403,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN403,1,NA,yes,Backward,7to3,"7, 6, 3, 2, 1",NA,0
+BABSYN403,1,NA,yes,Backward,8to4,"8, 9, 10",NA,0
+BABSYN403,1,NA,yes,Forward,18to21,"18, 19, 20, 30, 40",NA,0
+BABSYN403,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN403,1,NA,yes,Forward,35to39,"35, 34, 33, 32",NA,0
+BABSYN403,1,NA,yes,Forward,4to9,"4, 3, 2, 1, 11, 12",NA,0
+BABSYN403,1,NA,yes,Forward,5to7,"5, 4, 3, 2, 1",NA,0
+BABSYN403,1,NA,yes,Forward,6to12,"6, 4, 3, 2, 1",NA,0
+BABSYN403,1,NA,yes,next,target23,24,NA,1
+BABSYN403,1,NA,yes,next,target29,28,NA,0
+BABSYN403,1,NA,yes,next,target37,38,NA,1
+BABSYN403,1,NA,yes,next,target40,50,NA,0
+BABSYN403,1,NA,yes,next,target59,54,NA,0
+BABSYN403,1,NA,yes,next,target62,63,NA,1
+BABSYN403,1,NA,yes,next,target70,80,NA,0
+BABSYN403,1,NA,yes,next,target86,96,NA,0
+BABSYN403,1,NA,yes,skip,by10s,"10, 20, 21, 22, 23",NA,0
+BABSYN403,1,NA,yes,skip,by2s,"2, 4, 3, 2, 1",NA,0
+BABSYN403,1,NA,yes,skip,by5s,"21, 22, 23, 24",Started counting from # other than beginning of sequence,0
+BABSYN404,1,NA,yes,Backward,13to9,"13, 12, 10, 9",NA,0
+BABSYN404,1,NA,yes,Backward,18to14,"17, 16, 15, 14, 15",NA,0
+BABSYN404,1,NA,yes,Backward,26to22,"24, 23, 24, 25",NA,0
+BABSYN404,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Forward,21to24,"22, 23, 24",NA,0
+BABSYN404,1,NA,yes,Forward,35to39,"36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN404,1,NA,yes,Forward,6to12,"1, 2, 3, 4, 5, 6, 7, (realized)",Started counting from smaller #,0
+BABSYN404,1,NA,yes,next,target23,24,NA,1
+BABSYN404,1,NA,yes,next,target29,30,NA,1
+BABSYN404,1,NA,yes,next,target37,38,NA,1
+BABSYN404,1,NA,yes,next,target40,41,NA,1
+BABSYN404,1,NA,yes,next,target59,61,NA,0
+BABSYN404,1,NA,yes,next,target62,63,NA,1
+BABSYN404,1,NA,yes,next,target70,71,NA,1
+BABSYN404,1,NA,yes,next,target86,87,NA,1
+BABSYN404,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN404,1,NA,yes,skip,by2s,"2, 4, 6, 8, 12",NA,0
+BABSYN404,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN405,0,stopped early,no,Backward,13to9,na,NA,NA
+BABSYN405,0,stopped early,no,Backward,18to14,na,NA,NA
+BABSYN405,0,stopped early,no,Backward,26to22,na,NA,NA
+BABSYN405,0,stopped early,no,Backward,5to1,na,NA,NA
+BABSYN405,0,stopped early,no,Backward,7to3,na,NA,NA
+BABSYN405,0,stopped early,no,Backward,8to4,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,18to21,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,21to24,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,35to39,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,4to9,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,5to7,na,NA,NA
+BABSYN405,0,stopped early,no,Forward,6to12,na,NA,NA
+BABSYN405,0,stopped early,no,next,target23,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target29,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target37,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target40,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target59,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target62,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target70,NA,NA,NA
+BABSYN405,0,stopped early,no,next,target86,NA,NA,NA
+BABSYN405,0,stopped early,no,skip,by10s,na,NA,NA
+BABSYN405,0,stopped early,no,skip,by2s,na,NA,NA
+BABSYN405,0,stopped early,no,skip,by5s,na,NA,NA
+BABSYN406,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN406,1,NA,yes,next,target23,24,NA,1
+BABSYN406,1,NA,yes,next,target29,30,NA,1
+BABSYN406,1,NA,yes,next,target37,38,NA,1
+BABSYN406,1,NA,yes,next,target40,41,NA,1
+BABSYN406,1,NA,yes,next,target59,60,NA,1
+BABSYN406,1,NA,yes,next,target62,63,NA,1
+BABSYN406,1,NA,yes,next,target70,71,NA,1
+BABSYN406,1,NA,yes,next,target86,87,NA,1
+BABSYN406,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN406,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN406,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN407,1,NA,yes,Backward,13to9,"13, 12, 11, 12, 13",NA,0
+BABSYN407,1,NA,yes,Backward,18to14,"18, 19, 11, 12",NA,0
+BABSYN407,1,NA,yes,Backward,26to22,"26, 25, 24, 26, 23, 22",NA,0
+BABSYN407,1,NA,yes,Backward,5to1,"5, 4, 3, 1",NA,0
+BABSYN407,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,Backward,8to4,"8, 7, 9, 10",NA,0
+BABSYN407,1,NA,yes,Forward,18to21,"18, 18 and a half, 18 thousand, 18-90",NA,0
+BABSYN407,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN407,1,NA,yes,next,target23,24,NA,1
+BABSYN407,1,NA,yes,next,target29,20-30,NA,0
+BABSYN407,1,NA,yes,next,target37,38,NA,1
+BABSYN407,1,NA,yes,next,target40,46,NA,0
+BABSYN407,1,NA,yes,next,target59,50-11,NA,0
+BABSYN407,1,NA,yes,next,target62,53,NA,0
+BABSYN407,1,NA,yes,next,target70,70-80,NA,0
+BABSYN407,1,NA,yes,next,target86,87,NA,1
+BABSYN407,1,NA,yes,skip,by10s,"5, 20, 21, 22, 23",Started counting from # other than beginning of sequence,0
+BABSYN407,1,NA,yes,skip,by2s,"2, 4, 3, 4",NA,0
+BABSYN407,1,NA,yes,skip,by5s,"5, 10, 11, 12, 13",NA,0
+BABSYN408,1,NA,yes,Backward,13to9,"13, 12, 2",NA,0
+BABSYN408,1,NA,yes,Backward,18to14,"18, 17, 16, 18,",NA,0
+BABSYN408,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Forward,18to21,"18, 81, 82, 83",NA,0
+BABSYN408,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN408,1,NA,yes,next,target23,24,NA,1
+BABSYN408,1,NA,yes,next,target29,26,NA,0
+BABSYN408,1,NA,yes,next,target37,38,NA,1
+BABSYN408,1,NA,yes,next,target40,41,NA,1
+BABSYN408,1,NA,yes,next,target59,50,NA,0
+BABSYN408,1,NA,yes,next,target62,61,NA,0
+BABSYN408,1,NA,yes,next,target70,71,NA,1
+BABSYN408,1,NA,yes,next,target86,87,NA,1
+BABSYN408,1,NA,yes,skip,by10s,"10, 20, 21, 30, 1 and a half",NA,0
+BABSYN408,1,NA,yes,skip,by2s,"2, 4, 2 and a half, 2 and 7",NA,0
+BABSYN408,1,NA,yes,skip,by5s,"5, 10, 11, 13, 2 and a half",NA,0
+BABSYN409,1,NA,yes,Backward,13to9,"13, 12, 18, 13",NA,0
+BABSYN409,1,NA,yes,Backward,18to14,"18, 17, 19, 40, 41",NA,0
+BABSYN409,1,NA,yes,Backward,26to22,"26, 25, 28, 29, 25",NA,0
+BABSYN409,1,NA,yes,Backward,5to1,"5, 4, 6, 7, 8",NA,0
+BABSYN409,1,NA,yes,Backward,7to3,"7, 6, 8, 9, 10",NA,0
+BABSYN409,1,NA,yes,Backward,8to4,"8, 7, 9, 11, 12",NA,0
+BABSYN409,1,NA,yes,Forward,18to21,"18, 3, 4, 5",NA,0
+BABSYN409,1,NA,yes,Forward,21to24,"21, 5, 6, 7, 8",NA,0
+BABSYN409,1,NA,yes,Forward,35to39,"35, 8, 9, 10, 11",NA,0
+BABSYN409,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN409,1,NA,yes,Forward,5to7,"5, 2, 3",NA,0
+BABSYN409,1,NA,yes,Forward,6to12,"8, 9, 10",NA,0
+BABSYN409,1,NA,yes,next,target23,24,NA,1
+BABSYN409,1,NA,yes,next,target29,8,NA,0
+BABSYN409,1,NA,yes,next,target37,8,NA,0
+BABSYN409,1,NA,yes,next,target40,42,NA,0
+BABSYN409,1,NA,yes,next,target59,10,NA,0
+BABSYN409,1,NA,yes,next,target62,63,NA,1
+BABSYN409,1,NA,yes,next,target70,80,NA,0
+BABSYN409,1,NA,yes,next,target86,7,NA,0
+BABSYN409,1,NA,yes,skip,by10s,"10, 25, 60, 18, 19",NA,0
+BABSYN409,1,NA,yes,skip,by2s,"2, 1, 5, 4, 2, 1",NA,0
+BABSYN409,1,NA,yes,skip,by5s,"5, 10, 8, 9, 10",NA,0
+BABSYN410,1,NA,yes,Backward,13to9,"13, 14",NA,0
+BABSYN410,1,NA,yes,Backward,18to14,nr,NA,0
+BABSYN410,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Backward,7to3,nr,NA,0
+BABSYN410,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN410,1,NA,yes,next,target23,24,NA,1
+BABSYN410,1,NA,yes,next,target29,30,NA,1
+BABSYN410,1,NA,yes,next,target37,38,NA,1
+BABSYN410,1,NA,yes,next,target40,41,NA,1
+BABSYN410,1,NA,yes,next,target59,60,NA,1
+BABSYN410,1,NA,yes,next,target62,63,NA,1
+BABSYN410,1,NA,yes,next,target70,80,NA,0
+BABSYN410,1,NA,yes,next,target86,87,NA,1
+BABSYN410,1,NA,yes,skip,by10s,"10, 20, 23, 25",NA,0
+BABSYN410,1,NA,yes,skip,by2s,"2, 4, 6, I mean 7",NA,0
+BABSYN410,1,NA,yes,skip,by5s,"5, 10, 11",NA,0
+BABSYN411,1,NA,yes,Backward,13to9,"13, 12, 10, 11",NA,0
+BABSYN411,1,NA,yes,Backward,18to14,20,NA,0
+BABSYN411,1,NA,yes,Backward,26to22,"26, 25, 24, 26",NA,0
+BABSYN411,1,NA,yes,Backward,5to1,"3, 2, 1",NA,0
+BABSYN411,1,NA,yes,Backward,7to3,"7, 6, 9,",NA,0
+BABSYN411,1,NA,yes,Backward,8to4,"3, 4, 5",NA,0
+BABSYN411,1,NA,yes,Forward,18to21,"18, 11teen, 13, 14, 15",NA,0
+BABSYN411,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN411,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN411,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN411,1,NA,yes,Forward,5to7,"5, 6, 7, 8",Counted all #'s in correct order,1
+BABSYN411,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN411,1,NA,yes,next,target23,23,NA,0
+BABSYN411,1,NA,yes,next,target29,24,NA,0
+BABSYN411,1,NA,yes,next,target37,70,NA,0
+BABSYN411,1,NA,yes,next,target40,44,NA,0
+BABSYN411,1,NA,yes,next,target59,40,NA,0
+BABSYN411,1,NA,yes,next,target62,40,NA,0
+BABSYN411,1,NA,yes,next,target70,30,NA,0
+BABSYN411,1,NA,yes,next,target86,90,NA,0
+BABSYN411,1,NA,yes,skip,by10s,"10, 20, 21, 22, 23",NA,0
+BABSYN411,1,NA,yes,skip,by2s,"2, 4, 3, 10, 8",NA,0
+BABSYN411,1,NA,yes,skip,by5s,"5, 10, 11, 12",NA,0
+BABSYN412,0,stopped early,no,Backward,13to9,"13, 12, 10, 11, 10, 9",NA,NA
+BABSYN412,0,stopped early,no,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Backward,7to3,"6, 5, 4, 3",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Backward,8to4,"7, 6, 5, 4",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,21to24,"21, 22, 23, 24, 25",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,35to39,"36, 37, 38, 39",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,5to7,"6, 7, 8",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,NA
+BABSYN412,0,stopped early,no,next,target23,24,NA,NA
+BABSYN412,0,stopped early,no,next,target29,30,NA,NA
+BABSYN412,0,stopped early,no,next,target37,38,NA,NA
+BABSYN412,0,stopped early,no,next,target40,41,NA,NA
+BABSYN412,0,stopped early,no,next,target59,60,NA,NA
+BABSYN412,0,stopped early,no,next,target62,63,NA,NA
+BABSYN412,0,stopped early,no,next,target70,71,NA,NA
+BABSYN412,0,stopped early,no,next,target86,87,NA,NA
+BABSYN412,0,stopped early,no,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,NA
+BABSYN412,0,stopped early,no,skip,by2s,"2, 4, 8, 6, 8, 12, 10, 12",NA,NA
+BABSYN412,0,stopped early,no,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,NA
+BABSYN413,1,NA,yes,Backward,13to9,"8, 9, 10, 11",NA,0
+BABSYN413,1,NA,yes,Backward,18to14,"18, 17, 17, 18, 19",NA,0
+BABSYN413,1,NA,yes,Backward,26to22,"26, 25, 21, 20-0",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Backward,7to3,"7, 8, 9, 10",NA,0
+BABSYN413,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Forward,21to24,"21, 22, 24, 25",NA,0
+BABSYN413,1,NA,yes,Forward,35to39,"35, 38, 39,100",NA,0
+BABSYN413,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN413,1,NA,yes,next,target23,6,NA,0
+BABSYN413,1,NA,yes,next,target29,25,NA,0
+BABSYN413,1,NA,yes,next,target37,28,NA,0
+BABSYN413,1,NA,yes,next,target40,41,NA,1
+BABSYN413,1,NA,yes,next,target59,31,NA,0
+BABSYN413,1,NA,yes,next,target62,100,NA,0
+BABSYN413,1,NA,yes,next,target70,"90, 103",NA,0
+BABSYN413,1,NA,yes,next,target86,85,NA,0
+BABSYN413,1,NA,yes,skip,by10s,"10, 8, 9, 10",NA,0
+BABSYN413,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7",NA,0
+BABSYN413,1,NA,yes,skip,by5s,"5, 4, 3, 2, 1",NA,0
+BABSYN414,1,NA,yes,Backward,13to9,"11, 10, 9",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Backward,8to4,"7, 6, 5, 4,",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Forward,35to39,na,NA,0
+BABSYN414,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN414,1,NA,yes,next,target23,24,NA,1
+BABSYN414,1,NA,yes,next,target29,30,NA,1
+BABSYN414,1,NA,yes,next,target37,38,NA,1
+BABSYN414,1,NA,yes,next,target40,41,NA,1
+BABSYN414,1,NA,yes,next,target59,60,NA,1
+BABSYN414,1,NA,yes,next,target62,63,NA,1
+BABSYN414,1,NA,yes,next,target70,71,NA,1
+BABSYN414,1,NA,yes,next,target86,na,NA,0
+BABSYN414,1,NA,yes,skip,by10s,"20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN414,1,NA,yes,skip,by2s,"6, 8, 10",Counted all #'s in correct order?,1
+BABSYN414,1,NA,yes,skip,by5s,"15, 20, 25",Counted all #'s in correct order?,1
+BABSYN415,1,NA,yes,Backward,13to9,"1, 2, 3, 4, 5, 6",NA,0
+BABSYN415,1,NA,yes,Backward,18to14,"1, 2, 3, 4, 5, 6",NA,0
+BABSYN415,1,NA,yes,Backward,26to22,"26, 25, 30, 31, 32",NA,0
+BABSYN415,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 7, 6, 5, 4, 3, 2 ,1",Started counting down from higher #,0
+BABSYN415,1,NA,yes,Backward,7to3,"1, 2, 3, 4",NA,0
+BABSYN415,1,NA,yes,Backward,8to4,"8, 7, 1, 2, 3, 4",NA,0
+BABSYN415,1,NA,yes,Forward,18to21,"1, 2, 3, 4, 5",Started counting from smaller #,0
+BABSYN415,1,NA,yes,Forward,21to24,"1, 2, 3, 4, 5",Started counting from smaller #,0
+BABSYN415,1,NA,yes,Forward,35to39,"1, 2, 3, 4",Started counting from smaller #,0
+BABSYN415,1,NA,yes,Forward,4to9,"1, 2, 3, 4, 5, 6, 7, 8, 9",Started counting from smaller #,0
+BABSYN415,1,NA,yes,Forward,5to7,"1, 2, 3, 4, 5, 6, 7",Started counting from smaller #,0
+BABSYN415,1,NA,yes,Forward,6to12,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",Started counting from smaller #,0
+BABSYN415,1,NA,yes,next,target23,7,NA,0
+BABSYN415,1,NA,yes,next,target29,40,NA,0
+BABSYN415,1,NA,yes,next,target37,40,NA,0
+BABSYN415,1,NA,yes,next,target40,7,NA,0
+BABSYN415,1,NA,yes,next,target59,10,NA,0
+BABSYN415,1,NA,yes,next,target62,2,NA,0
+BABSYN415,1,NA,yes,next,target70,41,NA,0
+BABSYN415,1,NA,yes,next,target86,12,NA,0
+BABSYN415,1,NA,yes,skip,by10s,"1, 2, 3, 4",Started counting from # other than beginning of sequence,0
+BABSYN415,1,NA,yes,skip,by2s,"1, 2, 3, 4, 5, 6",Started counting from # other than beginning of sequence,0
+BABSYN415,1,NA,yes,skip,by5s,"1, 2, 3, 4, 5",Started counting from # other than beginning of sequence,0
+BABSYN416,1,NA,yes,Backward,13to9,"13, 14, 16",NA,0
+BABSYN416,1,NA,yes,Backward,18to14,"18, 17, 16, 14, 18, 29",NA,0
+BABSYN416,1,NA,yes,Backward,26to22,"26, 25, 20-30",NA,0
+BABSYN416,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN416,1,NA,yes,Backward,7to3,"7, 8, 1",NA,0
+BABSYN416,1,NA,yes,Backward,8to4,"8, 7, 8, 7, IDK",NA,0
+BABSYN416,1,NA,yes,Forward,18to21,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11",Started counting from smaller #,0
+BABSYN416,1,NA,yes,Forward,21to24,"1, 2, 3, 4, 5, 6, 7",Started counting from smaller #,0
+BABSYN416,1,NA,yes,Forward,35to39,"1, 2, 3, 4, 5",Started counting from smaller #,0
+BABSYN416,1,NA,yes,Forward,4to9,"1, 2, 3, 4, 5, 6, 7, 8, 9",Started counting from smaller #,0
+BABSYN416,1,NA,yes,Forward,5to7,"1, 2, 3, 4, 5, 6, 7",Started counting from smaller #,0
+BABSYN416,1,NA,yes,Forward,6to12,"1, 2, 3, 4, 5, 6, 7, 8, 9, 110, 11, 12",Started counting from smaller #,0
+BABSYN416,1,NA,yes,next,target23,30,NA,0
+BABSYN416,1,NA,yes,next,target29,1,NA,0
+BABSYN416,1,NA,yes,next,target37,8,NA,0
+BABSYN416,1,NA,yes,next,target40,10,NA,0
+BABSYN416,1,NA,yes,next,target59,7,NA,0
+BABSYN416,1,NA,yes,next,target62,4,NA,0
+BABSYN416,1,NA,yes,next,target70,89,NA,0
+BABSYN416,1,NA,yes,next,target86,84,NA,0
+BABSYN416,1,NA,yes,skip,by10s,"10, 18, 14",NA,0
+BABSYN416,1,NA,yes,skip,by2s,"2, 8, 9",NA,0
+BABSYN416,1,NA,yes,skip,by5s,"5, 10, 11, 8",NA,0
+BABSYN417,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Backward,26to22,"26, 25, 24, 24, 22",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN417,1,NA,yes,next,target23,24,NA,1
+BABSYN417,1,NA,yes,next,target29,30,NA,1
+BABSYN417,1,NA,yes,next,target37,38,NA,1
+BABSYN417,1,NA,yes,next,target40,41,NA,1
+BABSYN417,1,NA,yes,next,target59,60,NA,1
+BABSYN417,1,NA,yes,next,target62,63,NA,1
+BABSYN417,1,NA,yes,next,target70,71,NA,1
+BABSYN417,1,NA,yes,next,target86,87,NA,1
+BABSYN417,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN417,1,NA,yes,skip,by2s,"2, 4, 6, 8, 7",NA,0
+BABSYN417,1,NA,yes,skip,by5s,"15, 25, 30, 35",NA,0
+BABSYN418,1,NA,yes,Backward,13to9,"13, 12, 17, 18, 19",NA,0
+BABSYN418,1,NA,yes,Backward,18to14,"18, 17, 19, 20",NA,0
+BABSYN418,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 27",NA,0
+BABSYN418,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN418,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN418,1,NA,yes,Backward,8to4,"8, 7, 9, 6, 4",NA,0
+BABSYN418,1,NA,yes,Forward,18to21,"18, 14, 15, 16",NA,0
+BABSYN418,1,NA,yes,Forward,21to24,"1, 2, 3, 4",Started counting from smaller #,0
+BABSYN418,1,NA,yes,Forward,35to39,"35, 6, 7, 8, 9",NA,0
+BABSYN418,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN418,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN418,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN418,1,NA,yes,next,target23,24,NA,1
+BABSYN418,1,NA,yes,next,target29,20-10,NA,0
+BABSYN418,1,NA,yes,next,target37,na,NA,0
+BABSYN418,1,NA,yes,next,target40,40,NA,0
+BABSYN418,1,NA,yes,next,target59,66,NA,0
+BABSYN418,1,NA,yes,next,target62,69,NA,0
+BABSYN418,1,NA,yes,next,target70,64,NA,0
+BABSYN418,1,NA,yes,next,target86,84,NA,0
+BABSYN418,1,NA,yes,skip,by10s,"10, 20, 21, 22",NA,0
+BABSYN418,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7",NA,0
+BABSYN418,1,NA,yes,skip,by5s,"5, 10, 11, 12",NA,0
+BABSYN419,1,NA,yes,Backward,13to9,"13, 12, 13, 12, 11, 12, 13, 14",NA,0
+BABSYN419,1,NA,yes,Backward,18to14,"18, 17, 16, fiveteen, 14",NA,0
+BABSYN419,1,NA,yes,Backward,26to22,"26, 25,  24, 23, 22",Counted all #'s in correct order,1
+BABSYN419,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN419,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN419,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN419,1,NA,yes,Forward,18to21,"92, 93, 94, 95, 96",NA,0
+BABSYN419,1,NA,yes,Forward,21to24,"21, 25, 22, 23, 24",NA,0
+BABSYN419,1,NA,yes,Forward,35to39,"35, 33, 36, 37, 38, 39",NA,0
+BABSYN419,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN419,1,NA,yes,Forward,5to7,"1, 2, 3, 4, 5, 6, 7",Started counting from smaller #,0
+BABSYN419,1,NA,yes,Forward,6to12,"6, 5, 6, 7, 8, 9, 10, 11, 12",NA,0
+BABSYN419,1,NA,yes,next,target23,24,NA,1
+BABSYN419,1,NA,yes,next,target29,100,NA,0
+BABSYN419,1,NA,yes,next,target37,38,NA,1
+BABSYN419,1,NA,yes,next,target40,30,NA,0
+BABSYN419,1,NA,yes,next,target59,100,NA,0
+BABSYN419,1,NA,yes,next,target62,63,NA,1
+BABSYN419,1,NA,yes,next,target70,80,NA,0
+BABSYN419,1,NA,yes,next,target86,87,NA,1
+BABSYN419,1,NA,yes,skip,by10s,"10, two 10s, three 10s, four 10s, five 10s",NA,0
+BABSYN419,1,NA,yes,skip,by2s,"2, two 2s, three 2s, four 2s, five 2s",NA,0
+BABSYN419,1,NA,yes,skip,by5s,"5, 10, 11, 12, 13",NA,0
+BABSYN420,1,NA,yes,Backward,13to9,"11,10,9",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Backward,18to14,"16,15,14",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Backward,26to22,"24,23,22",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Backward,5to1,"5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Backward,7to3,"5,4,3",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Backward,8to4,"6,5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,18to21,"18,19,20,21",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,21to24,"21,22,23,24",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,35to39,"35,36,37,38,39",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,4to9,"4,5,6,7,8,9",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,5to7,"5,6,7",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,Forward,6to12,"6,7,8,9,10,11,12",Counted all #'s in correct order,1
+BABSYN420,1,NA,yes,next,target23,24,NA,1
+BABSYN420,1,NA,yes,next,target29,30,NA,1
+BABSYN420,1,NA,yes,next,target37,38,NA,1
+BABSYN420,1,NA,yes,next,target40,41,NA,1
+BABSYN420,1,NA,yes,next,target59,60,NA,1
+BABSYN420,1,NA,yes,next,target62,63,NA,1
+BABSYN420,1,NA,yes,next,target70,71,NA,1
+BABSYN420,1,NA,yes,next,target86,87,NA,1
+BABSYN420,1,NA,yes,skip,by10s,"30,40,50",Counted all #'s in correct order?,1
+BABSYN420,1,NA,yes,skip,by2s,"6,8,10",Counted all #'s in correct order?,1
+BABSYN420,1,NA,yes,skip,by5s,"15,20,25",Counted all #'s in correct order?,1
+BABSYN421,1,NA,yes,Backward,13to9,"13,5",NA,0
+BABSYN421,1,NA,yes,Backward,18to14,NR,NA,0
+BABSYN421,1,NA,yes,Backward,26to22,"26,25",NA,0
+BABSYN421,1,NA,yes,Backward,5to1,DK,NA,0
+BABSYN421,1,NA,yes,Backward,7to3,DK,NA,0
+BABSYN421,1,NA,yes,Backward,8to4,DK,NA,0
+BABSYN421,1,NA,yes,Forward,18to21,"18,19,20",NA,0
+BABSYN421,1,NA,yes,Forward,21to24,"21,26,",NA,0
+BABSYN421,1,NA,yes,Forward,35to39,"35,38,",NA,0
+BABSYN421,1,NA,yes,Forward,4to9,"4,8",NA,0
+BABSYN421,1,NA,yes,Forward,5to7,"5,5,5,5",NA,0
+BABSYN421,1,NA,yes,Forward,6to12,"6,8,19",NA,0
+BABSYN421,1,NA,yes,next,target23,68,NA,0
+BABSYN421,1,NA,yes,next,target29,1,NA,0
+BABSYN421,1,NA,yes,next,target37,2,NA,0
+BABSYN421,1,NA,yes,next,target40,8,NA,0
+BABSYN421,1,NA,yes,next,target59,52,NA,0
+BABSYN421,1,NA,yes,next,target62,98,NA,0
+BABSYN421,1,NA,yes,next,target70,1,NA,0
+BABSYN421,1,NA,yes,next,target86,1,NA,0
+BABSYN421,1,NA,yes,skip,by10s,DK,NA,0
+BABSYN421,1,NA,yes,skip,by2s,DK,NA,0
+BABSYN421,1,NA,yes,skip,by5s,DK,NA,0
+BABSYN422,1,NA,yes,Backward,13to9,"91,62",NA,0
+BABSYN422,1,NA,yes,Backward,18to14,"18,19,60",NA,0
+BABSYN422,1,NA,yes,Backward,26to22,"27,28,29",NA,0
+BABSYN422,1,NA,yes,Backward,5to1,"3,2,1",Counted all #'s in correct order,1
+BABSYN422,1,NA,yes,Backward,7to3,"5,4,3",Counted all #'s in correct order,1
+BABSYN422,1,NA,yes,Backward,8to4,"6,5,4",Counted all #'s in correct order,1
+BABSYN422,1,NA,yes,Forward,18to21,"18,68,91",NA,0
+BABSYN422,1,NA,yes,Forward,21to24,"21,20,60,80,6",NA,0
+BABSYN422,1,NA,yes,Forward,35to39,"35,60,80,11,12",NA,0
+BABSYN422,1,NA,yes,Forward,4to9,"4,70,6,90",NA,0
+BABSYN422,1,NA,yes,Forward,5to7,"5,7,9,6",NA,0
+BABSYN422,1,NA,yes,Forward,6to12,"6,8,90,6,70",NA,0
+BABSYN422,1,NA,yes,next,target23,24,NA,1
+BABSYN422,1,NA,yes,next,target29,26,NA,0
+BABSYN422,1,NA,yes,next,target37,38,NA,1
+BABSYN422,1,NA,yes,next,target40,41,NA,1
+BABSYN422,1,NA,yes,next,target59,56 or fifty-ten,NA,0
+BABSYN422,1,NA,yes,next,target62,63,NA,1
+BABSYN422,1,NA,yes,next,target70,71,NA,1
+BABSYN422,1,NA,yes,next,target86,89,NA,0
+BABSYN422,1,NA,yes,skip,by10s,"65,80",NA,0
+BABSYN422,1,NA,yes,skip,by2s,DK,NA,0
+BABSYN422,1,NA,yes,skip,by5s,DK,NA,0
+BABSYN423,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Forward,35to39,"35, 36, 37, 38,",NA,0
+BABSYN423,1,NA,yes,Forward,4to9,"4, 5, 6, 7,",NA,0
+BABSYN423,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN423,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10,",NA,0
+BABSYN423,1,NA,yes,next,target23,24,NA,1
+BABSYN423,1,NA,yes,next,target29,30,NA,1
+BABSYN423,1,NA,yes,next,target37,38,NA,1
+BABSYN423,1,NA,yes,next,target40,41,NA,1
+BABSYN423,1,NA,yes,next,target59,60,NA,1
+BABSYN423,1,NA,yes,next,target62,63,NA,1
+BABSYN423,1,NA,yes,next,target70,71,NA,1
+BABSYN423,1,NA,yes,next,target86,87,NA,1
+BABSYN423,1,NA,yes,skip,by10s,"10, 20, 30, 40",NA,0
+BABSYN423,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN423,1,NA,yes,skip,by5s,"5, 10, 20, 30",NA,0
+BABSYN424,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4,",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,18to21,"19, 20, 21, 22,",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN424,1,NA,yes,next,target23,24,NA,1
+BABSYN424,1,NA,yes,next,target29,30,NA,1
+BABSYN424,1,NA,yes,next,target37,38,NA,1
+BABSYN424,1,NA,yes,next,target40,41,NA,1
+BABSYN424,1,NA,yes,next,target59,60,NA,1
+BABSYN424,1,NA,yes,next,target62,63,NA,1
+BABSYN424,1,NA,yes,next,target70,71,NA,1
+BABSYN424,1,NA,yes,next,target86,87,NA,1
+BABSYN424,1,NA,yes,skip,by10s,"20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN424,1,NA,yes,skip,by2s,"6, 8, 10",Counted all #'s in correct order?,1
+BABSYN424,1,NA,yes,skip,by5s,"15, 20, 25",Counted all #'s in correct order?,1
+BABSYN425,1,NA,yes,Backward,13to9,IDK,NA,0
+BABSYN425,1,NA,yes,Backward,18to14,IDK,NA,0
+BABSYN425,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Backward,8to4,"6, 5, 4,",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Forward,18to21,IDK,NA,0
+BABSYN425,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN425,1,NA,yes,next,target23,24,NA,1
+BABSYN425,1,NA,yes,next,target29,27,NA,0
+BABSYN425,1,NA,yes,next,target37,38,NA,1
+BABSYN425,1,NA,yes,next,target40,41,NA,1
+BABSYN425,1,NA,yes,next,target59,57,NA,0
+BABSYN425,1,NA,yes,next,target62,63,NA,1
+BABSYN425,1,NA,yes,next,target70,78,NA,0
+BABSYN425,1,NA,yes,next,target86,87,NA,1
+BABSYN425,1,NA,yes,skip,by10s,"30,",NA,0
+BABSYN425,1,NA,yes,skip,by2s,"6, 8, 10",Counted all #'s in correct order?,1
+BABSYN425,1,NA,yes,skip,by5s,IDK,NA,0
+BABSYN426,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Forward,18to21,"1-17 in head, 18, 19, 20, 21","Counted all #'s in correct order,Started counting from smaller #",0
+BABSYN426,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN426,1,NA,yes,next,target23,24,NA,1
+BABSYN426,1,NA,yes,next,target29,30,NA,1
+BABSYN426,1,NA,yes,next,target37,38,NA,1
+BABSYN426,1,NA,yes,next,target40,41,NA,1
+BABSYN426,1,NA,yes,next,target59,60,NA,1
+BABSYN426,1,NA,yes,next,target62,63,NA,1
+BABSYN426,1,NA,yes,next,target70,71,NA,1
+BABSYN426,1,NA,yes,next,target86,87,NA,1
+BABSYN426,1,NA,yes,skip,by10s,"20, 30, 50",NA,0
+BABSYN426,1,NA,yes,skip,by2s,"4, 6, 8, 12, 13",NA,0
+BABSYN426,1,NA,yes,skip,by5s,"20, 30, 50,",NA,0
+BABSYN427,1,NA,yes,Backward,13to9,"14, 15, 16",NA,0
+BABSYN427,1,NA,yes,Backward,18to14,"18, 17, 18, 17, 18, 19",NA,0
+BABSYN427,1,NA,yes,Backward,26to22,"25, 26, 27, 28",NA,0
+BABSYN427,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN427,1,NA,yes,Backward,7to3,"7, 6, 9, 13, 8",NA,0
+BABSYN427,1,NA,yes,Backward,8to4,"8, 7, 6, 9, 11",NA,0
+BABSYN427,1,NA,yes,Forward,18to21,"18, 15, 16, 17, 18, 19, 20",NA,0
+BABSYN427,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN427,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN427,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN427,1,NA,yes,Forward,5to7,"5, 4, 3, 2, 1",NA,0
+BABSYN427,1,NA,yes,Forward,6to12,"6, 9, 7, 8, 5",NA,0
+BABSYN427,1,NA,yes,next,target23,IDK,NA,0
+BABSYN427,1,NA,yes,next,target29,6,NA,0
+BABSYN427,1,NA,yes,next,target37,5,NA,0
+BABSYN427,1,NA,yes,next,target40,6,NA,0
+BABSYN427,1,NA,yes,next,target59,70,NA,0
+BABSYN427,1,NA,yes,next,target62,5,NA,0
+BABSYN427,1,NA,yes,next,target70,40,NA,0
+BABSYN427,1,NA,yes,next,target86,20,NA,0
+BABSYN427,1,NA,yes,skip,by10s,"10, 20, 1, 2, 3",NA,0
+BABSYN427,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7, 8",NA,0
+BABSYN427,1,NA,yes,skip,by5s,"5, 10, 11, 12",NA,0
+BABSYN428,1,NA,yes,Backward,13to9,"9,8,7",NA,0
+BABSYN428,1,NA,yes,Backward,18to14,"19,21",NA,0
+BABSYN428,1,NA,yes,Backward,26to22,"twenty-eleven, twenty-twelve",NA,0
+BABSYN428,1,NA,yes,Backward,5to1,couldn't hear response,NA,0
+BABSYN428,1,NA,yes,Backward,7to3,couldn't hear response,NA,0
+BABSYN428,1,NA,yes,Backward,8to4,"8,9,11,12",NA,0
+BABSYN428,1,NA,yes,Forward,18to21,"18,19,12",NA,0
+BABSYN428,1,NA,yes,Forward,21to24,"20,6,11",NA,0
+BABSYN428,1,NA,yes,Forward,35to39,"6,7,8",NA,0
+BABSYN428,1,NA,yes,Forward,4to9,"4,3,2,1",NA,0
+BABSYN428,1,NA,yes,Forward,5to7,"5,4,9",NA,0
+BABSYN428,1,NA,yes,Forward,6to12,"6,11",NA,0
+BABSYN428,1,NA,yes,next,target23,DK,NA,0
+BABSYN428,1,NA,yes,next,target29,26,NA,0
+BABSYN428,1,NA,yes,next,target37,29,NA,0
+BABSYN428,1,NA,yes,next,target40,26,NA,0
+BABSYN428,1,NA,yes,next,target59,11,NA,0
+BABSYN428,1,NA,yes,next,target62,30,NA,0
+BABSYN428,1,NA,yes,next,target70,79,NA,0
+BABSYN428,1,NA,yes,next,target86,36,NA,0
+BABSYN428,1,NA,yes,skip,by10s,"21,22,23",NA,0
+BABSYN428,1,NA,yes,skip,by2s,"5,6,7",NA,0
+BABSYN428,1,NA,yes,skip,by5s,"11,12,13",NA,0
+BABSYN429,1,NA,yes,Backward,13to9,"18,24,25,26",NA,0
+BABSYN429,1,NA,yes,Backward,18to14,"14,15,16,17",NA,0
+BABSYN429,1,NA,yes,Backward,26to22,28,NA,0
+BABSYN429,1,NA,yes,Backward,5to1,"5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN429,1,NA,yes,Backward,7to3,"8,9,10",NA,0
+BABSYN429,1,NA,yes,Backward,8to4,"5,7,8",NA,0
+BABSYN429,1,NA,yes,Forward,18to21,"18,20,100",NA,0
+BABSYN429,1,NA,yes,Forward,21to24,"21,22,23,24",NA,0
+BABSYN429,1,NA,yes,Forward,35to39,"35,35,36",NA,0
+BABSYN429,1,NA,yes,Forward,4to9,"1,2,3,4,5,6,7,8",Started counting from smaller #,0
+BABSYN429,1,NA,yes,Forward,5to7,"5,4,3,2,1",NA,0
+BABSYN429,1,NA,yes,Forward,6to12,"6,5,4,3,2,1",NA,0
+BABSYN429,1,NA,yes,next,target23,26,NA,0
+BABSYN429,1,NA,yes,next,target29,25,NA,0
+BABSYN429,1,NA,yes,next,target37,50,NA,0
+BABSYN429,1,NA,yes,next,target40,six-o-five,NA,0
+BABSYN429,1,NA,yes,next,target59,DK,NA,0
+BABSYN429,1,NA,yes,next,target62,25,NA,0
+BABSYN429,1,NA,yes,next,target70,22,NA,0
+BABSYN429,1,NA,yes,next,target86,25,NA,0
+BABSYN429,1,NA,yes,skip,by10s,"6,70,80,5,6",NA,0
+BABSYN429,1,NA,yes,skip,by2s,"5,6,7,8,9",NA,0
+BABSYN429,1,NA,yes,skip,by5s,"11,12,13,14",NA,0
+BABSYN430,1,NA,yes,Backward,13to9,"13, 17, 18",NA,0
+BABSYN430,1,NA,yes,Backward,18to14,"18, 17, 21, 22",NA,0
+BABSYN430,1,NA,yes,Backward,26to22,"26, 25, 30, 31",NA,0
+BABSYN430,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN430,1,NA,yes,Backward,7to3,"7, 6, 4, 3, 2",NA,0
+BABSYN430,1,NA,yes,Backward,8to4,"8, 7, 71,",NA,0
+BABSYN430,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN430,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN430,1,NA,yes,Forward,35to39,"35, 22, 14, 15",NA,0
+BABSYN430,1,NA,yes,Forward,4to9,"4, 3, 2, 1",NA,0
+BABSYN430,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN430,1,NA,yes,Forward,6to12,"6, 11, 12",NA,0
+BABSYN430,1,NA,yes,next,target23,4,NA,0
+BABSYN430,1,NA,yes,next,target29,6,NA,0
+BABSYN430,1,NA,yes,next,target37,11,NA,0
+BABSYN430,1,NA,yes,next,target40,60,NA,0
+BABSYN430,1,NA,yes,next,target59,17,NA,0
+BABSYN430,1,NA,yes,next,target62,18,NA,0
+BABSYN430,1,NA,yes,next,target70,5,NA,0
+BABSYN430,1,NA,yes,next,target86,3,NA,0
+BABSYN430,1,NA,yes,skip,by10s,"10, 20, 21, 22",NA,0
+BABSYN430,1,NA,yes,skip,by2s,"2, 4, 5, 6",NA,0
+BABSYN430,1,NA,yes,skip,by5s,"5, 10, 11, 12",NA,0
+BABSYN431,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Backward,18to14,"18, 17, 16,",NA,0
+BABSYN431,1,NA,yes,Backward,26to22,IDK,NA,0
+BABSYN431,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Backward,7to3,"5, 4, 3,",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Backward,8to4,"6, 5, 4",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Forward,35to39,"35, IDK",NA,0
+BABSYN431,1,NA,yes,Forward,4to9,"5, 6, 7, 8, 9,",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Forward,5to7,"5, 6, 7, 8,",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN431,1,NA,yes,next,target23,4,NA,0
+BABSYN431,1,NA,yes,next,target29,IDK,NA,0
+BABSYN431,1,NA,yes,next,target37,30,NA,0
+BABSYN431,1,NA,yes,next,target40,50,NA,0
+BABSYN431,1,NA,yes,next,target59,37,NA,0
+BABSYN431,1,NA,yes,next,target62,90,NA,0
+BABSYN431,1,NA,yes,next,target70,78,NA,0
+BABSYN431,1,NA,yes,next,target86,69,NA,0
+BABSYN431,1,NA,yes,skip,by10s,"30, 40, 50",Counted all #'s in correct order?,1
+BABSYN431,1,NA,yes,skip,by2s,"8, 7, 6",NA,0
+BABSYN431,1,NA,yes,skip,by5s,"15, 25, 30",NA,0
+BABSYN432,1,NA,yes,Backward,13to9,"12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Backward,18to14,"16, 14, 15, 12",NA,0
+BABSYN432,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Backward,7to3,"7, 8, 9, 10",NA,0
+BABSYN432,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,5to7,"5, 6, 7,",Counted all #'s in correct order,1
+BABSYN432,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10,",NA,0
+BABSYN432,1,NA,yes,next,target23,24,NA,1
+BABSYN432,1,NA,yes,next,target29,20-10,NA,0
+BABSYN432,1,NA,yes,next,target37,29,NA,0
+BABSYN432,1,NA,yes,next,target40,40,NA,0
+BABSYN432,1,NA,yes,next,target59,40,NA,0
+BABSYN432,1,NA,yes,next,target62,63,NA,1
+BABSYN432,1,NA,yes,next,target70,65,NA,0
+BABSYN432,1,NA,yes,next,target86,87,NA,1
+BABSYN432,1,NA,yes,skip,by10s,"10, 9, 8 , 7",NA,0
+BABSYN432,1,NA,yes,skip,by2s,"2, 4, 3, 2",NA,0
+BABSYN432,1,NA,yes,skip,by5s,"9, 8, 7",NA,0
+BABSYN433,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3,",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Backward,8to4,"6, 5, 4,",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN433,1,NA,yes,next,target23,24,NA,1
+BABSYN433,1,NA,yes,next,target29,30,NA,1
+BABSYN433,1,NA,yes,next,target37,38,NA,1
+BABSYN433,1,NA,yes,next,target40,41,NA,1
+BABSYN433,1,NA,yes,next,target59,60,NA,1
+BABSYN433,1,NA,yes,next,target62,63,NA,1
+BABSYN433,1,NA,yes,next,target70,71,NA,1
+BABSYN433,1,NA,yes,next,target86,87,NA,1
+BABSYN433,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN433,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN433,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",NA,0
+BABSYN434,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN434,1,NA,yes,next,target23,24,NA,1
+BABSYN434,1,NA,yes,next,target29,30,NA,1
+BABSYN434,1,NA,yes,next,target37,38,NA,1
+BABSYN434,1,NA,yes,next,target40,41,NA,1
+BABSYN434,1,NA,yes,next,target59,60,NA,1
+BABSYN434,1,NA,yes,next,target62,63,NA,1
+BABSYN434,1,NA,yes,next,target70,71,NA,1
+BABSYN434,1,NA,yes,next,target86,87,NA,1
+BABSYN434,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN434,1,NA,yes,skip,by2s,"5, 6, 7, 8",NA,0
+BABSYN434,1,NA,yes,skip,by5s,"11, 12, 13, 14",NA,0
+BABSYN435,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN435,1,NA,yes,next,target23,24,NA,1
+BABSYN435,1,NA,yes,next,target29,30,NA,1
+BABSYN435,1,NA,yes,next,target37,38,NA,1
+BABSYN435,1,NA,yes,next,target40,41,NA,1
+BABSYN435,1,NA,yes,next,target59,60,NA,1
+BABSYN435,1,NA,yes,next,target62,63,NA,1
+BABSYN435,1,NA,yes,next,target70,71,NA,1
+BABSYN435,1,NA,yes,next,target86,87,NA,1
+BABSYN435,1,NA,yes,skip,by10s,"10, 20, 21, 22,",NA,0
+BABSYN435,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7,",NA,0
+BABSYN435,1,NA,yes,skip,by5s,"5, 10, 11, 12, 13",NA,0
+BABSYN436,1,NA,yes,Backward,13to9,"11, 10, 9",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Backward,18to14,"16, 15, 13",NA,0
+BABSYN436,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Backward,8to4,"6, 5, 4",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,18to21,"18, 17, corrected to 19, 20, 21",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN436,1,NA,yes,next,target23,24,NA,1
+BABSYN436,1,NA,yes,next,target29,30,NA,1
+BABSYN436,1,NA,yes,next,target37,38,NA,1
+BABSYN436,1,NA,yes,next,target40,41,NA,1
+BABSYN436,1,NA,yes,next,target59,60,NA,1
+BABSYN436,1,NA,yes,next,target62,63,NA,1
+BABSYN436,1,NA,yes,next,target70,71,NA,1
+BABSYN436,1,NA,yes,next,target86,87,NA,1
+BABSYN436,1,NA,yes,skip,by10s,"30, 40, 50",Counted all #'s in correct order?,1
+BABSYN436,1,NA,yes,skip,by2s,"6, 8, 10",Counted all #'s in correct order?,1
+BABSYN436,1,NA,yes,skip,by5s,"12,",NA,0
+BABSYN437,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Backward,18to14,"18, 17, 16",NA,0
+BABSYN437,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Forward,18to21,"18, 19, 20,",NA,0
+BABSYN437,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN437,1,NA,yes,next,target23,24,NA,1
+BABSYN437,1,NA,yes,next,target29,90,NA,0
+BABSYN437,1,NA,yes,next,target37,23,NA,0
+BABSYN437,1,NA,yes,next,target40,IDK,NA,0
+BABSYN437,1,NA,yes,next,target59,60,NA,1
+BABSYN437,1,NA,yes,next,target62,63,NA,1
+BABSYN437,1,NA,yes,next,target70,71,NA,1
+BABSYN437,1,NA,yes,next,target86,89,NA,0
+BABSYN437,1,NA,yes,skip,by10s,"10, 20,",NA,0
+BABSYN437,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN437,1,NA,yes,skip,by5s,"5, 10, 14, 16",NA,0
+BABSYN438,1,NA,yes,Backward,13to9,"12, 13, 14, 15",NA,0
+BABSYN438,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 11",NA,0
+BABSYN438,1,NA,yes,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Forward,18to21,"18, 17, 16,",NA,0
+BABSYN438,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN438,1,NA,yes,next,target23,24,NA,1
+BABSYN438,1,NA,yes,next,target29,30,NA,1
+BABSYN438,1,NA,yes,next,target37,38,NA,1
+BABSYN438,1,NA,yes,next,target40,41,NA,1
+BABSYN438,1,NA,yes,next,target59,90,NA,0
+BABSYN438,1,NA,yes,next,target62,63,NA,1
+BABSYN438,1,NA,yes,next,target70,71,NA,1
+BABSYN438,1,NA,yes,next,target86,87,NA,1
+BABSYN438,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN438,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7,",NA,0
+BABSYN438,1,NA,yes,skip,by5s,"5, 10, 11, 12",NA,0
+BABSYN439,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 21",NA,0
+BABSYN439,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN439,1,NA,yes,next,target23,24,NA,1
+BABSYN439,1,NA,yes,next,target29,30,NA,1
+BABSYN439,1,NA,yes,next,target37,38,NA,1
+BABSYN439,1,NA,yes,next,target40,41,NA,1
+BABSYN439,1,NA,yes,next,target59,60,NA,1
+BABSYN439,1,NA,yes,next,target62,63,NA,1
+BABSYN439,1,NA,yes,next,target70,71,NA,1
+BABSYN439,1,NA,yes,next,target86,87,NA,1
+BABSYN439,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN439,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7, 8, 9, 10",NA,0
+BABSYN439,1,NA,yes,skip,by5s,"5, 10, 20, 30, 40",NA,0
+BABSYN440,1,NA,yes,Backward,13to9,"11, 12, 11, 10, 9",NA,0
+BABSYN440,1,NA,yes,Backward,18to14,"16, 15, 16, 15, 16, 15, 14",NA,0
+BABSYN440,1,NA,yes,Backward,26to22,"6, 7, 8, 9, 5, 4, 3, 2, 1",NA,0
+BABSYN440,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Backward,8to4,"8, 6, 5, 4,",NA,0
+BABSYN440,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN440,1,NA,yes,Forward,6to12,"6, 5, 7, 8, 9, 10, 11, 12",NA,0
+BABSYN440,1,NA,yes,next,target23,24,NA,1
+BABSYN440,1,NA,yes,next,target29,30,NA,1
+BABSYN440,1,NA,yes,next,target37,38,NA,1
+BABSYN440,1,NA,yes,next,target40,41,NA,1
+BABSYN440,1,NA,yes,next,target59,60,NA,1
+BABSYN440,1,NA,yes,next,target62,63,NA,1
+BABSYN440,1,NA,yes,next,target70,71,NA,1
+BABSYN440,1,NA,yes,next,target86,87,NA,1
+BABSYN440,1,NA,yes,skip,by10s,"5, 10, 20, 30, 40, 50",NA,0
+BABSYN440,1,NA,yes,skip,by2s,"5, 6, 7, 8, 9 10, 20",NA,0
+BABSYN440,1,NA,yes,skip,by5s,"20, 30, 40, 50",NA,0
+BABSYN441,1,NA,yes,Backward,13to9,"13, 12,",NA,0
+BABSYN441,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 21",NA,0
+BABSYN441,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN441,1,NA,yes,next,target23,24,NA,1
+BABSYN441,1,NA,yes,next,target29,30,NA,1
+BABSYN441,1,NA,yes,next,target37,38,NA,1
+BABSYN441,1,NA,yes,next,target40,41,NA,1
+BABSYN441,1,NA,yes,next,target59,60,NA,1
+BABSYN441,1,NA,yes,next,target62,63,NA,1
+BABSYN441,1,NA,yes,next,target70,71,NA,1
+BABSYN441,1,NA,yes,next,target86,87,NA,1
+BABSYN441,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN441,1,NA,yes,skip,by2s,"2, 4, 3, 1",NA,0
+BABSYN441,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN442,1,NA,yes,Backward,13to9,"13-1, 12, IDK",NA,0
+BABSYN442,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Backward,26to22,"26, 25, 27, 28",NA,0
+BABSYN442,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Forward,18to21,"18, 19, 18-1",NA,0
+BABSYN442,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN442,1,NA,yes,next,target23,24,NA,1
+BABSYN442,1,NA,yes,next,target29,27,NA,0
+BABSYN442,1,NA,yes,next,target37,38,NA,1
+BABSYN442,1,NA,yes,next,target40,45,NA,0
+BABSYN442,1,NA,yes,next,target59,50,NA,0
+BABSYN442,1,NA,yes,next,target62,63,NA,1
+BABSYN442,1,NA,yes,next,target70,71,NA,1
+BABSYN442,1,NA,yes,next,target86,87,NA,1
+BABSYN442,1,NA,yes,skip,by10s,"10, 20, 21, 22",NA,0
+BABSYN442,1,NA,yes,skip,by2s,"2, 4,",NA,0
+BABSYN442,1,NA,yes,skip,by5s,"10, 11,",NA,0
+BABSYN443,1,NA,yes,Backward,13to9,"13, dk",NA,0
+BABSYN443,1,NA,yes,Backward,18to14,dk,NA,0
+BABSYN443,1,NA,yes,Backward,26to22,"26, dk",NA,0
+BABSYN443,1,NA,yes,Backward,5to1,"5, 4, 3, dk",NA,0
+BABSYN443,1,NA,yes,Backward,7to3,"7, 6,",NA,0
+BABSYN443,1,NA,yes,Backward,8to4,"8, 7, dk",NA,0
+BABSYN443,1,NA,yes,Forward,18to21,"18, 7,",NA,0
+BABSYN443,1,NA,yes,Forward,21to24,"21, 91, 30",NA,0
+BABSYN443,1,NA,yes,Forward,35to39,"35, 30",NA,0
+BABSYN443,1,NA,yes,Forward,4to9,"4, 5, 4, 5,",NA,0
+BABSYN443,1,NA,yes,Forward,5to7,"5,",NA,0
+BABSYN443,1,NA,yes,Forward,6to12,"6, 80",NA,0
+BABSYN443,1,NA,yes,next,target23,25,NA,0
+BABSYN443,1,NA,yes,next,target29,20-10,NA,0
+BABSYN443,1,NA,yes,next,target37,21,NA,0
+BABSYN443,1,NA,yes,next,target40,45,NA,0
+BABSYN443,1,NA,yes,next,target59,57,NA,0
+BABSYN443,1,NA,yes,next,target62,65,NA,0
+BABSYN443,1,NA,yes,next,target70,78,NA,0
+BABSYN443,1,NA,yes,next,target86,87,NA,1
+BABSYN443,1,NA,yes,skip,by10s,"20, dk",NA,0
+BABSYN443,1,NA,yes,skip,by2s,"2, 4, dk",NA,0
+BABSYN443,1,NA,yes,skip,by5s,"5, 20, dk",NA,0
+BABSYN444,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Backward,18to14,"16, - interference...",NA,0
+BABSYN444,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN444,1,NA,yes,next,target23,24,NA,1
+BABSYN444,1,NA,yes,next,target29,30,NA,1
+BABSYN444,1,NA,yes,next,target37,38,NA,1
+BABSYN444,1,NA,yes,next,target40,41,NA,1
+BABSYN444,1,NA,yes,next,target59,60,NA,1
+BABSYN444,1,NA,yes,next,target62,63,NA,1
+BABSYN444,1,NA,yes,next,target70,71,NA,1
+BABSYN444,1,NA,yes,next,target86,87,NA,1
+BABSYN444,1,NA,yes,skip,by10s,"10, 20, 21, 29",NA,0
+BABSYN444,1,NA,yes,skip,by2s,"2, 4, 6, 10, 14",NA,0
+BABSYN444,1,NA,yes,skip,by5s,"5, 10, 18",NA,0
+BABSYN445,1,NA,yes,Backward,13to9,"12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Backward,8to4,"7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,18to21,"19, 20, 21",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN445,1,NA,yes,next,target23,24,NA,1
+BABSYN445,1,NA,yes,next,target29,30,NA,1
+BABSYN445,1,NA,yes,next,target37,38,NA,1
+BABSYN445,1,NA,yes,next,target40,41,NA,1
+BABSYN445,1,NA,yes,next,target59,60,NA,1
+BABSYN445,1,NA,yes,next,target62,63,NA,1
+BABSYN445,1,NA,yes,next,target70,71,NA,1
+BABSYN445,1,NA,yes,next,target86,87,NA,1
+BABSYN445,1,NA,yes,skip,by10s,"30, 40, 50",Counted all #'s in correct order?,1
+BABSYN445,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN445,1,NA,yes,skip,by5s,"15, 20, 25",Counted all #'s in correct order?,1
+BABSYN446,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Backward,18to14,"17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Backward,8to4,"7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,18to21,"19, 20, 21",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,35to39,"36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,4to9,"5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN446,1,NA,yes,next,target23,24,NA,1
+BABSYN446,1,NA,yes,next,target29,30,NA,1
+BABSYN446,1,NA,yes,next,target37,38,NA,1
+BABSYN446,1,NA,yes,next,target40,41,NA,1
+BABSYN446,1,NA,yes,next,target59,60,NA,1
+BABSYN446,1,NA,yes,next,target62,63,NA,1
+BABSYN446,1,NA,yes,next,target70,71,NA,1
+BABSYN446,1,NA,yes,next,target86,87,NA,1
+BABSYN446,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN446,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN446,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN447,1,NA,yes,Backward,13to9,"12, 11, 10, dk",NA,0
+BABSYN447,1,NA,yes,Backward,18to14,"18, 17, 16, 14",NA,0
+BABSYN447,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Forward,18to21,"18, 17, 10",NA,0
+BABSYN447,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Forward,4to9,"4, 5, 3, 6, 7, 8, 9",NA,0
+BABSYN447,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN447,1,NA,yes,next,target23,24,NA,1
+BABSYN447,1,NA,yes,next,target29,20-10,NA,0
+BABSYN447,1,NA,yes,next,target37,38,NA,1
+BABSYN447,1,NA,yes,next,target40,41,NA,1
+BABSYN447,1,NA,yes,next,target59,50-10,NA,0
+BABSYN447,1,NA,yes,next,target62,63,NA,1
+BABSYN447,1,NA,yes,next,target70,78,NA,0
+BABSYN447,1,NA,yes,next,target86,87,NA,1
+BABSYN447,1,NA,yes,skip,by10s,"10, 20, 10, 20, dk",NA,0
+BABSYN447,1,NA,yes,skip,by2s,"2, 4, 5, 6, 8,",NA,0
+BABSYN447,1,NA,yes,skip,by5s,"5, 10, 20,",NA,0
+BABSYN448,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Forward,18to21,"81, 82, 83, 84",NA,0
+BABSYN448,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Forward,35to39,"36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Forward,4to9,"5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Forward,5to7,"6, 7, 8",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN448,1,NA,yes,next,target23,24,NA,1
+BABSYN448,1,NA,yes,next,target29,20,NA,0
+BABSYN448,1,NA,yes,next,target37,38,NA,1
+BABSYN448,1,NA,yes,next,target40,41,NA,1
+BABSYN448,1,NA,yes,next,target59,60,NA,1
+BABSYN448,1,NA,yes,next,target62,63,NA,1
+BABSYN448,1,NA,yes,next,target70,71,NA,1
+BABSYN448,1,NA,yes,next,target86,87,NA,1
+BABSYN448,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN448,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7, 8, 9, 10",NA,0
+BABSYN448,1,NA,yes,skip,by5s,"5, 4, 3, 2, 1",NA,0
+BABSYN449,1,NA,yes,Backward,13to9,"11, 10, 9",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Backward,18to14,"16, 15, 14",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Backward,5to1,"3, 2, 1",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Backward,8to4,"6, 5, 4",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN449,1,NA,yes,next,target23,24,NA,1
+BABSYN449,1,NA,yes,next,target29,30,NA,1
+BABSYN449,1,NA,yes,next,target37,38,NA,1
+BABSYN449,1,NA,yes,next,target40,41,NA,1
+BABSYN449,1,NA,yes,next,target59,60,NA,1
+BABSYN449,1,NA,yes,next,target62,63,NA,1
+BABSYN449,1,NA,yes,next,target70,78,NA,0
+BABSYN449,1,NA,yes,next,target86,87,NA,1
+BABSYN449,1,NA,yes,skip,by10s,"30, 40, 50",Counted all #'s in correct order?,1
+BABSYN449,1,NA,yes,skip,by2s,"6, 8, 10",Counted all #'s in correct order?,1
+BABSYN449,1,NA,yes,skip,by5s,"15, 25",NA,0
+BABSYN450,1,NA,no,Backward,13to9,NA,NA,NA
+BABSYN450,1,NA,no,Backward,18to14,NA,NA,NA
+BABSYN450,1,NA,no,Backward,26to22,NA,NA,NA
+BABSYN450,1,NA,no,Backward,5to1,NA,NA,NA
+BABSYN450,1,NA,no,Backward,7to3,NA,NA,NA
+BABSYN450,1,NA,no,Backward,8to4,NA,NA,NA
+BABSYN450,1,NA,no,Forward,18to21,NA,NA,NA
+BABSYN450,1,NA,no,Forward,21to24,NA,NA,NA
+BABSYN450,1,NA,no,Forward,35to39,NA,NA,NA
+BABSYN450,1,NA,no,Forward,4to9,NA,NA,NA
+BABSYN450,1,NA,no,Forward,5to7,NA,NA,NA
+BABSYN450,1,NA,no,Forward,6to12,NA,NA,NA
+BABSYN450,1,NA,no,next,target23,24,NA,NA
+BABSYN450,1,NA,no,next,target29,27,NA,NA
+BABSYN450,1,NA,no,next,target37,38,NA,NA
+BABSYN450,1,NA,no,next,target40,41,NA,NA
+BABSYN450,1,NA,no,next,target59,NA,NA,NA
+BABSYN450,1,NA,no,next,target62,NA,NA,NA
+BABSYN450,1,NA,no,next,target70,NA,NA,NA
+BABSYN450,1,NA,no,next,target86,NA,NA,NA
+BABSYN450,1,NA,no,skip,by10s,NA,NA,NA
+BABSYN450,1,NA,no,skip,by2s,NA,NA,NA
+BABSYN450,1,NA,no,skip,by5s,NA,NA,NA
+BABSYN451,1,NA,yes,Backward,13to9,"13,12,11,10,9,8",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Backward,18to14,"18,17,16,15,14",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Backward,26to22,"26,25,24,23,22,21",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Backward,5to1,"5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Backward,7to3,"7,6,5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Backward,8to4,"8,7,6,5,4,3,2,1",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Forward,18to21,"81,82,83,84,85",NA,0
+BABSYN451,1,NA,yes,Forward,21to24,"22,23,24,25",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Forward,35to39,"36,37,38,39",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Forward,4to9,"4,5,6,7,8,9,10",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Forward,5to7,"6,7,8,9",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,Forward,6to12,"6,7,8,9,10,11,12",Counted all #'s in correct order,1
+BABSYN451,1,NA,yes,next,target23,24,NA,1
+BABSYN451,1,NA,yes,next,target29,80,NA,0
+BABSYN451,1,NA,yes,next,target37,28,NA,0
+BABSYN451,1,NA,yes,next,target40,50,NA,0
+BABSYN451,1,NA,yes,next,target59,60,NA,1
+BABSYN451,1,NA,yes,next,target62,63,NA,1
+BABSYN451,1,NA,yes,next,target70,80,NA,0
+BABSYN451,1,NA,yes,next,target86,87,NA,1
+BABSYN451,1,NA,yes,skip,by10s,"10,20,30,40,50,60,70,80,90,100",Counted all #'s in correct order?,1
+BABSYN451,1,NA,yes,skip,by2s,"2,4,6,10",NA,0
+BABSYN451,1,NA,yes,skip,by5s,"5,10,15,20,25",Counted all #'s in correct order?,1
+BABSYN452,1,NA,yes,Backward,13to9,"8,10,9",NA,0
+BABSYN452,1,NA,yes,Backward,18to14,DK,NA,0
+BABSYN452,1,NA,yes,Backward,26to22,"24,23,22",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Backward,5to1,"3,2,1",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Backward,7to3,"5,4,3",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Backward,8to4,"6,7,8,9",NA,0
+BABSYN452,1,NA,yes,Forward,18to21,"18,19,20,21",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Forward,21to24,"21,22,23,24",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Forward,35to39,"35,36,37,38,39",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Forward,4to9,"4,5,6,7,8,9",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Forward,5to7,"5,6,7",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,Forward,6to12,"6,7,8,9,10,11,12",Counted all #'s in correct order,1
+BABSYN452,1,NA,yes,next,target23,24,NA,1
+BABSYN452,1,NA,yes,next,target29,DK,NA,0
+BABSYN452,1,NA,yes,next,target37,38,NA,1
+BABSYN452,1,NA,yes,next,target40,DK,NA,0
+BABSYN452,1,NA,yes,next,target59,58,NA,0
+BABSYN452,1,NA,yes,next,target62,DK,NA,0
+BABSYN452,1,NA,yes,next,target70,80,NA,0
+BABSYN452,1,NA,yes,next,target86,DK,NA,0
+BABSYN452,1,NA,yes,skip,by10s,DK,NA,0
+BABSYN452,1,NA,yes,skip,by2s,"6,8,9,10",NA,0
+BABSYN452,1,NA,yes,skip,by5s,20,NA,0
+BABSYN453,1,NA,yes,Backward,13to9,"12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Backward,18to14,"17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Backward,5to1,"4, 3, 2,1",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Backward,7to3,"6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Backward,8to4,"7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,18to21,"19, 20, 21",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,21to24,"22, 23, 24",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,35to39,"36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,4to9,"5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,5to7,"6, 7",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN453,1,NA,yes,next,target23,24,NA,1
+BABSYN453,1,NA,yes,next,target29,30,NA,1
+BABSYN453,1,NA,yes,next,target37,38,NA,1
+BABSYN453,1,NA,yes,next,target40,41,NA,1
+BABSYN453,1,NA,yes,next,target59,60,NA,1
+BABSYN453,1,NA,yes,next,target62,63,NA,1
+BABSYN453,1,NA,yes,next,target70,71,NA,1
+BABSYN453,1,NA,yes,next,target86,87,NA,1
+BABSYN453,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN453,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN453,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25",Counted all #'s in correct order?,1
+BABSYN454,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",NA,0
+BABSYN454,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN454,1,NA,yes,next,target23,24,NA,1
+BABSYN454,1,NA,yes,next,target29,30,NA,1
+BABSYN454,1,NA,yes,next,target37,38,NA,1
+BABSYN454,1,NA,yes,next,target40,48 (corrected to 41),NA,0
+BABSYN454,1,NA,yes,next,target59,56,NA,0
+BABSYN454,1,NA,yes,next,target62,63,NA,1
+BABSYN454,1,NA,yes,next,target70,74,NA,0
+BABSYN454,1,NA,yes,next,target86,87,NA,1
+BABSYN454,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN454,1,NA,yes,skip,by2s,"2, 4, 6, 2, 3",NA,0
+BABSYN454,1,NA,yes,skip,by5s,"5, 10, 13, 16",NA,0
+BABSYN455,1,NA,yes,Backward,13to9,"13, 12, 14, 15, 16, 17",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Backward,18to14,"18, 17, 19, 18, 17, 19, 20",NA,0
+BABSYN455,1,NA,yes,Backward,26to22,"24, 23, 24, 25, 26, 27",NA,0
+BABSYN455,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Forward,35to39,"35, 34, 34, 35, 36, 37, 38, 39",NA,0
+BABSYN455,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN455,1,NA,yes,next,target23,24,NA,1
+BABSYN455,1,NA,yes,next,target29,20-10,NA,0
+BABSYN455,1,NA,yes,next,target37,38,NA,1
+BABSYN455,1,NA,yes,next,target40,41,NA,1
+BABSYN455,1,NA,yes,next,target59,50-10,NA,0
+BABSYN455,1,NA,yes,next,target62,63,NA,1
+BABSYN455,1,NA,yes,next,target70,78,NA,0
+BABSYN455,1,NA,yes,next,target86,87,NA,1
+BABSYN455,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN455,1,NA,yes,skip,by2s,"2, 4, 5, 6, 7, 8, 9, 10",NA,0
+BABSYN455,1,NA,yes,skip,by5s,"5, 10, 5, 4, 3, 2, 1",NA,0
+BABSYN456,1,NA,yes,Backward,13to9,"11, 12, 13, 14",NA,0
+BABSYN456,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Backward,26to22,"25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Backward,5to1,"4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Backward,7to3,"5, 4, 3",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Backward,8to4,"7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN456,1,NA,yes,next,target23,24,NA,1
+BABSYN456,1,NA,yes,next,target29,30,NA,1
+BABSYN456,1,NA,yes,next,target37,31,NA,0
+BABSYN456,1,NA,yes,next,target40,50,NA,0
+BABSYN456,1,NA,yes,next,target59,60,NA,1
+BABSYN456,1,NA,yes,next,target62,63,NA,1
+BABSYN456,1,NA,yes,next,target70,80,NA,0
+BABSYN456,1,NA,yes,next,target86,87,NA,1
+BABSYN456,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN456,1,NA,yes,skip,by2s,"2, 4, 6, 8, 10",Counted all #'s in correct order?,1
+BABSYN456,1,NA,yes,skip,by5s,"5, 10,",NA,0
+BABSYN457,1,NA,yes,Backward,13to9,"13, 12, 14, 19",NA,0
+BABSYN457,1,NA,yes,Backward,18to14,"18, 17, 16, 14,",NA,0
+BABSYN457,1,NA,yes,Backward,26to22,"26, 25, 24, 20-11, 20-12",NA,0
+BABSYN457,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Forward,18to21,"18-1,18-2,18-3",NA,0
+BABSYN457,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN457,1,NA,yes,next,target23,24,NA,1
+BABSYN457,1,NA,yes,next,target29,27,NA,0
+BABSYN457,1,NA,yes,next,target37,38,NA,1
+BABSYN457,1,NA,yes,next,target40,41,NA,1
+BABSYN457,1,NA,yes,next,target59,56,NA,0
+BABSYN457,1,NA,yes,next,target62,63,NA,1
+BABSYN457,1,NA,yes,next,target70,71,NA,1
+BABSYN457,1,NA,yes,next,target86,86-1,NA,0
+BABSYN457,1,NA,yes,skip,by10s,"10, 20, 21,",NA,0
+BABSYN457,1,NA,yes,skip,by2s,"2, 4, 7, 10",NA,0
+BABSYN457,1,NA,yes,skip,by5s,"5, 10, 11",NA,0
+BABSYN458,1,NA,yes,Backward,13to9,"14,15",NA,0
+BABSYN458,1,NA,yes,Backward,18to14,"18,19,20",NA,0
+BABSYN458,1,NA,yes,Backward,26to22,"27,28,29,100",NA,0
+BABSYN458,1,NA,yes,Backward,5to1,"3,2,1",Counted all #'s in correct order,1
+BABSYN458,1,NA,yes,Backward,7to3,"7,5,4,3,2,1",NA,0
+BABSYN458,1,NA,yes,Backward,8to4,"6,4,3,2,1",NA,0
+BABSYN458,1,NA,yes,Forward,18to21,"1,2,3,4",Started counting from smaller #,0
+BABSYN458,1,NA,yes,Forward,21to24,"1,2,3",Started counting from smaller #,0
+BABSYN458,1,NA,yes,Forward,35to39,"1,2,3",Started counting from smaller #,0
+BABSYN458,1,NA,yes,Forward,4to9,"1,2,3,4",Started counting from smaller #,0
+BABSYN458,1,NA,yes,Forward,5to7,"10,25,30",NA,0
+BABSYN458,1,NA,yes,Forward,6to12,"2,3,4,5,6",Started counting from smaller #,0
+BABSYN458,1,NA,yes,next,target23,40,NA,0
+BABSYN458,1,NA,yes,next,target29,30,NA,1
+BABSYN458,1,NA,yes,next,target37,38,NA,1
+BABSYN458,1,NA,yes,next,target40,40,NA,0
+BABSYN458,1,NA,yes,next,target59,50,NA,0
+BABSYN458,1,NA,yes,next,target62,40,NA,0
+BABSYN458,1,NA,yes,next,target70,71,NA,1
+BABSYN458,1,NA,yes,next,target86,72,NA,0
+BABSYN458,1,NA,yes,skip,by10s,"25,30,45,60",NA,0
+BABSYN458,1,NA,yes,skip,by2s,"40,45,60,65",NA,0
+BABSYN458,1,NA,yes,skip,by5s,"5,4,3,2,1",NA,0
+BABSYN459,1,NA,yes,Backward,13to9,"11,12,13,14,15",NA,0
+BABSYN459,1,NA,yes,Backward,18to14,"19,20",NA,0
+BABSYN459,1,NA,yes,Backward,26to22,"40,41,42",NA,0
+BABSYN459,1,NA,yes,Backward,5to1,"3,2,1",Counted all #'s in correct order,1
+BABSYN459,1,NA,yes,Backward,7to3,"5,4,3",NA,0
+BABSYN459,1,NA,yes,Backward,8to4,"6,5,4",Counted all #'s in correct order,1
+BABSYN459,1,NA,yes,Forward,18to21,"19,20,1,2,3,4",NA,0
+BABSYN459,1,NA,yes,Forward,21to24,"20, 21,22,23,24","Counted all #'s in correct order,Started counting from smaller #",0
+BABSYN459,1,NA,yes,Forward,35to39,"35,1,2,3,4",NA,0
+BABSYN459,1,NA,yes,Forward,4to9,"5,6,7,8,9",Counted all #'s in correct order,1
+BABSYN459,1,NA,yes,Forward,5to7,"5,6,7,8",Counted all #'s in correct order,1
+BABSYN459,1,NA,yes,Forward,6to12,"6,7,8,9,10,1,2,3,4",NA,0
+BABSYN459,1,NA,yes,next,target23,11,NA,0
+BABSYN459,1,NA,yes,next,target29,25,NA,0
+BABSYN459,1,NA,yes,next,target37,1,NA,0
+BABSYN459,1,NA,yes,next,target40,2,NA,0
+BABSYN459,1,NA,yes,next,target59,7,NA,0
+BABSYN459,1,NA,yes,next,target62,20-20-20-22,NA,0
+BABSYN459,1,NA,yes,next,target70,24,NA,0
+BABSYN459,1,NA,yes,next,target86,1,NA,0
+BABSYN459,1,NA,yes,skip,by10s,"30,40,50",Counted all #'s in correct order?,1
+BABSYN459,1,NA,yes,skip,by2s,"5,6,7,8",NA,0
+BABSYN459,1,NA,yes,skip,by5s,"14,15,16,17",NA,0
+BABSYN460,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Backward,26to22,"26, 25, 24, 23, 22",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,Forward,6to12,"7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN460,1,NA,yes,next,target23,24,NA,1
+BABSYN460,1,NA,yes,next,target29,30,NA,1
+BABSYN460,1,NA,yes,next,target37,38,NA,1
+BABSYN460,1,NA,yes,next,target40,41,NA,1
+BABSYN460,1,NA,yes,next,target59,60,NA,1
+BABSYN460,1,NA,yes,next,target62,63,NA,1
+BABSYN460,1,NA,yes,next,target70,71,NA,1
+BABSYN460,1,NA,yes,next,target86,87,NA,1
+BABSYN460,1,NA,yes,skip,by10s,"10, 20, 30, 40, 50",Counted all #'s in correct order?,1
+BABSYN460,1,NA,yes,skip,by2s,"2, 4, 6,",NA,0
+BABSYN460,1,NA,yes,skip,by5s,"5, 10, 15, 20, 25,",Counted all #'s in correct order?,1
+BABSYN461,1,NA,yes,Backward,13to9,NR,NA,0
+BABSYN461,1,NA,yes,Backward,18to14,"16,15,13",NA,0
+BABSYN461,1,NA,yes,Backward,26to22,"24,23,22",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Backward,5to1,"3,2,1",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Backward,7to3,"5,4,3",NA,0
+BABSYN461,1,NA,yes,Backward,8to4,"6,5,4",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Forward,18to21,NR,NA,0
+BABSYN461,1,NA,yes,Forward,21to24,"21,22,23,24",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Forward,35to39,"35,36,37,38,39",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Forward,4to9,"4,5,6,7,8,9",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Forward,5to7,"5,6,7",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,Forward,6to12,"6,7,8,9,10,11,12",Counted all #'s in correct order,1
+BABSYN461,1,NA,yes,next,target23,24,NA,1
+BABSYN461,1,NA,yes,next,target29,30,NA,1
+BABSYN461,1,NA,yes,next,target37,38,NA,1
+BABSYN461,1,NA,yes,next,target40,41,NA,1
+BABSYN461,1,NA,yes,next,target59,60,NA,1
+BABSYN461,1,NA,yes,next,target62,63,NA,1
+BABSYN461,1,NA,yes,next,target70,80,NA,0
+BABSYN461,1,NA,yes,next,target86,87,NA,1
+BABSYN461,1,NA,yes,skip,by10s,DK,NA,0
+BABSYN461,1,NA,yes,skip,by2s,"6,8,10 (Child had a chart that helped her on this)",Counted all #'s in correct order?,1
+BABSYN461,1,NA,yes,skip,by5s,DK,NA,0
+BABSYN462,1,NA,yes,Backward,13to9,"13, 12, 11, 10, 9",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Backward,18to14,"18, 17, 16, 15, 14",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Backward,26to22,"24, 23, 22",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Backward,5to1,"5, 4, 3, 2, 1",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Backward,7to3,"7, 6, 5, 4, 3",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Backward,8to4,"8, 7, 6, 5, 4",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,18to21,"18, 19, 20, 21",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,21to24,"21, 22, 23, 24",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,35to39,"35, 36, 37, 38, 39",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,4to9,"4, 5, 6, 7, 8, 9",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,5to7,"5, 6, 7",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,Forward,6to12,"6, 7, 8, 9, 10, 11, 12",Counted all #'s in correct order,1
+BABSYN462,1,NA,yes,next,target23,24,NA,1
+BABSYN462,1,NA,yes,next,target29,30,NA,1
+BABSYN462,1,NA,yes,next,target37,38,NA,1
+BABSYN462,1,NA,yes,next,target40,54,NA,0
+BABSYN462,1,NA,yes,next,target59,69,NA,0
+BABSYN462,1,NA,yes,next,target62,63,NA,1
+BABSYN462,1,NA,yes,next,target70,80,NA,0
+BABSYN462,1,NA,yes,next,target86,90,NA,0
+BABSYN462,1,NA,yes,skip,by10s,"10, 20, 13, 14, 15, 16",NA,0
+BABSYN462,1,NA,yes,skip,by2s,"2, 4, 6, 8, 7, 6, 5",NA,0
+BABSYN462,1,NA,yes,skip,by5s,"5, 10, 11, 12, 13, 14, 15",NA,0
