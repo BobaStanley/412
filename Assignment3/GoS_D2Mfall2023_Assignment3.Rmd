@@ -29,6 +29,10 @@ Note: if you aren't able to fully complete a problem and are submitting code tha
 # Problem 1
 
 Include a chunk at the beginning of your document that loads the tidyverse. Load any other packages you decide to use in the same code-chunk. 
+```{r}
+library(tidyverse)
+```
+
 
 # Problem 2
 
@@ -58,6 +62,9 @@ PropCorrYNTask (or whatever you called this summary variable)
 PropCorrCounting (or whatever you called this summary variable)
 
 5. Provide a one or two sentence explanation for why the PropCorrCounting variable repeats the same value for every row within a given participant, but the other variables do not. 
+```{r}
+
+```
 
 
 # Problem 3

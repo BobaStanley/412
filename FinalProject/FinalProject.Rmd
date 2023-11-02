@@ -15,11 +15,11 @@ library(dplyr)
 ```
 
 ```{r}
-data("ufc_stats")
+ufc_stats
 ```
 
 ```{r}
-refresh_data()
+refresh_data(ufc_stats)
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
