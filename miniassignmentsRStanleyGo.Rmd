@@ -478,18 +478,111 @@ frac_propcorr_post %>%
         text = element_text(size = 14)) 
 ```
 ```{r}
-create_summary <- frac_propcorr_post %>%
+create_summary <- frac_propcorr_post %>% 
   group_by(Condition) %>%
-  summarise(mean_prop_corr = mean(prop_corr), se= sd(prop_corr/sqrt(n())))
+  summarise(mean_prop_corr = mean(prop_corr),
+            se = sd(prop_corr)/sqrt(n())) 
+
 create_summary
 ```
 ```{r}
-create_summary %>%
-  ggplot(aes(y = mean_prop_corr, x= Condition)) +
-  stat_summary(geom= "point", fun = "mean") +
-  stat_summary(geom = "errorbar", fun.data = "mean_se")
+create_summary %>% 
+  ggplot(aes(y = mean_prop_corr, x = Condition)) +  # then plot it
+  geom_point() +
+  geom_errorbar(aes(ymin = mean_prop_corr - se, ymax = mean_prop_corr + se), # adding the geom_errorbar 
+                width = 0.2) # specifying the width of the horizontal end lines
   
 ```
+```{r}
+frac_propcorr_post %>%
+  ggplot(aes(y = prop_corr, x = Condition)) +  # pass the dataset to ggplot, but then use stat_summary to calculate the mean within ggplot:
+  stat_summary(geom = "point", # we tell it which geom to use, within the stat_summary function (but remove the geom_ bit of the name)
+               fun = "mean" # tell it which function to use (there are different function parameters depending on what you're trying to plot)
+               ) +
+  stat_summary(geom = "errorbar",
+               fun.data = "mean_se") # telling it to use the standard error function to calculate the ymin and ymax
+```
+
+
+```{r}
+frac_propcorr_post %>%
+  
+  # ADDING THIS BEFORE PLOTTING
+  mutate(Condition = factor(Condition,
+                            levels = c("Map", "Div", "Cont")),
+         Condition = fct_recode(Condition,
+                                "Actively Divided Condition" = "Map",
+                                "Statically Divided" = "Div",
+                                "Not Divided" = "Cont")) %>%
+  
+  # NOW GOING BACK TO THE SAME PLOT AS BEFORE
+  
+  ggplot(aes(y = prop_corr, x = Condition)) +  
+
+  # ERROR BAR FIRST
+  stat_summary(geom = "errorbar",
+               fun.data = "mean_se",
+               width = 0.2) +
+  # MEAN POINT SECOND
+    stat_summary(geom = "point", 
+               fun = "mean",
+               size = 3,
+               color = "red") +
+  
+  # above this is the same basic plot, and now we're adding the visual modifications
+  
+  ylim(0, 1) +
+  labs(y = "Proportion Correct",
+       x = "Card Game Condition",
+       title = "Average proportion correct on the Mapping Task\n at Post-Test Across Conditions") +
+  theme_minimal() +
+  theme(axis.line = element_line(linewidth = 0.5, color = "black"),
+        panel.grid = element_line(linetype = "dashed", color = "grey"),
+        text = element_text(size = 14)) 
+```
+```{r}
+frac_propcorr_post %>%
+  
+  # ADDING THIS BEFORE PLOTTING
+  mutate(Condition = factor(Condition,
+                            levels = c("Map", "Div", "Cont")),
+         Condition = fct_recode(Condition,
+                                "Actively Divided Condition" = "Map",
+                                "Statically Divided" = "Div",
+                                "Not Divided" = "Cont")) %>%
+  
+  # NOW GOING BACK TO THE SAME PLOT AS BEFORE
+  
+  ggplot(aes(y = prop_corr, x = Condition)) +  
+  
+  # VIOLIN FIRST
+  
+  geom_violin(alpha = 0.5, # the transparency, can make it a bit seethrough
+              fill = "grey") + # color of the fill
+
+  # ERROR BAR SECOND
+  stat_summary(geom = "errorbar",
+               fun.data = "mean_se",
+               width = 0.2) +
+  
+  # MEAN POINT THIRD
+    stat_summary(geom = "point", 
+               fun = "mean",
+               size = 3,
+               color = "red") +
+  
+  # above this is the same basic plot, and now we're adding the visual modifications
+  
+  ylim(0, 1) +
+  labs(y = "Proportion Correct",
+       x = "Card Game Condition",
+       title = "Average proportion correct on the Mapping Task\n at Post-Test Across Conditions") +
+  theme_minimal() +
+  theme(axis.line = element_line(linewidth = 0.5, color = "black"),
+        panel.grid = element_line(linetype = "dashed", color = "grey"),
+        text = element_text(size = 14)) 
+```
+
 ```{r}
 frac_propcorr <- frac_data_raw %>%
   filter(TaskType == "Map" & IncludePostTest == 1 & IncludePreTest == 1) %>%
@@ -500,6 +593,20 @@ frac_propcorr <- frac_data_raw %>%
 ```
 ```{r}
 glimpse(frac_propcorr)
+```
+```{r}
+frac_propcorr %>%
+  ggplot(aes(y= prop_corr, x = Condition, color = Session)) +
+  stat_summary(geom = "point", fun = "mean", size = 3)
+```
+```{r}
+frac_propcorr %>%
+  ggplot(aes(y= prop_corr, x = Condition, color = Session)) +
+  stat_summary(geom = "point", fun = "mean", size = 3) +
+  scale_color_brewer(palette = "Dark2")
+```
+```{r}
+??ggdist 
 ```
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
