@@ -63,7 +63,46 @@ PropCorrCounting (or whatever you called this summary variable)
 
 5. Provide a one or two sentence explanation for why the PropCorrCounting variable repeats the same value for every row within a given participant, but the other variables do not. 
 ```{r}
+counting <- read.csv("BABSYN_counting_tidy.csv")
+task_data <- read.csv("BABSYN_YNtask_tidy.csv")
 
+```
+
+```{r}
+counting_summary <- counting %>%
+  filter(Include == 1) %>%  # Filter data for children with Include variable equal to 1
+  group_by(SubID) %>%
+  summarize(PropCorrCounting = mean(accuracy))
+```
+
+```{r}
+
+task_summary <- task_data %>%
+  filter(Include == 1) %>%
+  mutate(ComparisonCategory = case_when(
+    grepl("Before|After", Comparison) ~ "Order",
+    grepl("Smaller|Bigger", Comparison) ~ "Magnitude",
+    TRUE ~ NA_character_
+  )) %>%
+  mutate(SideCategory = ifelse(Side == "same", "Same", "Opposite")) %>%
+  mutate(TrialCategory = ifelse(grepl("consecutive", TrialType), "Consecutive", "Non-consecutive")) %>%
+  group_by(SubID, ComparisonCategory, SideCategory, TrialCategory) %>%
+  summarise(PropCorrYNTask = mean(Response.corr, na.rm = TRUE))
+
+
+
+
+```
+```{r}
+glimpse(task_summary)
+```
+
+```{r}
+combined_summary <- counting_summary %>%
+  inner_join(task_summary, by = "SubID")
+```
+```{r}
+# PropCorrCounting repeats because it presents the proportion of correct responses in the counting task-- remains constant for that participant.
 ```
 
 
@@ -81,8 +120,52 @@ Create a data visualization to explore the hypothesis above. Include:
 
 From the visual alone, do you think the hypothesis is supported? What kind of pattern do you see in the data?
 
+```{r}
+# Calculate the overall counting score
+counting_summary <- counting %>%
+  filter(Include == 1) %>%
+  group_by(SubID) %>%
+  summarize(PropCorrCounting = mean(accuracy))
+
+# Calculate the overall task score
+task_summary <- task_data %>%
+  filter(Include == 1) %>%
+  mutate(ComparisonCategory = case_when(
+    grepl("Before|After", Comparison) ~ "Order",
+    grepl("Smaller|Bigger", Comparison) ~ "Magnitude",
+    TRUE ~ NA_character_
+  )) %>%
+  mutate(SideCategory = ifelse(Side == "same", "Same", "Opposite")) %>%
+  mutate(TrialCategory = ifelse(grepl("consecutive", TrialType), "Consecutive", "Non-consecutive")) %>%
+  group_by(SubID, ComparisonCategory, SideCategory, TrialCategory) %>%
+  summarise(PropCorrYNTask = mean(Response.corr, na.rm = TRUE))
+
+# Merge the datasets based on 'SubID'
+merged_data <- counting_summary %>%
+  inner_join(task_summary, by = "SubID")
+
+# Create a scatter plot to explore the hypothesis
+ggplot(merged_data, aes(x = PropCorrCounting, y = PropCorrYNTask)) +
+  geom_point(color = "blue", size = 3) +  # Scatter plot points
+  geom_smooth(method = "lm", color = "red", se = FALSE) +  # Linear regression line
+  labs(
+    title = "Correlation Between Counting Score and Task Score",
+    x = "Overall Counting Score",
+    y = "Overall Task Score"
+  ) +
+  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+    legend.position = "none"
+  )
 
 
+```
+
+- I see a positive linear relationship as it looked like it's going upward-- the red linear regression reinforces this. 
 # Problem 4
 
 Take your code from Problem 3, and modify it so that you now plot the data for the Order task (i.e., before/after) and the Magnitude task (i.e., Bigger/Smaller) separately (hint: you'll need to use the new column you created for Problem 2). Do this in two ways: (1) within the same plot and (2) as separate faceted plots. 
@@ -90,7 +173,47 @@ Take your code from Problem 3, and modify it so that you now plot the data for t
 Which approach do you like better and why? (just one or two sentences is fine)
 What do you notice about the data when plotted this way? Make two observations. 
 
+```{r}
+# Create a scatter plot to explore the hypothesis
+ggplot(merged_data, aes(x = PropCorrCounting, y = PropCorrYNTask, color = ComparisonCategory)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "Correlation Between Counting Score and Task Score",
+    x = "Overall Counting Score",
+    y = "Overall Task Score"
+  ) +
+  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
 
+```
+```{r}
+# Create separate faceted plots for Order and Magnitude tasks
+ggplot(merged_data, aes(x = PropCorrCounting, y = PropCorrYNTask, color = ComparisonCategory)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "Correlation Between Counting Score and Task Score",
+    x = "Overall Counting Score",
+    y = "Overall Task Score"
+  ) +
+  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  ) +
+  facet_wrap(~ComparisonCategory)
+
+```
+- For me, I like the separate plots because it is easier to discern the differences
+- There is some variability in the data and the correlation is not perfectly linear
 # Problem 5
 
 Result: When the numbers are on the correct side (i.e., when Side == "same"), children do better on consecutive numbers, compared to non-consecutive numbers when asked about order (i.e., bigger and smaller), but not when asked about magnitude (i.e., larger and smaller). 
