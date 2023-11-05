@@ -224,8 +224,27 @@ Create a data visualizion to communicate the pattern described above (hint: the 
 - meaningful axis limits
 - three additional non-data based visual modifications
 
+```{r}
+sameside_data <- task_summary %>%
+  filter(SideCategory == "Same")
 
-
+# Create a data visualization to communicate the pattern
+ggplot(sameside_data, aes(x = TrialCategory, y = PropCorrYNTask)) +
+  geom_boxplot(fill = "lightblue", color = "blue", width = 0.6, outlier.shape = NA) +
+  geom_jitter(position = position_jitter(width = 0.2), color = "blue", size = 3) +
+  stat_summary(fun = mean, geom = "point", color = "red", size = 3) +
+  labs(
+    title = "Task Performance Pattern for Same Side Trials",
+    x = "Trial Type",
+    y = "Proportion Correct (Mean)"
+  ) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+```
 
 
 
