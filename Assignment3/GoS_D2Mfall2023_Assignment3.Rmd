@@ -5,26 +5,13 @@ output:
     df_print: paged
 ---
 
-This is the assignment template for **Assignment 3** in Data to Manuscript in R (Advanced Topics II 01:185:412). Use this template to do your own assignment by following the steps below:
-
-1. Download this file and put it in a subfolder (called "Assignment3") of your local GitHub repository for this class. (see note 1 below before doing this*)
-2. Rename this file as "LASTNAMEFIRSTINITIAL_D2Mfall2023_Assignment3.rmd", e.g., "HurstM_D2Mfall2023_Assignment3.rmd"
-3. Add to the YAML header: (1) an author line with your name, (2) a date line that will fill in the date using your operating system (see slides or google to figure this out)
-4. Complete the assignment questions below by following each prompt. 
-5. Edit this preamble to remove these instructions and instead to describe what this is (i.e., "This is a completed assignment for...")
-6. Knit to HTML by clicking the little arrow next to the word "Knit" above (yours might say "preview") and then select "Knit to HTML". VIEW YOUR HTML TO MAKE SURE IT LOOKS RIGHT.
-Note: if you aren't able to fully complete a problem and are submitting code that won't actually run, you won't be able to knit it (by default). To get it to knit, add "error=TRUE" to the code chunk header (see example below). This tells R to run it and include the error as output, rather than stopping the knitting process.
-
+This is a completed assignment for Professor Hurst of Data Manuscript 
 ```{r, error=TRUE}
 #this is just to give you an example of the code chunk header above, which is only necessary if you're submitting an assignment with code that won't run.
 #for example, you might want to do that if you've made some progress on a problem, but aren't able to fully complete it. Rather than submitting nothing, submit what you've done so far. 
 ```
 
-6. When you're done, commit and push all the files associated with the assignment (.RMD file, .HTML knit file, datasets) to GitHub. Go to GitHub.com to ensure everything is visible there. If you want me to double check that I can see it, send me an email. 
 
-7. Finally, submit the assignment on Canvas by including a link to your github repository. This will signal to me that it's ready to be graded. 
-
-*Note 1: As you commit changes in your local repo and push the repo to github (e.g., as part of your class ICMAs), you'll also be pushing any mid-work you've done on this assignment. That's fine with me (and works as a good way to have version control and a back-up of your assignment!). If you'd rather not put things on GitHub until they're done, then there's a few ways to do that: (1) uncheck these files before committing, (2) don't put these files in this folder until you're finished (i.e., work in a different folder first), (3) add your Assignment3 folder to your gitignore file (see slides from class or google as a reminder for how to do that), just make sure to remove it from your gitignore once you're ready to submit!
 
 # Problem 1
 
@@ -230,7 +217,7 @@ sameside_data <- task_summary %>%
 
 # Create a data visualization to communicate the pattern
 ggplot(sameside_data, aes(x = TrialCategory, y = PropCorrYNTask)) +
-  geom_boxplot(fill = "lightblue", color = "blue", width = 0.6, outlier.shape = NA) +
+  geom_boxplot(fill = "grey", color = "blue", width = 0.6, outlier.shape = NA) +
   geom_jitter(position = position_jitter(width = 0.2), color = "blue", size = 3) +
   stat_summary(fun = mean, geom = "point", color = "red", size = 3) +
   labs(
