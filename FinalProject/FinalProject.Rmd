@@ -10,16 +10,38 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 ```{r}
 library(tidyverse)
 ```
-```{r}
-library(dplyr)
-```
 
 ```{r}
 ufc_stats
 ```
+- create a csv file, just in case
+```{r}
+write.csv(ufc_stats,file="ufc_stats.csv")
+```
+
+Who has the most significant strikes in UFC? 
+```{r}
+ufc_stats %>% group_by(fighter) %>%
+  summarise(total_significant_strikes = sum(significant_strikes_landed)) %>%
+  arrange(-total_significant_strikes) %>%
+  head()
+```
+Best KOer
 
 ```{r}
-refresh_data(ufc_stats)
+ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(knockdown_rate = sum(knockdowns) / sum(significant_strikes_attempted)) %>%
+  arrange(desc(knockdown_rate)) %>%
+  head()
+```
+
+```{r}
+ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(striking_efficiency = sum(significant_strikes_landed) / sum(significant_strikes_attempted)) %>%
+  arrange(desc(striking_efficiency)) %>%
+  head()
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
