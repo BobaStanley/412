@@ -77,29 +77,26 @@ We report how we determined our sample size, all data exclusions (if any), all m
 
 ## Participants
 ```{r}
-#vec_mode <- function(x){
-  #grouped_tibble <- years_in_college %>%
-  #as.tibble %>%
-  #group_by(value)%>%
-  #count() %>%
+vec_mode <- function(x) {
+  group_tibble <- as_tibble(x) %>%
+    group_by(value) %>%
+    count()
 
-#max_count <- max(grouped_tibble$n)
-  
-#grouped_tibble %>%
-#filter(n == max_count)%>%
-#select(value) %>%
-#pull()
-#}
+  max_count <- max(group_tibble$n)
+
+  group_tibble %>%
+    filter(n == max_count) %>%
+    select(value) %>%
+    pull()
+}
+
+years_in_college <- c(4, 4, 4, 4, 3, 4, 2, 3, 3, 4, 4)
+
+vec_mode(years_in_college)
+
+
 ```
 
-
-```{r}
-#years_in_college <- c(4, 4, 4, 4, 3, 4, 2, 3, 3, 4, 4)
-```
-
-```{r}
-#vec_mode(years_in_college)
-```
 
 
 
