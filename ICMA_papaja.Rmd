@@ -39,8 +39,8 @@ wordcount         : "X"
 
 bibliography      : "r-references.bib"
 
-floatsintext      : no
-linenumbers       : yes
+floatsintext      : yes
+linenumbers       : no
 draft             : no
 mask              : no
 
@@ -49,7 +49,7 @@ tablelist         : no
 footnotelist      : no
 
 classoption       : "man"
-output            : papaja::apa6_pdf
+output            : papaja::apa6_word
 ---
 
 ```{r setup, include = FALSE}
@@ -64,11 +64,44 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 
+**monkey**
+
+*monkey*
+
+```{r}
+library(tidyverse)
+```
 
 # Methods
 We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
 
 ## Participants
+```{r}
+#vec_mode <- function(x){
+  #grouped_tibble <- years_in_college %>%
+  #as.tibble %>%
+  #group_by(value)%>%
+  #count() %>%
+
+#max_count <- max(grouped_tibble$n)
+  
+#grouped_tibble %>%
+#filter(n == max_count)%>%
+#select(value) %>%
+#pull()
+#}
+```
+
+
+```{r}
+#years_in_college <- c(4, 4, 4, 4, 3, 4, 2, 3, 3, 4, 4)
+```
+
+```{r}
+#vec_mode(years_in_college)
+```
+
+
 
 ## Material
 
@@ -79,6 +112,12 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 
 # Results
+(ref:chick-time-caption) Each Chick's weight in grams (y-axis) over time (x-axis), with each chick a separate line
+```{r, fig.cap= "(ref:chick-time-caption)", fight.aligh = "left", out.width = "50%"}
+ChickWeight %>%
+  ggplot(aes(y= weight, x= Time, group = Chick, color = Diet)) +
+  geom_line()
+```
 
 # Discussion
 
