@@ -1837,6 +1837,7 @@ the chunk or by placing your cursor inside it and pressing
 <!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Best Striker in UFC</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzICU+JVxuICBncm91cF9ieShmaWdodGVyKSAlPiVcbiAgc3VtbWFyaXNlKHN0cmlraW5nX2VmZmljaWVuY3kgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpIC8gc3VtKHNpZ25pZmljYW50X3N0cmlrZXNfYXR0ZW1wdGVkKSkgJT4lXG4gIGFycmFuZ2UoZGVzYyhzdHJpa2luZ19lZmZpY2llbmN5KSkgJT4lXG4gIGhlYWQoKVxuYGBgIn0= -->
@@ -1855,6 +1856,73 @@ the chunk or by placing your cursor inside it and pressing
 <!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Best Grappler in UFC</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzICU+JVxuICBncm91cF9ieShmaWdodGVyKSAlPiVcbiAgc3VtbWFyaXNlKGdyYXBwbGluZ19lZmZpY2llbmN5ID0gc3VtKHRha2Vkb3duX3N1Y2Nlc3NmdWwpIC8gc3VtKHRha2Vkb3duX2F0dGVtcHRlZCkpICU+JVxuICBhcnJhbmdlKGRlc2MoZ3JhcHBsaW5nX2VmZmljaWVuY3kpKSAlPiVcbiAgaGVhZCgpXG5gYGAifQ== -->
+<pre class="r"><code>ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(grappling_efficiency = sum(takedown_successful) / sum(takedown_attempted)) %&gt;%
+  arrange(desc(grappling_efficiency)) %&gt;%
+  head()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Miwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IMOXIDIiXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCbzJSdjA3RE1CREduYlJwMVVBcEFoNGdMNUFzWGRoUUVMQ3dJUDZJYnNoSkxxa1YxNDR1U1NrYmo4ek0wR0NudGxSbHdwTGp1NTk5My9tTG4rOVdTMy9sRTBKR1pEeHl5TWhUSWZIZVhoL0NhMExHcmtvY01pWXp2ZTdVb1VzVmFIaXU1c1JzTEdLS1VnVHZqSmRNMUZJWWZCRW5XY3ZEUjBDMkNlNHp4dVhXN0p6RlpVSnhIY1NJSURrMTlEVG1zQXVlQUlIaEVlTWdnbHZBTmdIRFR1SU54ZUNsNVJLMldremY1T2FIOU9PLzY4Q2FKK2dHYW1QTE5YQ2FzMkxkQUpyMHFrQmFWWnlKNGdQeW5LVU1SUG8xMEptaC9JeXMxbHhyZmF0UDEzVy93NFlwcDdWdGFLR2YwWVpHT2FwNmxlMEhKVk5aTlV3S1ZlVHFSL0FHeFE0T3dLSVYraVpabUs1YlVZWkwzYURmUG95NWlTZEhzWHRvNlhaR3lqTlNFeEFGRS9iL2U1d213TzFUS3NlOTRhaENKaHJyUk5FNmFtUkQ3VGsvbGR5UzNodlovd0VLaVBpQWV3SUFBQT09In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["fighter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["grappling_efficiency"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Aaron Wilkinson","2":"1"},{"1":"Abdul-Kerim Edilov","2":"1"},{"1":"Akbarh Arreola","2":"1"},{"1":"Alex Pereira","2":"1"},{"1":"Allen Berube","2":"1"},{"1":"Amar Suloev","2":"1"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Best Entertainer based on KO</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzICU+JVxuICBncm91cF9ieShmaWdodGVyKSAlPiVcbiAgc3VtbWFyaXNlKGVudGVydGFpbm1lbnRfc2NvcmUgPSBcbiAgICAoa25vY2tkb3ducyArIHNpZ25pZmljYW50X3N0cmlrZXNfbGFuZGVkIC0gc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQgKyBzdWJtaXNzaW9uX2F0dGVtcHQpIC8gNCkgJT4lXG4gIGFycmFuZ2UoZGVzYyhlbnRlcnRhaW5tZW50X3Njb3JlKSkgJT4lXG4gIGhlYWQoKVxuYGBgIn0= -->
+<pre class="r"><code>ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(entertainment_score = 
+    (knockdowns + significant_strikes_landed - significant_strikes_attempted + submission_attempt) / 4) %&gt;%
+  arrange(desc(entertainment_score)) %&gt;%
+  head()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogUmV0dXJuaW5nIG1vcmUgKG9yIGxlc3MpIHRoYW4gMSByb3cgcGVyIGBzdW1tYXJpc2UoKWAgZ3JvdXAgd2FzIGRlcHJlY2F0ZWQgaW4gZHBseXIgMS4xLjAuXG5QbGVhc2UgdXNlIGByZWZyYW1lKClgIGluc3RlYWQuXG5XaGVuIHN3aXRjaGluZyBmcm9tIGBzdW1tYXJpc2UoKWAgdG8gYHJlZnJhbWUoKWAsIHJlbWVtYmVyIHRoYXQgYHJlZnJhbWUoKWAgYWx3YXlzIHJldHVybnMgYW4gdW5ncm91cGVkIGRhdGEgZnJhbWUgYW5kIGFkanVzdCBhY2NvcmRpbmdseS5gc3VtbWFyaXNlKClgIGhhcyBncm91cGVkIG91dHB1dCBieSAnZmlnaHRlcicuIFlvdSBjYW4gb3ZlcnJpZGUgdXNpbmcgdGhlIGAuZ3JvdXBzYCBhcmd1bWVudC5cbiJ9 -->
+<pre><code>Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in dplyr 1.1.0.
+Please use `reframe()` instead.
+When switching from `summarise()` to `reframe()`, remember that `reframe()` always returns an ungrouped data frame and adjust accordingly.`summarise()` has grouped output by &#39;fighter&#39;. You can override using the `.groups` argument.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5yb3ciOjYsIm5jb2wiOjIsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAyIl0sIkdyb3VwcyI6WyJmaWdodGVyIFs2XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJuVlJzVTdETUJDOU5rbXJCZ3FWK2dQNWdXYUFoUTJoVml5b0NMVWdkVVBYeEUwdFVydXlIUldZK0Z4R0JpYUdCanUxQTBUaXBPVHVucC9mK2U1bWs4VjV1QWdCd0FQZmE0RVg2QkNDaC92cjBRV0EzOVpKQzN6b0dmK3NTVU1kR0hDZ3Y0NDlPSjRVVWxFVzNXRldFSXYxWjRTaDR0R2NMd1htRmp3WkkrWFJGRFBNMTBpa280NTUraEpOa3h2Q1hxbTdmelJQdUZMUlZZcWJIeDZLbk12b2x1d1VaMGJPdk9IeUV5cXIvY2MvL2gycy9Xa3FTSEtVMGpia3dEQkZoZkZLNElZMDZEM0JkekhUdUxuU043TjQwNyt5TEwrYXVvNDBxQVoyQUxzcm1xMFZFVFlkRXFZVGhaUnRkUFFvRXk1MFBkZzNwTHA4cXlobldxeHRwaDgwSHRzU0RlQzBZS1o0T2tyV0JYc2FuWm1HcXVPRDlXM2MrUlczRHlYOTBrb0ZWcXBEV0VhWjIwbVE0NUxVdTlTVHFIcU10NEl5NVNhblVSa3JydXFkaHduUEhWTDFCdnR2dDVKTmtIUUNBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["fighter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["entertainment_score"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Dustin Pague","2":"1.25"},{"1":"Renato Sobral","2":"1.25"},{"1":"Caio Magalhaes","2":"1.00"},{"1":"Cody McKenzie","2":"1.00"},{"1":"Scott Adams","2":"1.00"},{"1":"Carlos Newton","2":"0.75"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzICU+JVxuICBncm91cF9ieShmaWdodGVyKSAlPiVcbiAgc3VtbWFyaXNlKHBwdl9pbXBhY3Rfc2NvcmUgPSBcbiAgICAoa25vY2tkb3ducyArIHNpZ25pZmljYW50X3N0cmlrZXNfbGFuZGVkICsgdGFrZWRvd25fc3VjY2Vzc2Z1bCArICgxIC0gdGFrZWRvd25fcmF0ZSkgKiAxMCkgLyA0ICtcbiAgICBzdW0oYXR0ZW5kYW5jZSkgLyAxMDAwKSAlPiVcbiAgYXJyYW5nZShkZXNjKHBwdl9pbXBhY3Rfc2NvcmUpKSAlPiVcbiAgaGVhZCgpXG5gYGAifQ== -->
+<pre class="r"><code>ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(ppv_impact_score = 
+    (knockdowns + significant_strikes_landed + takedown_successful + (1 - takedown_rate) * 10) / 4 +
+    sum(attendance) / 1000) %&gt;%
+  arrange(desc(ppv_impact_score)) %&gt;%
+  head()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogUmV0dXJuaW5nIG1vcmUgKG9yIGxlc3MpIHRoYW4gMSByb3cgcGVyIGBzdW1tYXJpc2UoKWAgZ3JvdXAgd2FzIGRlcHJlY2F0ZWQgaW4gZHBseXIgMS4xLjAuXG5QbGVhc2UgdXNlIGByZWZyYW1lKClgIGluc3RlYWQuXG5XaGVuIHN3aXRjaGluZyBmcm9tIGBzdW1tYXJpc2UoKWAgdG8gYHJlZnJhbWUoKWAsIHJlbWVtYmVyIHRoYXQgYHJlZnJhbWUoKWAgYWx3YXlzIHJldHVybnMgYW4gdW5ncm91cGVkIGRhdGEgZnJhbWUgYW5kIGFkanVzdCBhY2NvcmRpbmdseS5gc3VtbWFyaXNlKClgIGhhcyBncm91cGVkIG91dHB1dCBieSAnZmlnaHRlcicuIFlvdSBjYW4gb3ZlcnJpZGUgdXNpbmcgdGhlIGAuZ3JvdXBzYCBhcmd1bWVudC5cbiJ9 -->
+<pre><code>Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in dplyr 1.1.0.
+Please use `reframe()` instead.
+When switching from `summarise()` to `reframe()`, remember that `reframe()` always returns an ungrouped data frame and adjust accordingly.`summarise()` has grouped output by &#39;fighter&#39;. You can override using the `.groups` argument.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5yb3ciOjYsIm5jb2wiOjIsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAyIl0sIkdyb3VwcyI6WyJmaWdodGVyIFsxXSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJzVlJTMDdETUJDZGZKeXFrVnFDMkxIaUFna0xXTERzQXZFUkNDRStVamVvTXFtYldxUjJaTHZBa2tOMHowMDRHSXNHTzdFbDhBV3dGTCtaTjVObnYvSGQ2ZlFvbmFZQUVFRWNCUkFoSFFKNmZEakxUd0RpVUNjQnhEQTArSzZiOW5SZ3lFeC9pUzNzbmhNdUtpSVA3bFYrUzRrUTVIOExBR056dThubTV1bHcvL05yc3JtMmVHWHgwdUxGSC9Uc29yTEdVbHFyamt6bldPRmlJZkNLZU8xRHdkOEtwbm56eThoTTZVTnZiZHQrKzdxdUtldEcyWk9EQmEyV2lnaWJaazN6T3FPckJwZHFKa3ZlZWRwNk9nUGVLTXFaVmdyTm95RHZwb0h3aUowMU15ZlA4M0s1WmkvNXNYSFRsZnMxc25IeUt3NzdJK1BXU2lFcmxSQldVZVplQU5YNG1kUTJHZXN4ZEFhTFJsQ20zTmcwS3d2RkZYWjlhY2xyeDNUZVlQc0Rack9qNjRzQ0FBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["fighter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["ppv_impact_score"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Georges St-Pierre","2":"1299.591"},{"1":"Georges St-Pierre","2":"1299.091"},{"1":"Georges St-Pierre","2":"1298.841"},{"1":"Georges St-Pierre","2":"1298.341"},{"1":"Georges St-Pierre","2":"1298.091"},{"1":"Georges St-Pierre","2":"1298.091"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
 toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
 <p>When you save the notebook, an HTML file containing the code and
@@ -1866,7 +1934,7 @@ run any R code chunks. Instead, the output of the chunk when it was last
 run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZpbmFsIFByb2plY3QiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmBgYA0KDQpgYGB7cn0NCnVmY19zdGF0cw0KYGBgDQotIGNyZWF0ZSBhIGNzdiBmaWxlLCBqdXN0IGluIGNhc2UNCmBgYHtyfQ0Kd3JpdGUuY3N2KHVmY19zdGF0cyxmaWxlPSJ1ZmNfc3RhdHMuY3N2IikNCmBgYA0KDQpXaG8gaGFzIHRoZSBtb3N0IHNpZ25pZmljYW50IHN0cmlrZXMgaW4gVUZDPyANCmBgYHtyfQ0KdWZjX3N0YXRzICU+JSBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHRvdGFsX3NpZ25pZmljYW50X3N0cmlrZXMgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpKSAlPiUNCiAgYXJyYW5nZSgtdG90YWxfc2lnbmlmaWNhbnRfc3RyaWtlcykgJT4lDQogIGhlYWQoKQ0KYGBgDQpCZXN0IEtPZXINCg0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoa25vY2tkb3duX3JhdGUgPSBzdW0oa25vY2tkb3ducykgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKGtub2NrZG93bl9yYXRlKSkgJT4lDQogIGhlYWQoKQ0KYGBgDQoNCmBgYHtyfQ0KdWZjX3N0YXRzICU+JQ0KICBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHN0cmlraW5nX2VmZmljaWVuY3kgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpIC8gc3VtKHNpZ25pZmljYW50X3N0cmlrZXNfYXR0ZW1wdGVkKSkgJT4lDQogIGFycmFuZ2UoZGVzYyhzdHJpa2luZ19lZmZpY2llbmN5KSkgJT4lDQogIGhlYWQoKQ0KYGBgDQoNCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCg0KV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4NCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZpbmFsIFByb2plY3QiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmBgYA0KDQpgYGB7cn0NCnVmY19zdGF0cw0KYGBgDQotIGNyZWF0ZSBhIGNzdiBmaWxlLCBqdXN0IGluIGNhc2UNCmBgYHtyfQ0Kd3JpdGUuY3N2KHVmY19zdGF0cyxmaWxlPSJ1ZmNfc3RhdHMuY3N2IikNCmBgYA0KDQpXaG8gaGFzIHRoZSBtb3N0IHNpZ25pZmljYW50IHN0cmlrZXMgaW4gVUZDPyANCmBgYHtyfQ0KdWZjX3N0YXRzICU+JSBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHRvdGFsX3NpZ25pZmljYW50X3N0cmlrZXMgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpKSAlPiUNCiAgYXJyYW5nZSgtdG90YWxfc2lnbmlmaWNhbnRfc3RyaWtlcykgJT4lDQogIGhlYWQoKQ0KYGBgDQpCZXN0IEtPZXINCg0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoa25vY2tkb3duX3JhdGUgPSBzdW0oa25vY2tkb3ducykgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKGtub2NrZG93bl9yYXRlKSkgJT4lDQogIGhlYWQoKQ0KYGBgDQogQmVzdCBTdHJpa2VyIGluIFVGQw0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoc3RyaWtpbmdfZWZmaWNpZW5jeSA9IHN1bShzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCkgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKHN0cmlraW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCkJlc3QgR3JhcHBsZXIgaW4gVUZDDQoNCmBgYHtyfQ0KdWZjX3N0YXRzICU+JQ0KICBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKGdyYXBwbGluZ19lZmZpY2llbmN5ID0gc3VtKHRha2Vkb3duX3N1Y2Nlc3NmdWwpIC8gc3VtKHRha2Vkb3duX2F0dGVtcHRlZCkpICU+JQ0KICBhcnJhbmdlKGRlc2MoZ3JhcHBsaW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCg0KQmVzdCBFbnRlcnRhaW5lciBiYXNlZCBvbiBLTw0KDQpgYGB7cn0NCnVmY19zdGF0cyAlPiUNCiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lDQogIHN1bW1hcmlzZShlbnRlcnRhaW5tZW50X3Njb3JlID0gDQogICAgKGtub2NrZG93bnMgKyBzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCAtIHNpZ25pZmljYW50X3N0cmlrZXNfYXR0ZW1wdGVkICsgc3VibWlzc2lvbl9hdHRlbXB0KSAvIDQpICU+JQ0KICBhcnJhbmdlKGRlc2MoZW50ZXJ0YWlubWVudF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2UocHB2X2ltcGFjdF9zY29yZSA9IA0KICAgIChrbm9ja2Rvd25zICsgc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQgKyB0YWtlZG93bl9zdWNjZXNzZnVsICsgKDEgLSB0YWtlZG93bl9yYXRlKSAqIDEwKSAvIDQgKw0KICAgIHN1bShhdHRlbmRhbmNlKSAvIDEwMDApICU+JQ0KICBhcnJhbmdlKGRlc2MocHB2X2ltcGFjdF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuDQo=</div>
 
 
 
