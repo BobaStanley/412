@@ -72,6 +72,56 @@ ufc_stats %>%
   arrange(desc(ppv_impact_score)) %>%
   head()
 ```
+Best PPV seller based on Revenue per fight
+```{r}
+ufc_stats <- ufc_stats %>%
+  mutate(ppv_revenue_per_fight = (attendance * 59.99) / n())
+
+best_ppv_seller_per_fight <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(avg_ppv_revenue_per_fight = mean(ppv_revenue_per_fight)) %>%
+  arrange(desc(avg_ppv_revenue_per_fight))
+
+# Print the top fighter
+print(best_ppv_seller_per_fight$fighter[1])
+```
+Best PPV seller overall
+```{r}
+ufc_stats <- ufc_stats %>%
+  mutate(ppv_revenue = attendance * 59.99)
+
+best_ppv_seller <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(total_ppv_revenue = sum(ppv_revenue)) %>%
+  arrange(desc(total_ppv_revenue)) %>%
+  head(1)
+
+# Print the fighter with the highest total PPV revenue
+print(best_ppv_seller)
+```
+
+Greatest of All Time
+
+```{r}
+ufc_stats_filtered <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(
+    total_wins = sum(winner == "W"),
+    total_losses = sum(winner == "L"),
+    win_loss_ratio = total_wins / (total_wins + total_losses),
+    avg_opponent_wins = mean(ifelse(winner == "W", head(total_wins, -1), 0)),
+    avg_opponent_losses = mean(ifelse(winner == "L", head(total_losses, -1), 0)),
+    total_fights = n()
+  ) %>%
+  filter(total_fights >= 10)  # Filter for fighters with at least 10 fights
+
+goat_filtered <- ufc_stats_filtered %>%
+  arrange(desc(win_loss_ratio), desc(avg_opponent_wins)) %>%
+  head(1)
+
+# Print the fighter with the highest win-loss ratio and average opponent wins
+print(goat_filtered)
+```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 

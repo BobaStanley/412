@@ -1923,6 +1923,83 @@ When switching from `summarise()` to `reframe()`, remember that `reframe()` alwa
 <!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Best PPV seller based on Revenue per fight</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzIDwtIHVmY19zdGF0cyAlPiVcbiAgbXV0YXRlKHBwdl9yZXZlbnVlX3Blcl9maWdodCA9IChhdHRlbmRhbmNlICogNTkuOTkpIC8gbigpKVxuXG5iZXN0X3Bwdl9zZWxsZXJfcGVyX2ZpZ2h0IDwtIHVmY19zdGF0cyAlPiVcbiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lXG4gIHN1bW1hcmlzZShhdmdfcHB2X3JldmVudWVfcGVyX2ZpZ2h0ID0gbWVhbihwcHZfcmV2ZW51ZV9wZXJfZmlnaHQpKSAlPiVcbiAgYXJyYW5nZShkZXNjKGF2Z19wcHZfcmV2ZW51ZV9wZXJfZmlnaHQpKVxuXG4jIFByaW50IHRoZSB0b3AgZmlnaHRlclxucHJpbnQoYmVzdF9wcHZfc2VsbGVyX3Blcl9maWdodCRmaWdodGVyWzFdKVxuYGBgIn0= -->
+<pre class="r"><code>ufc_stats &lt;- ufc_stats %&gt;%
+  mutate(ppv_revenue_per_fight = (attendance * 59.99) / n())
+
+best_ppv_seller_per_fight &lt;- ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(avg_ppv_revenue_per_fight = mean(ppv_revenue_per_fight)) %&gt;%
+  arrange(desc(avg_ppv_revenue_per_fight))
+
+# Print the top fighter
+print(best_ppv_seller_per_fight$fighter[1])</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiQ2hhcmxpZSBWYWxlbmNpYVwiXG4ifQ== -->
+<pre><code>[1] &quot;Charlie Valencia&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Best PPV seller overall</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzIDwtIHVmY19zdGF0cyAlPiVcbiAgbXV0YXRlKHBwdl9yZXZlbnVlID0gYXR0ZW5kYW5jZSAqIDU5Ljk5KVxuXG5iZXN0X3Bwdl9zZWxsZXIgPC0gdWZjX3N0YXRzICU+JVxuICBncm91cF9ieShmaWdodGVyKSAlPiVcbiAgc3VtbWFyaXNlKHRvdGFsX3Bwdl9yZXZlbnVlID0gc3VtKHBwdl9yZXZlbnVlKSkgJT4lXG4gIGFycmFuZ2UoZGVzYyh0b3RhbF9wcHZfcmV2ZW51ZSkpICU+JVxuICBoZWFkKDEpXG5cbiMgUHJpbnQgdGhlIGZpZ2h0ZXIgd2l0aCB0aGUgaGlnaGVzdCB0b3RhbCBQUFYgcmV2ZW51ZVxucHJpbnQoYmVzdF9wcHZfc2VsbGVyKVxuYGBgIn0= -->
+<pre class="r"><code>ufc_stats &lt;- ufc_stats %&gt;%
+  mutate(ppv_revenue = attendance * 59.99)
+
+best_ppv_seller &lt;- ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(total_ppv_revenue = sum(ppv_revenue)) %&gt;%
+  arrange(desc(total_ppv_revenue)) %&gt;%
+  head(1)
+
+# Print the fighter with the highest total PPV revenue
+print(best_ppv_seller)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6Miwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyIxIMOXIDIiXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFRc1U3RE1CQzlPREZWSTdXQStBRkdCcElGQmxZa0JDdUNJblZBcWt4NlRTMkNIVGxPWWVRYitCcStqTEhsbk5wUzVSdnNkODkzNys3NTZXNStsYzl6QUVnaFN4TklPVUhnTDdQNzRnWWdZNVFra01IWTNWOVVkRWJBa1NjSEQ2Y1BxRTJOM2ZtekxSNGxHb05FVGwzQjdZKzYvSDI5K0l1VXVCSWYySGtWNXNuUlN0WnJpeWFJV20xRnMyamJ6Y0xnQmxXUGtjalk2TTh5Q0UyYzBEY2RPNHA0V3RXSXJvdDJ6cGZDaW5KbHFKK3liZFF5MHEyVldsRVRjNFo1MUp5WWlEanVsZHRrV1ZUclhyMFgxMjdBOEx5UGljZkpBV2I3a1d6bnBiaVhPa0pWUzRWaDkwYThZZU9US1RrZURKZXRrY29HSjhSMjVmQmJnYWwwRTVqQkcyei9BZkI3UFRQbkFRQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["fighter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total_ppv_revenue"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Georges St-Pierre","2":"77302574"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Greatest of All Time</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudWZjX3N0YXRzX2ZpbHRlcmVkIDwtIHVmY19zdGF0cyAlPiVcbiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lXG4gIHN1bW1hcmlzZShcbiAgICB0b3RhbF93aW5zID0gc3VtKHdpbm5lciA9PSBcIldcIiksXG4gICAgdG90YWxfbG9zc2VzID0gc3VtKHdpbm5lciA9PSBcIkxcIiksXG4gICAgd2luX2xvc3NfcmF0aW8gPSB0b3RhbF93aW5zIC8gKHRvdGFsX3dpbnMgKyB0b3RhbF9sb3NzZXMpLFxuICAgIGF2Z19vcHBvbmVudF93aW5zID0gbWVhbihpZmVsc2Uod2lubmVyID09IFwiV1wiLCBoZWFkKHRvdGFsX3dpbnMsIC0xKSwgMCkpLFxuICAgIGF2Z19vcHBvbmVudF9sb3NzZXMgPSBtZWFuKGlmZWxzZSh3aW5uZXIgPT0gXCJMXCIsIGhlYWQodG90YWxfbG9zc2VzLCAtMSksIDApKSxcbiAgICB0b3RhbF9maWdodHMgPSBuKClcbiAgKSAlPiVcbiAgZmlsdGVyKHRvdGFsX2ZpZ2h0cyA+PSAxMCkgICMgRmlsdGVyIGZvciBmaWdodGVycyB3aXRoIGF0IGxlYXN0IDEwIGZpZ2h0c1xuXG5nb2F0X2ZpbHRlcmVkIDwtIHVmY19zdGF0c19maWx0ZXJlZCAlPiVcbiAgYXJyYW5nZShkZXNjKHdpbl9sb3NzX3JhdGlvKSwgZGVzYyhhdmdfb3Bwb25lbnRfd2lucykpICU+JVxuICBoZWFkKDEpXG5cbiMgUHJpbnQgdGhlIGZpZ2h0ZXIgd2l0aCB0aGUgaGlnaGVzdCB3aW4tbG9zcyByYXRpbyBhbmQgYXZlcmFnZSBvcHBvbmVudCB3aW5zXG5wcmludChnb2F0X2ZpbHRlcmVkKVxuYGBgIn0= -->
+<pre class="r"><code>ufc_stats_filtered &lt;- ufc_stats %&gt;%
+  group_by(fighter) %&gt;%
+  summarise(
+    total_wins = sum(winner == &quot;W&quot;),
+    total_losses = sum(winner == &quot;L&quot;),
+    win_loss_ratio = total_wins / (total_wins + total_losses),
+    avg_opponent_wins = mean(ifelse(winner == &quot;W&quot;, head(total_wins, -1), 0)),
+    avg_opponent_losses = mean(ifelse(winner == &quot;L&quot;, head(total_losses, -1), 0)),
+    total_fights = n()
+  ) %&gt;%
+  filter(total_fights &gt;= 10)  # Filter for fighters with at least 10 fights
+
+goat_filtered &lt;- ufc_stats_filtered %&gt;%
+  arrange(desc(win_loss_ratio), desc(avg_opponent_wins)) %&gt;%
+  head(1)
+
+# Print the fighter with the highest win-loss ratio and average opponent wins
+print(goat_filtered)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyIxIMOXIDciXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFSUVU3RE1CRGNKQTFXQTVTaWZvQVBOQmVFeEExVlFqd0FnZFJiNUtadWF1SGFrZTFTeEFYZXdndDVRY3ZhdFVXYWxSTHZ6R2JYTTV2bngvbHRNUzhBSUlOQmxrQ1dZd3I1Njh2VDlCNWdrQ0pJWUFCRGQzN2dSeE5NQ0Q3alR1Rjh0dUg2WmlZVzlKTWp2UFNsNHhsekZ5T1hQL3dDZFBHWHgrUW5ZdmlQenB3VEhibWtHMmFDQmhKSXN1TE4yaklkWUdHVnBhTGFjV2tDYzNGa2hES0dSVzZFZGM5VW1scXVBbnROMzV0S3RhMlNUTnJ1aU1sSjRXUlNtTzVGbUo3ZW9WYTdNbXAycHRKdmZCMHcrc1pxUVUwMEZzbGlTUzB0VnhyN0VlMTdMVVMxS0J3VlF1citUTjVyVG5TUHVOcEtwMlE1cmRkYitUYTljeGQwMWg1WG5uUnljcnd5UFlSUmVSaDF4bVRESll2YUJWMHdFZmVLanIzaHN0VmMydWdFV1ZQNlJVV21WaUl5M2h2cy93QndrRGN2a0FJQUFBPT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["fighter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total_wins"],"name":[2],"type":["int"],"align":["right"]},{"label":["total_losses"],"name":[3],"type":["int"],"align":["right"]},{"label":["win_loss_ratio"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["avg_opponent_wins"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["avg_opponent_losses"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["total_fights"],"name":[7],"type":["int"],"align":["right"]}],"data":[{"1":"Amir Albazi","2":"13","3":"0","4":"1","5":"NA","6":"0","7":"13"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the
 toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
 <p>When you save the notebook, an HTML file containing the code and
@@ -1934,7 +2011,7 @@ run any R code chunks. Instead, the output of the chunk when it was last
 run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZpbmFsIFByb2plY3QiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmBgYA0KDQpgYGB7cn0NCnVmY19zdGF0cw0KYGBgDQotIGNyZWF0ZSBhIGNzdiBmaWxlLCBqdXN0IGluIGNhc2UNCmBgYHtyfQ0Kd3JpdGUuY3N2KHVmY19zdGF0cyxmaWxlPSJ1ZmNfc3RhdHMuY3N2IikNCmBgYA0KDQpXaG8gaGFzIHRoZSBtb3N0IHNpZ25pZmljYW50IHN0cmlrZXMgaW4gVUZDPyANCmBgYHtyfQ0KdWZjX3N0YXRzICU+JSBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHRvdGFsX3NpZ25pZmljYW50X3N0cmlrZXMgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpKSAlPiUNCiAgYXJyYW5nZSgtdG90YWxfc2lnbmlmaWNhbnRfc3RyaWtlcykgJT4lDQogIGhlYWQoKQ0KYGBgDQpCZXN0IEtPZXINCg0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoa25vY2tkb3duX3JhdGUgPSBzdW0oa25vY2tkb3ducykgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKGtub2NrZG93bl9yYXRlKSkgJT4lDQogIGhlYWQoKQ0KYGBgDQogQmVzdCBTdHJpa2VyIGluIFVGQw0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoc3RyaWtpbmdfZWZmaWNpZW5jeSA9IHN1bShzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCkgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKHN0cmlraW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCkJlc3QgR3JhcHBsZXIgaW4gVUZDDQoNCmBgYHtyfQ0KdWZjX3N0YXRzICU+JQ0KICBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKGdyYXBwbGluZ19lZmZpY2llbmN5ID0gc3VtKHRha2Vkb3duX3N1Y2Nlc3NmdWwpIC8gc3VtKHRha2Vkb3duX2F0dGVtcHRlZCkpICU+JQ0KICBhcnJhbmdlKGRlc2MoZ3JhcHBsaW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCg0KQmVzdCBFbnRlcnRhaW5lciBiYXNlZCBvbiBLTw0KDQpgYGB7cn0NCnVmY19zdGF0cyAlPiUNCiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lDQogIHN1bW1hcmlzZShlbnRlcnRhaW5tZW50X3Njb3JlID0gDQogICAgKGtub2NrZG93bnMgKyBzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCAtIHNpZ25pZmljYW50X3N0cmlrZXNfYXR0ZW1wdGVkICsgc3VibWlzc2lvbl9hdHRlbXB0KSAvIDQpICU+JQ0KICBhcnJhbmdlKGRlc2MoZW50ZXJ0YWlubWVudF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2UocHB2X2ltcGFjdF9zY29yZSA9IA0KICAgIChrbm9ja2Rvd25zICsgc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQgKyB0YWtlZG93bl9zdWNjZXNzZnVsICsgKDEgLSB0YWtlZG93bl9yYXRlKSAqIDEwKSAvIDQgKw0KICAgIHN1bShhdHRlbmRhbmNlKSAvIDEwMDApICU+JQ0KICBhcnJhbmdlKGRlc2MocHB2X2ltcGFjdF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkZpbmFsIFByb2plY3QiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmBgYA0KDQpgYGB7cn0NCnVmY19zdGF0cw0KYGBgDQotIGNyZWF0ZSBhIGNzdiBmaWxlLCBqdXN0IGluIGNhc2UNCmBgYHtyfQ0Kd3JpdGUuY3N2KHVmY19zdGF0cyxmaWxlPSJ1ZmNfc3RhdHMuY3N2IikNCmBgYA0KDQpXaG8gaGFzIHRoZSBtb3N0IHNpZ25pZmljYW50IHN0cmlrZXMgaW4gVUZDPyANCmBgYHtyfQ0KdWZjX3N0YXRzICU+JSBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHRvdGFsX3NpZ25pZmljYW50X3N0cmlrZXMgPSBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQpKSAlPiUNCiAgYXJyYW5nZSgtdG90YWxfc2lnbmlmaWNhbnRfc3RyaWtlcykgJT4lDQogIGhlYWQoKQ0KYGBgDQpCZXN0IEtPZXINCg0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoa25vY2tkb3duX3JhdGUgPSBzdW0oa25vY2tkb3ducykgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKGtub2NrZG93bl9yYXRlKSkgJT4lDQogIGhlYWQoKQ0KYGBgDQogQmVzdCBTdHJpa2VyIGluIFVGQw0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2Uoc3RyaWtpbmdfZWZmaWNpZW5jeSA9IHN1bShzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCkgLyBzdW0oc2lnbmlmaWNhbnRfc3RyaWtlc19hdHRlbXB0ZWQpKSAlPiUNCiAgYXJyYW5nZShkZXNjKHN0cmlraW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCkJlc3QgR3JhcHBsZXIgaW4gVUZDDQoNCmBgYHtyfQ0KdWZjX3N0YXRzICU+JQ0KICBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKGdyYXBwbGluZ19lZmZpY2llbmN5ID0gc3VtKHRha2Vkb3duX3N1Y2Nlc3NmdWwpIC8gc3VtKHRha2Vkb3duX2F0dGVtcHRlZCkpICU+JQ0KICBhcnJhbmdlKGRlc2MoZ3JhcHBsaW5nX2VmZmljaWVuY3kpKSAlPiUNCiAgaGVhZCgpDQpgYGANCg0KQmVzdCBFbnRlcnRhaW5lciBiYXNlZCBvbiBLTw0KDQpgYGB7cn0NCnVmY19zdGF0cyAlPiUNCiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lDQogIHN1bW1hcmlzZShlbnRlcnRhaW5tZW50X3Njb3JlID0gDQogICAgKGtub2NrZG93bnMgKyBzaWduaWZpY2FudF9zdHJpa2VzX2xhbmRlZCAtIHNpZ25pZmljYW50X3N0cmlrZXNfYXR0ZW1wdGVkICsgc3VibWlzc2lvbl9hdHRlbXB0KSAvIDQpICU+JQ0KICBhcnJhbmdlKGRlc2MoZW50ZXJ0YWlubWVudF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KYGBge3J9DQp1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2UocHB2X2ltcGFjdF9zY29yZSA9IA0KICAgIChrbm9ja2Rvd25zICsgc2lnbmlmaWNhbnRfc3RyaWtlc19sYW5kZWQgKyB0YWtlZG93bl9zdWNjZXNzZnVsICsgKDEgLSB0YWtlZG93bl9yYXRlKSAqIDEwKSAvIDQgKw0KICAgIHN1bShhdHRlbmRhbmNlKSAvIDEwMDApICU+JQ0KICBhcnJhbmdlKGRlc2MocHB2X2ltcGFjdF9zY29yZSkpICU+JQ0KICBoZWFkKCkNCmBgYA0KQmVzdCBQUFYgc2VsbGVyIGJhc2VkIG9uIFJldmVudWUgcGVyIGZpZ2h0DQpgYGB7cn0NCnVmY19zdGF0cyA8LSB1ZmNfc3RhdHMgJT4lDQogIG11dGF0ZShwcHZfcmV2ZW51ZV9wZXJfZmlnaHQgPSAoYXR0ZW5kYW5jZSAqIDU5Ljk5KSAvIG4oKSkNCg0KYmVzdF9wcHZfc2VsbGVyX3Blcl9maWdodCA8LSB1ZmNfc3RhdHMgJT4lDQogIGdyb3VwX2J5KGZpZ2h0ZXIpICU+JQ0KICBzdW1tYXJpc2UoYXZnX3Bwdl9yZXZlbnVlX3Blcl9maWdodCA9IG1lYW4ocHB2X3JldmVudWVfcGVyX2ZpZ2h0KSkgJT4lDQogIGFycmFuZ2UoZGVzYyhhdmdfcHB2X3JldmVudWVfcGVyX2ZpZ2h0KSkNCg0KIyBQcmludCB0aGUgdG9wIGZpZ2h0ZXINCnByaW50KGJlc3RfcHB2X3NlbGxlcl9wZXJfZmlnaHQkZmlnaHRlclsxXSkNCmBgYA0KQmVzdCBQUFYgc2VsbGVyIG92ZXJhbGwNCmBgYHtyfQ0KdWZjX3N0YXRzIDwtIHVmY19zdGF0cyAlPiUNCiAgbXV0YXRlKHBwdl9yZXZlbnVlID0gYXR0ZW5kYW5jZSAqIDU5Ljk5KQ0KDQpiZXN0X3Bwdl9zZWxsZXIgPC0gdWZjX3N0YXRzICU+JQ0KICBncm91cF9ieShmaWdodGVyKSAlPiUNCiAgc3VtbWFyaXNlKHRvdGFsX3Bwdl9yZXZlbnVlID0gc3VtKHBwdl9yZXZlbnVlKSkgJT4lDQogIGFycmFuZ2UoZGVzYyh0b3RhbF9wcHZfcmV2ZW51ZSkpICU+JQ0KICBoZWFkKDEpDQoNCiMgUHJpbnQgdGhlIGZpZ2h0ZXIgd2l0aCB0aGUgaGlnaGVzdCB0b3RhbCBQUFYgcmV2ZW51ZQ0KcHJpbnQoYmVzdF9wcHZfc2VsbGVyKQ0KYGBgDQoNCkdyZWF0ZXN0IG9mIEFsbCBUaW1lDQoNCmBgYHtyfQ0KdWZjX3N0YXRzX2ZpbHRlcmVkIDwtIHVmY19zdGF0cyAlPiUNCiAgZ3JvdXBfYnkoZmlnaHRlcikgJT4lDQogIHN1bW1hcmlzZSgNCiAgICB0b3RhbF93aW5zID0gc3VtKHdpbm5lciA9PSAiVyIpLA0KICAgIHRvdGFsX2xvc3NlcyA9IHN1bSh3aW5uZXIgPT0gIkwiKSwNCiAgICB3aW5fbG9zc19yYXRpbyA9IHRvdGFsX3dpbnMgLyAodG90YWxfd2lucyArIHRvdGFsX2xvc3NlcyksDQogICAgYXZnX29wcG9uZW50X3dpbnMgPSBtZWFuKGlmZWxzZSh3aW5uZXIgPT0gIlciLCBoZWFkKHRvdGFsX3dpbnMsIC0xKSwgMCkpLA0KICAgIGF2Z19vcHBvbmVudF9sb3NzZXMgPSBtZWFuKGlmZWxzZSh3aW5uZXIgPT0gIkwiLCBoZWFkKHRvdGFsX2xvc3NlcywgLTEpLCAwKSksDQogICAgdG90YWxfZmlnaHRzID0gbigpDQogICkgJT4lDQogIGZpbHRlcih0b3RhbF9maWdodHMgPj0gMTApICAjIEZpbHRlciBmb3IgZmlnaHRlcnMgd2l0aCBhdCBsZWFzdCAxMCBmaWdodHMNCg0KZ29hdF9maWx0ZXJlZCA8LSB1ZmNfc3RhdHNfZmlsdGVyZWQgJT4lDQogIGFycmFuZ2UoZGVzYyh3aW5fbG9zc19yYXRpbyksIGRlc2MoYXZnX29wcG9uZW50X3dpbnMpKSAlPiUNCiAgaGVhZCgxKQ0KDQojIFByaW50IHRoZSBmaWdodGVyIHdpdGggdGhlIGhpZ2hlc3Qgd2luLWxvc3MgcmF0aW8gYW5kIGF2ZXJhZ2Ugb3Bwb25lbnQgd2lucw0KcHJpbnQoZ29hdF9maWx0ZXJlZCkNCmBgYA0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuDQo=</div>
 
 
 
