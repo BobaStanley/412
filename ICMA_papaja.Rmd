@@ -110,10 +110,29 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 # Results
 (ref:chick-time-caption) Each Chick's weight in grams (y-axis) over time (x-axis), with each chick a separate line
+
+(ref:wgt-over-tm-cap) Chick weight in grams(x - axis) over time (y- axis), where time is mesured in days. Each Chick is represented as a separate line. In general, chicks' weight tended to increase over time. 
 ```{r, fig.cap= "(ref:chick-time-caption)", fight.aligh = "left", out.width = "50%"}
 ChickWeight %>%
   ggplot(aes(y= weight, x= Time, group = Chick, color = Diet)) +
   geom_line()
+```
+```{r plt-wgt-over-tm, fig.cap= "(ref:wgt-over-tm-cap)", out.height = "25%", fig.align = "center"}
+ChickWeight %>%
+  ggplot(aes(y= weight, x= Time, group = Chick, color = Diet)) +
+  geom_line()+
+  theme(
+    panel.grid.major.x = element_blank()
+  )
+
+```
+
+```{r}
+ChickWeight %>%
+  group_by(Diet, Time)%>%
+  summarise(mean_weight = mean(weight)) %>%
+  pivot_wider(values_from = mean_weight, names_from = Diet)%>%
+  knitr::kable(digits = 2, align= "c")
 ```
 
 # Discussion
