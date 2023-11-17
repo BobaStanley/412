@@ -35,12 +35,41 @@ ufc_stats %>%
   arrange(desc(knockdown_rate)) %>%
   head()
 ```
-
+ Best Striker in UFC
 ```{r}
 ufc_stats %>%
   group_by(fighter) %>%
   summarise(striking_efficiency = sum(significant_strikes_landed) / sum(significant_strikes_attempted)) %>%
   arrange(desc(striking_efficiency)) %>%
+  head()
+```
+Best Grappler in UFC
+
+```{r}
+ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(grappling_efficiency = sum(takedown_successful) / sum(takedown_attempted)) %>%
+  arrange(desc(grappling_efficiency)) %>%
+  head()
+```
+
+Best Entertainer based on KO
+
+```{r}
+ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(entertainment_score = 
+    (knockdowns + significant_strikes_landed - significant_strikes_attempted + submission_attempt) / 4) %>%
+  arrange(desc(entertainment_score)) %>%
+  head()
+```
+```{r}
+ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(ppv_impact_score = 
+    (knockdowns + significant_strikes_landed + takedown_successful + (1 - takedown_rate) * 10) / 4 +
+    sum(attendance) / 1000) %>%
+  arrange(desc(ppv_impact_score)) %>%
   head()
 ```
 
