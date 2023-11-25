@@ -457,10 +457,281 @@ This project delves into an in-depth analysis of UFC fighter statistics to ident
 \hypertarget{data-analysis}{%
 \subsection{Data analysis}\label{data-analysis}}
 
-We used R (Version 4.3.1; R Core Team, 2023) and the R-packages \emph{papaja} (Version 0.1.2; Aust \& Barth, 2023), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
+We used R (Version 4.3.1; R Core Team, 2023) and the R-packages \emph{dplyr} (Version 1.1.3; Wickham, François, Henry, Müller, \& Vaughan, 2023), \emph{forcats} (Version 1.0.0; Wickham, 2023), \emph{ggplot2} (Version 3.4.3; Wickham, 2016), \emph{lubridate} (Version 1.9.2; Grolemund \& Wickham, 2011), \emph{papaja} (Version 0.1.2; Aust \& Barth, 2023), \emph{purrr} (Version 1.0.2; Wickham \& Henry, 2023), \emph{readr} (Version 2.1.4; Wickham, Hester, \& Bryan, 2023), \emph{stringr} (Version 1.5.0; Wickham, 2022), \emph{tibble} (Version 3.2.1; Müller \& Wickham, 2023), \emph{tidyr} (Version 1.3.0; Wickham, Vaughan, \& Girlich, 2023), \emph{tidyverse} (Version 2.0.0; Wickham et al., 2019), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
+
+\hypertarget{planned-analysis}{%
+\subsection{Planned Analysis}\label{planned-analysis}}
+
+Our analysis focused on several key aspects of UFC fighter performance, including:
+
+\begin{itemize}
+\item
+  \textbf{Best Striker:} We calculated the total significant strikes landed for each fighter and identified the top performers.
+\item
+  \textbf{Best Grappler:} Utilizing the grappling efficiency metric, we determined the fighters with the highest success rate in takedowns.
+\item
+  \textbf{Best KOer:} We considered knockdowns, significant strikes, and other metrics to identify fighters with exceptional knockout abilities.
+\item
+  \textbf{Best Entertainer:} A composite metric, combining significant strikes, takedowns, and knockdowns, helped us identify fighters who entertain the audience.
+\item
+  \textbf{Best PPV Seller:} We calculated the average PPV revenue per fight for each fighter, focusing on financial success.
+\item
+  \textbf{Greatest of All Time (GOAT):} Based on win-loss ratio and total wins, we identified the top fighters with at least 15 fights.
+\end{itemize}
+
+\hypertarget{planned-figure-and-table}{%
+\subsection{Planned Figure and Table}\label{planned-figure-and-table}}
+
+\emph{Figure: Top 20 GOAT (Win-Loss Ratio and Total Wins)}
+
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\emph{Figure: Top 20 Entertainers}
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\emph{Figure: Top 20 PPV Seller}
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-3-1.pdf}
+\emph{Figure: Top 20 Koer}
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-4-1.pdf}
+\emph{Figure: Top 20 Striker}
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-5-1.pdf}
+\emph{Figure: Top 20 Grapplers}
+\includegraphics{Into-the-UFC--outline-_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\emph{Table KOer}
+
+\begin{tabular}{c|c}
+\hline
+fighter & total\_knockdowns\\
+\hline
+Donald Cerrone & 20\\
+\hline
+Jeremy Stephens & 19\\
+\hline
+Anderson Silva & 18\\
+\hline
+Edson Barboza & 16\\
+\hline
+Chuck Liddell & 14\\
+\hline
+Junior Dos Santos & 14\\
+\hline
+Lyoto Machida & 14\\
+\hline
+Mauricio Rua & 14\\
+\hline
+Thiago Santos & 14\\
+\hline
+Anthony Johnson & 13\\
+\hline
+Conor McGregor & 13\\
+\hline
+Dustin Poirier & 13\\
+\hline
+Israel Adesanya & 13\\
+\hline
+Melvin Guillard & 13\\
+\hline
+Thiago Alves & 13\\
+\hline
+Vitor Belfort & 13\\
+\hline
+John Lineker & 12\\
+\hline
+Khalil Rountree Jr. & 12\\
+\hline
+Marlon Vera & 12\\
+\hline
+Nate Marquardt & 12\\
+\hline
+\end{tabular}
+
+\emph{Table Striker}
+
+\begin{tabular}{c|c}
+\hline
+fighter & striking\_efficiency\\
+\hline
+Andy Anderson & 1\\
+\hline
+Bill Mahood & 1\\
+\hline
+Brendon Marotte & 1\\
+\hline
+Cory Walmsley & 1\\
+\hline
+Derek Downey & 1\\
+\hline
+Dmitri Stepanov & 1\\
+\hline
+\end{tabular}
+
+\emph{Table for Grappler}
+
+\begin{tabular}{c|c}
+\hline
+fighter & grappling\_efficiency\\
+\hline
+Aaron Wilkinson & 1\\
+\hline
+Abdul-Kerim Edilov & 1\\
+\hline
+Akbarh Arreola & 1\\
+\hline
+Alex Pereira & 1\\
+\hline
+Allen Berube & 1\\
+\hline
+Amar Suloev & 1\\
+\hline
+\end{tabular}
+
+\emph{Table for PPV Seller}
+
+\begin{tabular}{c|c}
+\hline
+fighter & total\_ppv\_revenue\\
+\hline
+Georges St-Pierre & 77302574\\
+\hline
+Michael Bisping & 61136589\\
+\hline
+BJ Penn & 55079938\\
+\hline
+Randy Couture & 44891237\\
+\hline
+Urijah Faber & 43629287\\
+\hline
+Thales Leites & 41445831\\
+\hline
+Rory MacDonald & 37295483\\
+\hline
+Patrick Cote & 36811364\\
+\hline
+Fabricio Werdum & 36304568\\
+\hline
+Daniel Cormier & 35437113\\
+\hline
+Josh Koscheck & 35358286\\
+\hline
+Mark Bocek & 35245685\\
+\hline
+Rich Franklin & 34447098\\
+\hline
+Dennis Siver & 33712580\\
+\hline
+Rick Story & 33650671\\
+\hline
+Phil Davis & 32550334\\
+\hline
+John Lineker & 32160399\\
+\hline
+Matt Hughes & 31857809\\
+\hline
+Frank Mir & 30972597\\
+\hline
+Sergio Moraes & 30588181\\
+\hline
+\end{tabular}
+
+\emph{Table for Entertainer}
+
+\begin{tabular}{c|c}
+\hline
+fighter & entertainment\_metric\\
+\hline
+Max Holloway & 3205\\
+\hline
+Frankie Edgar & 1874\\
+\hline
+Rafael Dos Anjos & 1850\\
+\hline
+Angela Hill & 1832\\
+\hline
+Donald Cerrone & 1772\\
+\hline
+Joanna Jedrzejczyk & 1759\\
+\hline
+Sean Strickland & 1732\\
+\hline
+Dustin Poirier & 1678\\
+\hline
+Bobby Green & 1673\\
+\hline
+Michael Bisping & 1593\\
+\hline
+Jessica Andrade & 1577\\
+\hline
+Nate Diaz & 1562\\
+\hline
+Alexander Volkanovski & 1538\\
+\hline
+Jon Jones & 1512\\
+\hline
+Tim Means & 1467\\
+\hline
+Andrei Arlovski & 1462\\
+\hline
+Cub Swanson & 1461\\
+\hline
+Alex Caceres & 1450\\
+\hline
+Edson Barboza & 1437\\
+\hline
+Neil Magny & 1414\\
+\hline
+\end{tabular}
+
+\emph{Table for the GOAT}
+
+\begin{tabular}{c|c|c|c|c}
+\hline
+fighter & total\_wins & total\_losses & total\_fights & win\_loss\_ratio\\
+\hline
+Jon Jones & 70 & 1 & 23 & 0.99\\
+\hline
+Georges St-Pierre & 69 & 2 & 22 & 0.97\\
+\hline
+Amanda Nunes & 42 & 5 & 18 & 0.89\\
+\hline
+Leon Edwards & 47 & 6 & 16 & 0.89\\
+\hline
+Belal Muhammad & 45 & 7 & 18 & 0.87\\
+\hline
+Dong Hyun Kim & 36 & 6 & 18 & 0.86\\
+\hline
+Ryan Bader & 40 & 7 & 20 & 0.85\\
+\hline
+Demetrious Johnson & 56 & 10 & 18 & 0.85\\
+\hline
+Kamaru Usman & 53 & 10 & 17 & 0.84\\
+\hline
+Curtis Blaydes & 31 & 6 & 17 & 0.84\\
+\hline
+Beneil Dariush & 36 & 7 & 22 & 0.84\\
+\hline
+Aljamain Sterling & 45 & 9 & 19 & 0.83\\
+\hline
+Cain Velasquez & 24 & 5 & 15 & 0.83\\
+\hline
+Jon Fitch & 38 & 9 & 18 & 0.81\\
+\hline
+Matt Hughes & 41 & 10 & 25 & 0.80\\
+\hline
+Colby Covington & 42 & 11 & 15 & 0.79\\
+\hline
+Sean Strickland & 48 & 13 & 20 & 0.79\\
+\hline
+Robert Whittaker & 47 & 13 & 20 & 0.78\\
+\hline
+Stipe Miocic & 36 & 10 & 18 & 0.78\\
+\hline
+Valentina Shevchenko & 43 & 12 & 16 & 0.78\\
+\hline
+\end{tabular}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -478,8 +749,38 @@ Aust, F., \& Barth, M. (2023). \emph{{papaja}: {Prepare} reproducible {APA} jour
 \leavevmode\vadjust pre{\hypertarget{ref-R-tinylabels}{}}%
 Barth, M. (2023). \emph{{tinylabels}: Lightweight variable labels}. Retrieved from \url{https://cran.r-project.org/package=tinylabels}
 
+\leavevmode\vadjust pre{\hypertarget{ref-R-lubridate}{}}%
+Grolemund, G., \& Wickham, H. (2011). Dates and times made easy with {lubridate}. \emph{Journal of Statistical Software}, \emph{40}(3), 1--25. Retrieved from \url{https://www.jstatsoft.org/v40/i03/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-tibble}{}}%
+Müller, K., \& Wickham, H. (2023). \emph{Tibble: Simple data frames}. Retrieved from \url{https://CRAN.R-project.org/package=tibble}
+
 \leavevmode\vadjust pre{\hypertarget{ref-R-base}{}}%
 R Core Team. (2023). \emph{R: A language and environment for statistical computing}. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from \url{https://www.R-project.org/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-ggplot2}{}}%
+Wickham, H. (2016). \emph{ggplot2: Elegant graphics for data analysis}. Springer-Verlag New York. Retrieved from \url{https://ggplot2.tidyverse.org}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-stringr}{}}%
+Wickham, H. (2022). \emph{Stringr: Simple, consistent wrappers for common string operations}. Retrieved from \url{https://CRAN.R-project.org/package=stringr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-forcats}{}}%
+Wickham, H. (2023). \emph{Forcats: Tools for working with categorical variables (factors)}. Retrieved from \url{https://CRAN.R-project.org/package=forcats}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-tidyverse}{}}%
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D., François, R., \ldots{} Yutani, H. (2019). Welcome to the {tidyverse}. \emph{Journal of Open Source Software}, \emph{4}(43), 1686. \url{https://doi.org/10.21105/joss.01686}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-dplyr}{}}%
+Wickham, H., François, R., Henry, L., Müller, K., \& Vaughan, D. (2023). \emph{Dplyr: A grammar of data manipulation}. Retrieved from \url{https://CRAN.R-project.org/package=dplyr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-purrr}{}}%
+Wickham, H., \& Henry, L. (2023). \emph{Purrr: Functional programming tools}. Retrieved from \url{https://CRAN.R-project.org/package=purrr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-readr}{}}%
+Wickham, H., Hester, J., \& Bryan, J. (2023). \emph{Readr: Read rectangular text data}. Retrieved from \url{https://CRAN.R-project.org/package=readr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-tidyr}{}}%
+Wickham, H., Vaughan, D., \& Girlich, M. (2023). \emph{Tidyr: Tidy messy data}. Retrieved from \url{https://CRAN.R-project.org/package=tidyr}
 
 \end{CSLReferences}
 

@@ -26,7 +26,6 @@ ufc_stats %>% group_by(fighter) %>%
   arrange(-total_significant_strikes) %>%
   head()
 ```
-Best KOer
 
 ```{r}
 ufc_stats %>%
@@ -34,6 +33,21 @@ ufc_stats %>%
   summarise(knockdown_rate = sum(knockdowns) / sum(significant_strikes_attempted)) %>%
   arrange(desc(knockdown_rate)) %>%
   head()
+```
+
+Best KOer
+
+```{r}
+# Identifying Best KOers
+best_koer_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(total_knockdowns = sum(knockdowns)) %>%
+  arrange(desc(total_knockdowns)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 KOers
+
+# Print the data for the top 20 KOers
+print(best_koer_data)
+
 ```
  Best Striker in UFC
 ```{r}
