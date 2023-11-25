@@ -49,8 +49,10 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
+library("tidyverse")
 r_refs("r-references.bib")
 ```
+
 
 ```{r analysis-preferences}
 # Seed for random number generation
@@ -158,6 +160,54 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 
 # Results
+## Planned Analysis
+
+Our analysis focused on several key aspects of UFC fighter performance, including:
+
+- **Best Striker:** We calculated the total significant strikes landed for each fighter and identified the top performers.
+
+- **Best Grappler:** Utilizing the grappling efficiency metric, we determined the fighters with the highest success rate in takedowns.
+
+- **Best KOer:** We considered knockdowns, significant strikes, and other metrics to identify fighters with exceptional knockout abilities.
+
+- **Best Entertainer:** A composite metric, combining significant strikes, takedowns, and knockdowns, helped us identify fighters who entertain the audience.
+
+- **Best PPV Seller:** We calculated the average PPV revenue per fight for each fighter, focusing on financial success.
+
+- **Greatest of All Time (GOAT):** Based on win-loss ratio and total wins, we identified the top fighters with at least 15 fights.
+
+## Planned Figure and Table
+### Figure: Top 20 GOAT (Win-Loss Ratio and Total Wins)
+
+```{r, echo=TRUE, results='hide', message=FALSE}
+# Filter and Calculate GOAT Metrics
+ufc_stats_filtered <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(
+    total_wins = sum(winner == "W"),
+    total_losses = sum(winner == "L"),
+    total_fights = n_distinct(id)
+  ) %>%
+  filter(total_fights >= 15)  # Adjust the minimum number of fights as needed
+
+ufc_stats_filtered <- ufc_stats_filtered %>%
+  mutate(win_loss_ratio = total_wins / (total_wins + total_losses))
+
+# Identify Top 20 GOAT
+top_20_goat_filtered <- ufc_stats_filtered %>%
+  arrange(desc(win_loss_ratio), desc(total_wins)) %>%
+  head(20)
+```
+
+```{r}
+# Plot the Top 20 GOAT as a bar plot
+ggplot(top_20_goat_filtered, aes(x = reorder(fighter, -win_loss_ratio), y = win_loss_ratio)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Top 20 GOAT (Based on Win-Loss Ratio and Total Wins)", x = "Fighter", y = "Win-Loss Ratio") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
 
 # Discussion
 

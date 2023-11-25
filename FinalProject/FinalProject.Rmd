@@ -53,15 +53,17 @@ ufc_stats %>%
   head()
 ```
 
-Best Entertainer based on KO
+Best Entertainer 
 
 ```{r}
-ufc_stats %>%
+best_entertainer_data <- ufc_stats %>%
   group_by(fighter) %>%
-  summarise(entertainment_score = 
-    (knockdowns + significant_strikes_landed - significant_strikes_attempted + submission_attempt) / 4) %>%
-  arrange(desc(entertainment_score)) %>%
-  head()
+  summarise(entertainment_metric = sum(significant_strikes_landed) + sum(takedown_successful) + sum(knockdowns)) %>%
+  arrange(desc(entertainment_metric)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 entertainers
+
+# Print the top entertainers
+print(best_entertainer_data)
 ```
 ```{r}
 ufc_stats %>%
@@ -71,27 +73,6 @@ ufc_stats %>%
     sum(attendance) / 1000) %>%
   arrange(desc(ppv_impact_score)) %>%
   head()
-```
-Best PPV seller based on Revenue per fight
-```{r}
-ufc_stats_filtered <- ufc_stats %>%
-  group_by(fighter) %>%
-  summarise(
-    total_wins = sum(winner == "W"),
-    total_losses = sum(winner == "L"),
-    total_fights = n_distinct(id)
-  ) %>%
-  filter(total_fights >= 5)  # Adjust the minimum number of fights as needed
-
-ufc_stats_filtered <- ufc_stats_filtered %>%
-  mutate(win_loss_ratio = total_wins / (total_wins + total_losses))
-
-goat_filtered <- ufc_stats_filtered %>%
-  arrange(desc(win_loss_ratio), desc(total_wins)) %>%
-  head(1)
-
-# Print the fighter with the best overall record
-print(goat_filtered)
 ```
 Best PPV seller overall
 ```{r}
@@ -108,30 +89,6 @@ best_ppv_seller <- ufc_stats %>%
 print(best_ppv_seller)
 ```
 
-Greatest of All Time
-
-```{r}
-ufc_stats_filtered <- ufc_stats %>%
-  group_by(fighter, fight_date) %>%
-  summarise(
-    total_wins = sum(winner == "W"),
-    total_losses = sum(winner == "L"),
-    total_fights = n_distinct(id)
-  ) %>%
-  group_by(fighter) %>%
-  summarise(
-    win_loss_ratio = total_wins / (total_wins + total_losses),
-    avg_opponent_wins = ifelse(total_fights > 1, mean(na.omit(total_wins)), 0),
-    total_fights = sum(total_fights)
-  ) %>%
-  filter(total_fights >= 15)
-
-ranked_fighters <- ufc_stats_filtered %>%
-  arrange(desc(win_loss_ratio), desc(avg_opponent_wins))
-
-# Print the ranked list of fighters
-print(ranked_fighters)
-```
 ```{r}
 ufc_stats_filtered <- ufc_stats %>%
   group_by(fighter) %>%
@@ -151,6 +108,131 @@ goat_filtered <- ufc_stats_filtered %>%
 
 # Print the fighter with the best overall record
 print(goat_filtered)
+```
+
+Graph for best Grappler
+
+```{r}
+# Identifying Best Grapplers
+best_grappler_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(grappling_efficiency = sum(takedown_successful) / sum(takedown_attempted)) %>%
+  arrange(desc(grappling_efficiency)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 grapplers
+
+# Plot the Best Grappler (Top 20)
+ggplot(best_grappler_data, aes(x = reorder(fighter, -grappling_efficiency), y = grappling_efficiency)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Best Grappler (Grappling Efficiency) - Top 20", x = "Fighter", y = "Grappling Efficiency") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+Best Striker graph
+
+```{r}
+# Identifying Best Strikers
+best_striker_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(significant_strikes_rate = sum(significant_strikes_landed) / sum(significant_strikes_attempted)) %>%
+  arrange(desc(significant_strikes_rate)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 strikers
+
+# Plot the Best Striker (Top 20)
+ggplot(best_striker_data, aes(x = reorder(fighter, -significant_strikes_rate), y = significant_strikes_rate)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Best Striker (Significant Strikes Rate) - Top 20", x = "Fighter", y = "Significant Strikes Rate") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+Best KOer
+
+
+```{r}
+# Identifying Best KOers
+best_koer_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(total_knockdowns = sum(knockdowns)) %>%
+  arrange(desc(total_knockdowns)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 KOers
+
+# Plot the Best KOer (Top 20)
+ggplot(best_koer_data, aes(x = reorder(fighter, -total_knockdowns), y = total_knockdowns)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Best KOer (Total Knockdowns) - Top 20", x = "Fighter", y = "Total Knockdowns") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+```{r}
+# Identify Overall Best PPV Seller
+best_ppv_seller_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(total_ppv_revenue = sum(attendance * 59.99)) %>%
+  arrange(desc(total_ppv_revenue)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 PPV sellers
+
+# Plot the Best PPV Sellers (Top 20)
+ggplot(best_ppv_seller_data, aes(x = reorder(fighter, -total_ppv_revenue), y = total_ppv_revenue)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Best PPV Seller (Total PPV Revenue) - Top 20", x = "Fighter", y = "Total PPV Revenue") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+Best Entertainer
+
+```{r}
+# Identifying Best Entertainers
+best_entertainer_data <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(entertainment_metric = sum(significant_strikes_landed) + sum(takedown_successful)) %>%
+  arrange(desc(entertainment_metric)) %>%
+  head(20)  # Adjust the number to 20 for the top 20 entertainers
+
+# Plot the Best Entertainer (Top 20)
+ggplot(best_entertainer_data, aes(x = reorder(fighter, -entertainment_metric), y = entertainment_metric)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Best Entertainer (Composite Metric) - Top 20", x = "Fighter", y = "Composite Metric") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+Greatest of All Time graph
+```{r}
+# Filter and Calculate GOAT Metrics
+ufc_stats_filtered <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(
+    total_wins = sum(winner == "W"),
+    total_losses = sum(winner == "L"),
+    total_fights = n_distinct(id)
+  ) %>%
+  filter(total_fights >= 15)  # Adjust the minimum number of fights as needed
+
+ufc_stats_filtered <- ufc_stats_filtered %>%
+  mutate(win_loss_ratio = total_wins / (total_wins + total_losses))
+
+# Identify Top 20 GOAT
+top_20_goat_filtered <- ufc_stats_filtered %>%
+  arrange(desc(win_loss_ratio), desc(total_wins)) %>%
+  head(20)
+
+# Plot the Top 20 GOAT
+ggplot(top_20_goat_filtered, aes(x = reorder(fighter, -win_loss_ratio), y = win_loss_ratio)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Top 20 GOAT (Based on Win-Loss Ratio and Total Wins)", x = "Fighter", y = "Win-Loss Ratio") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
