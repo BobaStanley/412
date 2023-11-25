@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  man]{apa6}
+  man,floatsintext]{apa6}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
@@ -158,13 +158,7 @@
     {}{\InnerPatchFailed}%
   }
 {}{\PatchFailed}
-\keywords{keywords\newline\indent Word count: X}
-\DeclareDelayedFloatFlavor{ThreePartTable}{table}
-\DeclareDelayedFloatFlavor{lltable}{table}
-\DeclareDelayedFloatFlavor*{longtable}{table}
-\makeatletter
-\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
-\makeatother
+\keywords{Best, GOAT, Fighter, Performance, UFC\newline\indent Word count: 160}
 \usepackage{lineno}
 
 \linenumbers
@@ -179,7 +173,7 @@
   pdftitle={Into the UFC: Best Fighter, Striker, Grappler, and Entertainer},
   pdfauthor={Stanley Go1},
   pdflang={en-EN},
-  pdfkeywords={keywords},
+  pdfkeywords={Best, GOAT, Fighter, Performance, UFC},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
@@ -205,13 +199,7 @@ Correspondence concerning this article should be addressed to Stanley Go, Postal
 \affiliation{\vspace{0.5cm}\textsuperscript{1} Rutgers University}
 
 \abstract{%
-One or two sentences providing a \textbf{basic introduction} to the field, comprehensible to a scientist in any discipline.
-Two to three sentences of \textbf{more detailed background}, comprehensible to scientists in related disciplines.
-One sentence clearly stating the \textbf{general problem} being addressed by this particular study.
-One sentence summarizing the main result (with the words ``\textbf{here we show}'' or their equivalent).
-Two or three sentences explaining what the \textbf{main result} reveals in direct comparison to what was thought to be the case previously, or how the main result adds to previous knowledge.
-One or two sentences to put the results into a more \textbf{general context}.
-Two or three sentences to provide a \textbf{broader perspective}, readily comprehensible to a scientist in any discipline.
+This project delves into an in-depth analysis of UFC fighter statistics to identify and recognize excellence in various performance categories. The primary objective is to pinpoint the best fighters in distinct areas such as striking, grappling, knockout ability, and overall entertainment value. The study further aims to determine the greatest of all time (GOAT) by evaluating fighters based on their win-loss ratios. Leveraging a comprehensive dataset encompassing fighter metrics, the analysis employs key indicators such as significant strikes rate, takedown success rate, and total knockdowns. The anticipated results include detailed insights into the best striker, grappler, KOer, and entertainer, contributing to a comprehensive understanding of individual strengths within the competitive realm of UFC. Additionally, the study seeks to establish the GOAT by considering the historical performance of fighters with a minimum threshold of 10 matches. Through meticulous analysis and visualization, this project aims to offer a nuanced perspective on the unparalleled skills and accomplishments of UFC fighters across diverse categories.
 }
 
 
@@ -219,10 +207,243 @@ Two or three sentences to provide a \textbf{broader perspective}, readily compre
 \begin{document}
 \maketitle
 
+\#Introduction:
+
+\begin{itemize}
+\tightlist
+\item
+  Background:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Brief overview of the UFC and its significance in the world of mixed martial arts (MMA).
+  \item
+    Growing interest in understanding and analyzing fighter performance.
+  \end{itemize}
+\item
+  Research Focus:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exploration of UFC fighter statistics to recognize excellence in various performance categories.
+  \end{itemize}
+\item
+  Big Question:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The Ultimate Fighting Championship (UFC) hosts a wide range of fighters with diverse skill sets, including striking, grappling, and entertainment value. The objective of this project is to systematically analyze UFC fighter data to determine who excels in each category, identify the best overall fighters, and predict fight outcomes and potential earnings. We will aim our analysis to provide insights into fighter performance, audience appeal, and financial success within the UFC.
+  \end{itemize}
+\item
+  Objectives:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Identification of the best fighters in specific areas:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Best Striker
+    \item
+      Best Grappler
+    \item
+      Best KOer
+    \item
+      Best Entertainer
+    \end{itemize}
+  \end{itemize}
+\item
+  Key Questions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Research questions guiding the analysis:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Who are the best strikers, grapplers, and KOers in UFC?
+    \item
+      What factors contribute to a fighter's entertainment value?
+    \item
+      Who is considered the greatest of all time in UFC?
+    \end{itemize}
+  \end{itemize}
+\item
+  Data Source:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Utilization of the UFC Stats dataset with a comprehensive set of fighter metrics.
+  \end{itemize}
+\item
+  Methodology:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Planned analysis includes calculating key metrics such as significant strikes rate, takedown success rate, and total knockdowns.
+  \end{itemize}
+\item
+  Anticipated Results:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Expected outcomes involve insights into the best performers in each category, contributing to a nuanced understanding of individual strengths.
+  \end{itemize}
+\item
+  Significance:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Emphasis on the significance of recognizing and appreciating excellence within the competitive realm of UFC.
+  \end{itemize}
+\item
+  Overview of the Document:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Brief mention of the subsequent sections, including the methodology, results, and discussion.
+  \end{itemize}
+\end{itemize}
+
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.
+\hypertarget{data-collection}{%
+\subsection{Data Collection}\label{data-collection}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Source:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Utilize the UFC Stats dataset, containing comprehensive fighter metrics, including but not limited to knockdowns, significant strikes, takedowns, and fight outcomes.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{analysis-approach}{%
+\subsection{Analysis Approach}\label{analysis-approach}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Identifying Best Striker:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Calculate the significant strikes rate for each fighter:
+    \[ \text{Significant Strikes Rate} = \frac{\text{Total Significant Strikes Landed}}{\text{Total Significant Strikes Attempted}} \]
+  \item
+    Determine the fighter with the highest significant strikes rate as the best striker.
+  \end{itemize}
+\item
+  \textbf{Identifying Best Grappler:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Compute the takedown success rate for each fighter:
+    \[ \text{Takedown Success Rate} = \frac{\text{Total Successful Takedowns}}{\text{Total Takedown Attempts}} \]
+  \item
+    Identify the fighter with the highest takedown success rate as the best grappler.
+  \end{itemize}
+\item
+  \textbf{Identifying Best KOer:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sum the total knockdowns for each fighter.
+  \item
+    Determine the fighter with the highest total knockdowns as the best KOer.
+  \end{itemize}
+\item
+  \textbf{Identifying Best Entertainer:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Develop a composite metric considering both significant strikes and successful takedowns.
+  \item
+    Determine the fighter with the highest composite metric as the best entertainer.
+  \end{itemize}
+\item
+  \textbf{Determining Greatest of All Time (GOAT):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Filter fighters with a minimum threshold of 10 matches.
+  \item
+    Calculate the win-loss ratio for each fighter:
+    \[ \text{Win-Loss Ratio} = \frac{\text{Total Wins}}{\text{Total Wins + Total Losses}} \]
+  \item
+    Identify the fighter with the highest win-loss ratio as the GOAT.
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{visualization}{%
+\subsection{Visualization}\label{visualization}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Figure Creation:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Develop bar plots for each category (Best Striker, Best Grappler, Best KOer, Best Entertainer, and GOAT) to visually represent the analysis results.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Limitations of the Analysis:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Acknowledge potential limitations such as data accuracy, sample size variations, and the subjectivity of composite metrics.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ethical-considerations}{%
+\subsection{Ethical Considerations}\label{ethical-considerations}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Ethical Considerations:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ensure the privacy and consent of fighters in the analysis.
+  \item
+    Avoid biased interpretations and represent results objectively.
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{participants}{%
 \subsection{Participants}\label{participants}}

@@ -22,23 +22,19 @@ authornote: |
 
   Enter author note here.
 
-abstract: |
-  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
-  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
-  One sentence clearly stating the **general problem** being addressed by  this particular study.
-  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
-  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
-  One or two sentences to put the results into a more **general context**.
-  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+abstract: 
   
-  <!-- https://tinyurl.com/ybremelq -->
+  This project delves into an in-depth analysis of UFC fighter statistics to identify and recognize excellence in various performance categories. The primary objective is to pinpoint the best fighters in distinct areas such as striking, grappling, knockout ability, and overall entertainment value. The study further aims to determine the greatest of all time (GOAT) by evaluating fighters based on their win-loss ratios. Leveraging a comprehensive dataset encompassing fighter metrics, the analysis employs key indicators such as significant strikes rate, takedown success rate, and total knockdowns. The anticipated results include detailed insights into the best striker, grappler, KOer, and entertainer, contributing to a comprehensive understanding of individual strengths within the competitive realm of UFC. Additionally, the study seeks to establish the GOAT by considering the historical performance of fighters with a minimum threshold of 10 matches. Through meticulous analysis and visualization, this project aims to offer a nuanced perspective on the unparalleled skills and accomplishments of UFC fighters across diverse categories.
   
-keywords          : "keywords"
-wordcount         : "X"
+
+
+  
+keywords          : "Best, GOAT, Fighter, Performance, UFC"
+wordcount         : "160"
 
 bibliography      : "r-references.bib"
 
-floatsintext      : no
+floatsintext      : yes
 linenumbers       : yes
 draft             : no
 mask              : no
@@ -62,10 +58,94 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
+#Introduction: 
+  
+  - Background:
+      - Brief overview of the UFC and its significance in the world of mixed martial arts (MMA).
+      - Growing interest in understanding and analyzing fighter performance.
+
+  - Research Focus:
+      - Exploration of UFC fighter statistics to recognize excellence in various performance categories.
+
+  - Big Question:
+      - The Ultimate Fighting Championship (UFC) hosts a wide range of fighters with diverse skill sets, including striking, grappling, and entertainment value. The objective of this project is to systematically analyze UFC fighter data to determine who excels in each category, identify the best overall fighters, and predict fight outcomes and potential earnings. We will aim our analysis to provide insights into fighter performance, audience appeal, and financial success within the UFC.
+
+  - Objectives:
+      - Identification of the best fighters in specific areas:
+          - Best Striker
+          - Best Grappler
+          - Best KOer
+          - Best Entertainer
+
+  - Key Questions:
+      - Research questions guiding the analysis:
+          - Who are the best strikers, grapplers, and KOers in UFC?
+          - What factors contribute to a fighter's entertainment value?
+          - Who is considered the greatest of all time in UFC?
+
+  - Data Source:
+      - Utilization of the UFC Stats dataset with a comprehensive set of fighter metrics.
+
+  - Methodology:
+      - Planned analysis includes calculating key metrics such as significant strikes rate, takedown success rate, and total knockdowns.
+
+  - Anticipated Results:
+      - Expected outcomes involve insights into the best performers in each category, contributing to a nuanced understanding of individual strengths.
+
+  - Significance:
+      - Emphasis on the significance of recognizing and appreciating excellence within the competitive realm of UFC.
+
+  - Overview of the Document:
+      - Brief mention of the subsequent sections, including the methodology, results, and discussion.
 
 
 # Methods
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+## Data Collection
+
+- **Data Source:**
+  - Utilize the UFC Stats dataset, containing comprehensive fighter metrics, including but not limited to knockdowns, significant strikes, takedowns, and fight outcomes.
+
+## Analysis Approach
+
+1. **Identifying Best Striker:**
+   - Calculate the significant strikes rate for each fighter:
+     \[ \text{Significant Strikes Rate} = \frac{\text{Total Significant Strikes Landed}}{\text{Total Significant Strikes Attempted}} \]
+   - Determine the fighter with the highest significant strikes rate as the best striker.
+
+2. **Identifying Best Grappler:**
+   - Compute the takedown success rate for each fighter:
+     \[ \text{Takedown Success Rate} = \frac{\text{Total Successful Takedowns}}{\text{Total Takedown Attempts}} \]
+   - Identify the fighter with the highest takedown success rate as the best grappler.
+
+3. **Identifying Best KOer:**
+   - Sum the total knockdowns for each fighter.
+   - Determine the fighter with the highest total knockdowns as the best KOer.
+
+4. **Identifying Best Entertainer:**
+   - Develop a composite metric considering both significant strikes and successful takedowns.
+   - Determine the fighter with the highest composite metric as the best entertainer.
+
+5. **Determining Greatest of All Time (GOAT):**
+   - Filter fighters with a minimum threshold of 10 matches.
+   - Calculate the win-loss ratio for each fighter:
+     \[ \text{Win-Loss Ratio} = \frac{\text{Total Wins}}{\text{Total Wins + Total Losses}} \]
+   - Identify the fighter with the highest win-loss ratio as the GOAT.
+
+## Visualization
+
+- **Figure Creation:**
+  - Develop bar plots for each category (Best Striker, Best Grappler, Best KOer, Best Entertainer, and GOAT) to visually represent the analysis results.
+
+## Limitations
+
+- **Limitations of the Analysis:**
+  - Acknowledge potential limitations such as data accuracy, sample size variations, and the subjectivity of composite metrics.
+
+## Ethical Considerations
+
+- **Ethical Considerations:**
+  - Ensure the privacy and consent of fighters in the analysis.
+  - Avoid biased interpretations and represent results objectively.
 
 ## Participants
 
