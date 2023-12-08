@@ -625,6 +625,19 @@ fracdata_lm %>%
   summarise(mean_age = mean(AgeSession1_months, na.rm = TRUE), mean_post = mean(post), mean_pre= mean(pre), sd_age = sd(AgeSession1_months, na.rm = TRUE))
 ```
 
+
+```{r}
+project_data %>%
+  select(subject_id, "INC_DEC...8", "CON_IMP...13") %>%
+  pivot_longer('INC_DEC...8', "CON_IMP...13")%>%
+  separate(name, into = c("property1", "property2"))%>%
+  mutate(lowercase_value = tolower(value), non_response = case_when == "yes" - 1, lowercase_value == "no" - 0)
+             
+             
+```
+
+
+
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
