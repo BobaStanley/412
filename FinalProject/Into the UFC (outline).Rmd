@@ -146,12 +146,6 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 - **Limitations of the Analysis:**
   - Acknowledge potential limitations such as data accuracy, sample size variations, and the subjectivity of composite metrics.
 
-## Ethical Considerations
-
-- **Ethical Considerations:**
-  - Ensure the privacy and consent of fighters in the analysis.
-  - Avoid biased interpretations and represent results objectively.
-
 ## Participants
 
 ## Material
