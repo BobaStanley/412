@@ -18,9 +18,7 @@ affiliation:
     institution   : "Rutgers University"
 
 authornote: |
-  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
-
-  Enter author note here.
+  This project was submitted on `r Sys.Date()`
 
 abstract: 
   
@@ -63,7 +61,7 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
-#Introduction: 
+# Introduction: 
   
   - Background:
       - Brief overview of the UFC and its significance in the world of mixed martial arts (MMA).
@@ -87,9 +85,6 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
           - Who are the best strikers, grapplers, and KOers in UFC?
           - What factors contribute to a fighter's entertainment value?
           - Who is considered the greatest of all time in UFC?
-
-  - Data Source:
-      - Utilization of the UFC Stats dataset with a comprehensive set of fighter metrics.
 
   - Methodology:
       - Planned analysis includes calculating key metrics such as significant strikes rate, takedown success rate, and total knockdowns.
@@ -135,6 +130,7 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
    - Calculate the win-loss ratio for each fighter:
      \[ \text{Win-Loss Ratio} = \frac{\text{Total Wins}}{\text{Total Wins + Total Losses}} \]
    - Identify the fighter with the highest win-loss ratio as the GOAT.
+   - Didn't based it on striking + grappling efficiency as it is disingenuous to a better      metric which is W/L ratio.  
 
 ## Visualization
 
@@ -171,13 +167,12 @@ Our analysis focused on several key aspects of UFC fighter performance, includin
 
 - **Best PPV Seller:** We calculated the average PPV revenue per fight for each fighter, focusing on financial success.
 
-- **Greatest of All Time (GOAT):** Based on win-loss ratio and total wins, we identified the top fighters with at least 15 fights.
+- **Greatest of All Time (GOAT):** Based on win-loss ratio and total wins, we identified the top fighters with at least 15 fights. 
 
 ## Planned Figure and Table
  *Figure: Top 20 GOAT (Win-Loss Ratio and Total Wins)*
 
 ```{r}
-# Filter and Calculate GOAT Metrics
 ufc_stats_filtered <- ufc_stats %>%
   group_by(fighter) %>%
   summarise(
@@ -185,7 +180,7 @@ ufc_stats_filtered <- ufc_stats %>%
     total_losses = sum(winner == "L"),
     total_fights = n_distinct(id)
   ) %>%
-  filter(total_fights >= 15)  # Adjust the minimum number of fights as needed
+  filter(total_fights >= 15)  
 
 ufc_stats_filtered <- ufc_stats_filtered %>%
   mutate(win_loss_ratio = total_wins / (total_wins + total_losses))
@@ -195,12 +190,12 @@ top_20_goat_filtered <- ufc_stats_filtered %>%
   arrange(desc(win_loss_ratio), desc(total_wins)) %>%
   head(20)
 
-# Plot the Top 20 GOAT
-ggplot(top_20_goat_filtered, aes(x = reorder(fighter, -win_loss_ratio), y = win_loss_ratio)) +
-  geom_bar(stat = "identity", position = "dodge", color = "black") +
-  labs(title = "Top 20 GOAT (Based on Win-Loss Ratio and Total Wins)", x = "Fighter", y = "Win-Loss Ratio") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+# Plot the Top 20 GOAT as a scatter plot with names
+ggplot(top_20_goat_filtered, aes(x = total_wins, y = win_loss_ratio, label = fighter)) +
+  geom_point(color = "blue") +  
+  geom_text(vjust = -0.5, hjust = 0.5) +  
+  labs(title = "Top 20 GOAT (Based on Win-Loss Ratio and Total Wins)", x = "Total Wins", y = "Win-Loss Ratio") +
+  theme_minimal()
 ```
 
  *Figure: Top 20 Entertainers* 
@@ -320,7 +315,7 @@ best_striking_efficiency_data <- ufc_stats %>%
   arrange(desc(striking_efficiency)) %>%
   head()  # Adjust the number based on your preferences
 
-# Create a table
+
 best_striking_efficiency_table <- best_striking_efficiency_data %>%
   knitr::kable(digits = 2, align = "c")
 
@@ -338,7 +333,7 @@ best_grappling_efficiency_data <- ufc_stats %>%
   arrange(desc(grappling_efficiency)) %>%
   head()  # Adjust the number based on your preferences
 
-# Create a table
+
 best_grappling_efficiency_table <- best_grappling_efficiency_data %>%
   knitr::kable(digits = 2, align = "c")
 
@@ -358,7 +353,7 @@ best_ppv_seller_data <- ufc_stats %>%
   arrange(desc(total_ppv_revenue)) %>%
   head(20)  # Adjust the number based on your preferences
 
-# Create a table
+
 best_ppv_seller_table <- best_ppv_seller_data %>%
   knitr::kable(digits = 2, align = "c")
 
@@ -377,7 +372,7 @@ best_entertainer_data <- ufc_stats %>%
   arrange(desc(entertainment_metric)) %>%
   head(20)  # Adjust the number based on your preferences
 
-# Create a table
+
 best_entertainer_table <- best_entertainer_data %>%
   knitr::kable(digits = 2, align = "c")
 
@@ -407,7 +402,7 @@ top_20_goat_filtered <- ufc_stats_filtered %>%
   arrange(desc(win_loss_ratio), desc(total_wins)) %>%
   head(20)
 
-# Create a table
+
 goat_table <- top_20_goat_filtered %>%
   knitr::kable(digits = 2, align = "c")
 

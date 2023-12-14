@@ -253,6 +253,34 @@ ggplot(top_20_goat_filtered, aes(x = reorder(fighter, -win_loss_ratio), y = win_
 
 
 ```
+```{r}
+
+ufc_stats_filtered <- ufc_stats %>%
+  group_by(fighter) %>%
+  summarise(
+    total_wins = sum(winner == "W"),
+    total_losses = sum(winner == "L"),
+    total_fights = n_distinct(id)
+  ) %>%
+  filter(total_fights >= 15)  
+
+ufc_stats_filtered <- ufc_stats_filtered %>%
+  mutate(win_loss_ratio = total_wins / (total_wins + total_losses))
+
+# Identify Top 20 GOAT
+top_20_goat_filtered <- ufc_stats_filtered %>%
+  arrange(desc(win_loss_ratio), desc(total_wins)) %>%
+  head(20)
+
+# Plot the Top 20 GOAT as a scatter plot with names
+ggplot(top_20_goat_filtered, aes(x = total_wins, y = win_loss_ratio, label = fighter)) +
+  geom_point(color = "blue") +  
+  geom_text(vjust = -0.5, hjust = 0.5) +  
+  labs(title = "Top 20 GOAT (Based on Win-Loss Ratio and Total Wins)", x = "Total Wins", y = "Win-Loss Ratio") +
+  theme_minimal()
+
+
+```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
