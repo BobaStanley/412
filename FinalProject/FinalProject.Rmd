@@ -123,28 +123,11 @@ goat_filtered <- ufc_stats_filtered %>%
 # Print the fighter with the best overall record
 print(goat_filtered)
 ```
-```{r}
-# Combine Striking and Grappling Efficiency
-combined_data <- striking_data %>%
-  left_join(grappling_data, by = "fighter") %>%
-  mutate(combined_efficiency = striking_efficiency + coalesce(grappling_efficiency, 0)) %>%
-  arrange(desc(combined_efficiency)) %>%
-  head(20)
-
-print(combined_data)
 
 
-```
 
 
-```{r}
-# Create a bar plot for the combined efficiency
-ggplot(combined_data, aes(x = reorder(fighter, -combined_efficiency), y = combined_efficiency)) +
-  geom_bar(stat = "identity", position = "dodge", color = "black") +
-  labs(title = "Combined Efficiency - Top 20", x = "Fighter", y = "Combined Efficiency") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
+
 
 Graph for best Grappler
 
