@@ -144,6 +144,7 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 ## Participants
 - UFC Fighters
+
 ## Material
 
 ## Procedure
@@ -217,6 +218,9 @@ ggplot(top_20_goat_filtered, aes(x = total_wins, y = win_loss_ratio, label = fig
   theme_minimal()
 ```
 
+  - In this figure, we compare fighters based on their win-loss record. We combine total     wins of fighters and divide that by their total record which includes their wins +       losses to calculate their ratio. This tells us who has the best percentage of success
+    in the octagon.
+
  *Figure: Top 20 Entertainers* 
 ```{r}
 # Identifying Best Entertainers
@@ -234,6 +238,8 @@ ggplot(best_entertainer_data, aes(x = reorder(fighter, -entertainment_metric), y
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+  - In this figure, we calculate the entertainment metric based on the strikes landed and    takedowns landed. This is a good metric as viewers tend to be drawn towards              significant hits on the head or body. We then used that and apply it to 20 UFC           fighters
 
  *Figure: Top 20 PPV Seller* 
 ```{r}
@@ -253,6 +259,8 @@ ggplot(best_ppv_seller_data, aes(x = reorder(fighter, -total_ppv_revenue), y = t
 
 
 ```
+ - In this figure, we calculate who the best PPV seller is in the UFC. We mainly use        attendance as the key metric and multiply that by 59.99 to get the total revenue made    by the UFC based on that fighter.
+ 
  *Figure: Top 20 Koer* 
 ```{r}
 # Identifying Best KOers
@@ -270,6 +278,9 @@ ggplot(best_koer_data, aes(x = reorder(fighter, -total_knockdowns), y = total_kn
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+  - In this figure, we calculate the most accurate fighter based on knockdowns. Knockdown     is a good indicator of how accurate and strong a fighter is. We use sum of variable      knockdowns to see how much knockdowns a fighter has in their career. 
+
  *Figure: Top 20 Striker*
 ```{r}
 # Identifying Best Strikers
@@ -287,6 +298,9 @@ ggplot(best_striker_data, aes(x = reorder(fighter, -significant_strikes_rate), y
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+  -   In this figure, we calculate the best striker based on the significance strikes          landed rate. To do this, we sum the amount landed and strikes attempted to find the       rate. It is a good measurement since it finds out who the most accurate and              effective striker is. 
+
  *Figure: Top 20 Grapplers*
 ```{r}
 # Identifying Best Grapplers
@@ -306,6 +320,7 @@ ggplot(best_grappler_data, aes(x = reorder(fighter, -grappling_efficiency), y = 
 
 ```
 
+  - In this figure, we find the best grappler by using grappling efficiency. We calculate     using the sum of takedown success over the sum of takedown attempted.
  *Table KOer*
 ```{r create-table, results='asis'}
 
