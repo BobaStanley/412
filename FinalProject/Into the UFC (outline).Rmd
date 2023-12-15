@@ -143,13 +143,13 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
   - Acknowledge potential limitations such as data accuracy, sample size variations, and the subjectivity of composite metrics.
 
 ## Participants
-
+- UFC Fighters
 ## Material
 
 ## Procedure
 
 ## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
+We used `r cite_r("r-references.bib")` for all our analyses. And, ufc_stats.rda.
 
 
 # Results
@@ -168,6 +168,25 @@ Our analysis focused on several key aspects of UFC fighter performance, includin
 - **Best PPV Seller:** We calculated the average PPV revenue per fight for each fighter, focusing on financial success.
 
 - **Greatest of All Time (GOAT):** Based on win-loss ratio and total wins, we identified the top fighters with at least 15 fights. 
+
+
+# Discussion
+The analysis of UFC fighter statistics has provided valuable insights into various performance categories, shedding light on the strengths and capabilities of individual fighters within the competitive realm of mixed martial arts (MMA). This discussion will systematically address the research questions posed in the introduction, connecting the findings to the broader context of UFC fighter performance.
+
+## Best Striker in UFC
+The identification of the best striker was based on the significant strikes rate, calculated as the ratio of total significant strikes landed to attempted. The analysis revealed [Name] as the fighter with the highest striking efficiency, showcasing exceptional skill in landing significant strikes. This result aligns with the goal of recognizing technical proficiency in striking, providing fans and analysts with a nuanced perspective on the stand-up game.
+
+## Best Grappler in UFC
+Grappling efficiency, defined as the ratio of successful takedowns to attempted takedowns, was utilized to pinpoint the best grappler. [Name] emerged as the fighter with the highest grappling efficiency, showcasing dominance in ground control and takedown success. This insight contributes to the understanding of diverse skill sets among UFC fighters, emphasizing the importance of both striking and grappling in MMA.
+
+## Greatest of All Time (GOAT) Analysis
+The determination of the Greatest of All Time (GOAT) involved assessing fighters based on their win-loss ratio and total wins, with a minimum fight threshold. The analysis identified [Name] as the top-ranked fighter, emphasizing sustained success and overall excellence. The scatter plot visually represents the relationship between total wins and the win-loss ratio for the top 20 GOAT fighters. This graphical representation adds depth to the analysis, allowing for a quick comparison of fighters' career trajectories.
+
+## Limitations and Future Directions
+Despite the insightful findings, this analysis has its limitations. The reliance on statistical metrics may overlook intangible factors influencing a fighter's performance. Additionally, variations in data accuracy and the subjective nature of composite metrics pose challenges. Future research could delve into incorporating qualitative data and exploring advanced statistical models to offer a more comprehensive understanding of UFC fighter excellence.
+
+In conclusion, the discussion has provided a comprehensive interpretation of the data, addressing the research questions and highlighting the strengths and limitations of the analysis. The nuanced insights into striking, grappling, and overall fighter performance contribute to the ongoing discourse surrounding the diverse skill sets within the UFC. The discussion sets the stage for future research, encouraging a more holistic approach to assessing fighter excellence in MMA.
+
 
 ## Planned Figure and Table
  *Figure: Top 20 GOAT (Win-Loss Ratio and Total Wins)*
