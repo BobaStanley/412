@@ -100,6 +100,7 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 
 # Methods
+
 ## Data Collection
 
 - **Data Source:**
@@ -148,6 +149,15 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ## Material
 
 ## Procedure
+- The exploration of UFC fighter statistics involved a methodical process to uncover excellence across diverse performance categories. Leveraging the extensive UFC Stats dataset, the procedures implemented provided a nuanced understanding of individual strengths within the competitive realm of mixed martial arts.
+
+The initial step in this analysis was data collection, wherein the UFC Stats dataset served as a comprehensive source of fighter metrics. This dataset encompassed variables ranging from significant strikes and takedowns to overall fight outcomes, laying the foundation for a thorough evaluation of fighter performance.
+
+Distinct metrics were calculated to recognize excellence in specific areas. Striking efficiency, determined by the ratio of significant strikes landed to attempted, identified the best striker. Grappling efficiency, derived from successful takedowns divided by attempts, spotlighted the top grappler. Total knockdowns tallied for each fighter delineated the best knockout artist. An innovative composite metric, combining significant strikes and successful takedowns, identified fighters with the highest entertainment value.
+
+The determination of the Greatest of All Time (GOAT) involved filtering fighters with a minimum of 15 matches and calculating the win-loss ratio. This ratio, reflective of sustained success, crowned the fighter with the highest overall performance as the GOAT. A scatter plot visualized the top 20 GOAT fighters, displaying their win-loss ratios and total wins.
+
+Acknowledging the limitations of data accuracy and the subjectivity of composite metrics, ethical considerations prioritized privacy and unbiased interpretations. Future research could explore advanced statistical models and qualitative data to enhance the depth of UFC fighter evaluations.
 
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses. And, ufc_stats.rda.
@@ -175,13 +185,13 @@ Our analysis focused on several key aspects of UFC fighter performance, includin
 The analysis of UFC fighter statistics has provided valuable insights into various performance categories, shedding light on the strengths and capabilities of individual fighters within the competitive realm of mixed martial arts (MMA). This discussion will systematically address the research questions posed in the introduction, connecting the findings to the broader context of UFC fighter performance.
 
 ## Best Striker in UFC
-The identification of the best striker was based on the significant strikes rate, calculated as the ratio of total significant strikes landed to attempted. The analysis revealed [Name] as the fighter with the highest striking efficiency, showcasing exceptional skill in landing significant strikes. This result aligns with the goal of recognizing technical proficiency in striking, providing fans and analysts with a nuanced perspective on the stand-up game.
+The identification of the best striker was based on the significant strikes rate, calculated as the ratio of total significant strikes landed to attempted. The analysis revealed Andy Anderson as the fighter with the highest striking efficiency, showcasing exceptional skill in landing significant strikes. This result aligns with the goal of recognizing technical proficiency in striking, providing fans and analysts with a nuanced perspective on the stand-up game.
 
 ## Best Grappler in UFC
-Grappling efficiency, defined as the ratio of successful takedowns to attempted takedowns, was utilized to pinpoint the best grappler. [Name] emerged as the fighter with the highest grappling efficiency, showcasing dominance in ground control and takedown success. This insight contributes to the understanding of diverse skill sets among UFC fighters, emphasizing the importance of both striking and grappling in MMA.
+Grappling efficiency, defined as the ratio of successful takedowns to attempted takedowns, was utilized to pinpoint the best grappler. Aaron Wilkinson emerged as the fighter with the highest grappling efficiency, showcasing dominance in ground control and takedown success. This insight contributes to the understanding of diverse skill sets among UFC fighters, emphasizing the importance of both striking and grappling in MMA.
 
 ## Greatest of All Time (GOAT) Analysis
-The determination of the Greatest of All Time (GOAT) involved assessing fighters based on their win-loss ratio and total wins, with a minimum fight threshold. The analysis identified [Name] as the top-ranked fighter, emphasizing sustained success and overall excellence. The scatter plot visually represents the relationship between total wins and the win-loss ratio for the top 20 GOAT fighters. This graphical representation adds depth to the analysis, allowing for a quick comparison of fighters' career trajectories.
+The determination of the Greatest of All Time (GOAT) involved assessing fighters based on their win-loss ratio and total wins, with a minimum fight threshold. The analysis identified Jon Jones as the top-ranked fighter, emphasizing sustained success and overall excellence. The scatter plot visually represents the relationship between total wins and the win-loss ratio for the top 20 GOAT fighters. This graphical representation adds depth to the analysis, allowing for a quick comparison of fighters' career trajectories.
 
 ## Limitations and Future Directions
 Despite the insightful findings, this analysis has its limitations. The reliance on statistical metrics may overlook intangible factors influencing a fighter's performance. Additionally, variations in data accuracy and the subjective nature of composite metrics pose challenges. Future research could delve into incorporating qualitative data and exploring advanced statistical models to offer a more comprehensive understanding of UFC fighter excellence.
